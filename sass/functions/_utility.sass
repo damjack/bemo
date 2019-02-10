@@ -1,0 +1,5 @@
+@function removeUnit($val)
+  @return $val / ($val * 0 + 1)
+
+@function calc-percent($target, $container)
+  @return ($target / $container) * 100%
