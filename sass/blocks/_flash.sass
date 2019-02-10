@@ -1,23 +1,23 @@
 .flash
   text-align: center
-  border: 1px solid $gray-900
+  border: 1px solid $gray-color
   +heading-font-family
   +padding(1)
   border-radius: 4px
-  color: $dark
+  color: $dark-color
 
 .flash--notice
   @extend .flash
-  border-color: $notice
-  color: $notice
+  border-color: $notice-color
+  color: $notice-color
 
   &:before
     margin-right: 0.5em
 
 .flash--alert
   @extend .flash
-  border-color: $alert
-  color: $alert
+  border-color: $alert-color
+  color: $alert-color
 
   &:before
     margin-right: 0.5em

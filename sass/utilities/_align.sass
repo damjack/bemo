@@ -2,7 +2,8 @@
   .align--#{$direction}
     text-align: #{$direction}
 
-  @each $name in $align-breakpoints
-    .align--#{$direction}-on-#{$name}
-      +at-breakpoint($name)
+@each $name in $align-breakpoints
+  +at-breakpoint($name)
+    @each $direction in $align-directions
+      .align--#{$direction}-on-#{$name}
         text-align: #{$direction}

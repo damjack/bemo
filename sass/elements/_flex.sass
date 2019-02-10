@@ -1,0 +1,20 @@
+.flex
+  +flex
+
+.flex__item
+  +flex-item
+
+.flex--reverse
+  @extend .flex
+  flex-direction: row-reverse
+
+.flex--reverse-column
+  @extend .flex
+  flex-direction: column-reverse
+
+@each $content, $value in $flex-contents
+  .justify--#{$content}
+    justify-content: $value
+
+  .align--#{$content}
+    align-items: $value
