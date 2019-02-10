@@ -1,46 +1,39 @@
 //
 // Color system
 //
-$enable-gradients: false
+$enable-color-gradients: false
 
 // stylelint-disable
-$white:    #fff !default
-$gray-200: #e9ecef !default
-$gray-300: #dee2e6 !default
-$gray-600: #6c757d !default
-$gray-700: #495057 !default
-$gray-900: #212529 !default
-$black:    #000 !default
+$white-color:    #fff
+$gray-color:     #6c757d
+$black-color:    #000
 
-$grays: () !default
-$grays: map-merge(("200": $gray-200, "300": $gray-300, "600": $gray-600, "700": $gray-700, "900": $gray-900), $grays)
+$blue-color:    #007bff !default
+$indigo-color:  #6610f2 !default
+$purple-color:  #6f42c1 !default
+$pink-color:    #e83e8c !default
+$red-color:     #dc3545 !default
+$orange-color:  #fd7e14 !default
+$yellow-color:  #ffc107 !default
+$green-color:   #28a745 !default
+$teal-color:    #20c997 !default
+$cyan-color:    #17a2b8 !default
 
-$blue:    #007bff !default
-$indigo:  #6610f2 !default
-$purple:  #6f42c1 !default
-$pink:    #e83e8c !default
-$red:     #dc3545 !default
-$orange:  #fd7e14 !default
-$yellow:  #ffc107 !default
-$green:   #28a745 !default
-$teal:    #20c997 !default
-$cyan:    #17a2b8 !default
+$colors: ()
+$colors: map-merge(("blue": $blue-color, "indigo": $indigo-color, "purple": $purple-color, "pink": $pink-color, "red": $red-color, "orange": $orange-color, "yellow": $yellow-color, "green": $green-color, "teal": $teal-color, "cyan": $cyan-color, "white": $white-color, "gray": $gray-color, "gray-dark": $black-color), $colors)
 
-$colors: () !default
-$colors: map-merge(("blue": $blue, "indigo": $indigo, "purple": $purple, "pink": $pink, "red": $red, "orange": $orange, "yellow": $yellow, "green": $green, "teal": $teal, "cyan": $cyan, "white": $white, "gray": $gray-600, "gray-dark": $gray-900), $colors)
-
-$primary:       $indigo !default
-$secondary:     $teal !default
-$notice:        $cyan !default
-$alert:         $red !default
-$light:         $gray-200 !default
-$dark:          $gray-900 !default
+$primary-color:       $indigo-color
+$secondary-color:     $teal-color
+$notice-color:        $cyan-color
+$alert-color:         $red-color
+$light-color:         $gray-color
+$dark-color:          $black-color
 
 $bemo-colors: () !default
-$bemo-colors: map-merge(("primary": $primary, "secondary": $secondary, "notice": $notice, "alert": $alert, "light": $light, "dark": $dark), $bemo-colors)
+$bemo-colors: map-merge(("primary": $primary-color, "secondary": $secondary-color, "notice": $notice-color, "alert": $alert-color, "light": $light-color, "dark": $dark-color), $bemo-colors)
 // stylelint-enable
 
-$base-body-color: $white
+$base-body-color: $white-color
 
 // Set a specific jump point for requesting color jumps
 $bemo-color-interval:      8% !default
@@ -49,12 +42,13 @@ $bemo-color-interval:      8% !default
 $yiq-contrasted-threshold: 150 !default
 
 // Customize the light and dark text colors for use in our YIQ color contrast function.
-$yiq-text-dark: $gray-900 !default
-$yiq-text-light: $white !default
+$yiq-text-dark:    $black-color
+$yiq-text-light:   $white-color
 
 // Body
 //
 // Settings for the `<body>` element.
 
-$body-bg:                   $white !default
-$body-color:                $gray-900 !default
+$body-bg-color:    $white-color
+$body-color:       $black-color
+$border-color:     $gray-color
