@@ -1,6 +1,6 @@
 const path = require('path');
 const autoprefixer = require("autoprefixer");
-const modulesPath = path.resolve(__dirname, '../bemo-modules')
+const modulesPath = path.resolve(__dirname, '../sass')
 module.exports = (config, env) => {
 
   if (env === 'PRODUCTION') {
@@ -37,15 +37,15 @@ module.exports = (config, env) => {
           }
         },
         {
-          loader: 'sass-loader',
-          options: {
-            includePaths: [
-              modulesPath,
-            ],
-          }
+          loader: 'sass-loader'
         },
       ],
       include: modulesPath,
+    },
+    {
+      test: /\.stories\.js[x]?$/,
+      loaders: [require.resolve('@storybook/addon-storysource/loader')],
+      enforce: 'pre',
     }
   )
 
