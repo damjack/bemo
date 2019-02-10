@@ -3,7 +3,7 @@
 // Contextual backgrounds
 
 @mixin gradient-bg($color)
-  @if $enable-gradients
+  @if $enable-color-gradients
     background: $color linear-gradient(180deg, mix($body-bg, $color, 15%), $color) repeat-x
   @else
     background-color: $color

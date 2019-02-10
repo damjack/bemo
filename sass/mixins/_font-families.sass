@@ -1,10 +1,14 @@
+@mixin font-family($family: $helvetica, $font-weight: false,  $line-height: false, $letter-spacing: false)
+  font-family: $family
+  @if $font-weight { font-weight: $font-weight }
+  @if $line-height { line-height: $line-height }
+  @if $letter-spacing { line-height: $letter-spacing }
+
 @mixin heading-font-family
-  font-family: $heading-font-family
-  font-weight: $heading-font-weight
+  +font-family($heading-font-family, $heading-font-weight, $heading-line-height, $heading-letter-spacing)
 
 @mixin base-font-family
-  font-family: $base-font-family
-  font-weight: $base-font-weight
+  +font-family($base-font-family, $base-font-weight, $base-line-height, $base-letter-spacing)
 
 @mixin monospaced-font-family
   font-family: $monospaced-font-family
