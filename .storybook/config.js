@@ -5,6 +5,7 @@ import { withConsole } from '@storybook/addon-console';
 import { themes } from '@storybook/components';
 
 import '../sass/application.sass'
+import '../stories/theme.sass'
 import { version } from '../package.json'
 
 addDecorator(
@@ -26,7 +27,7 @@ addDecorator(
       barFill: 'rgba(255,255,255,1)',
       barSelectedColor: 'rgba(0,0,0,0.1)',
       inputFill: 'rgba(0,0,0,0.05)',
-      mainTextFace: '"Helvetica Neue", Helvetica, Roboto, Arial, sans-serif',
+      mainTextFace: '"Source Sans Pro", Helvetica, Roboto, Arial, sans-serif',
       mainTextColor: '#333333',
       dimmedTextColor: 'rgba(0,0,0,0.4)',
       highlightColor: '#9fdaff',

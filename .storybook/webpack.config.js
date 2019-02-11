@@ -27,7 +27,7 @@ module.exports = (config, env) => {
     },
     {
       test: /\.s[ac]ss$/,
-      loaders: [
+      use: [
         'style-loader',
         'css-loader',
         {
@@ -40,11 +40,34 @@ module.exports = (config, env) => {
           loader: 'sass-loader'
         },
       ],
-      include: modulesPath,
+      include: [
+        modulesPath,
+        path.resolve(__dirname, '../stories/')
+      ]
+    },
+    {
+      test: /\.stories\.js?$/,
+      use: [
+        {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env']
+          }
+        }
+      ],
+      include: [
+        path.resolve(__dirname, '../components/')
+      ],
+      enforce: 'pre',
     },
     {
       test: /\.stories\.js[x]?$/,
-      loaders: [require.resolve('@storybook/addon-storysource/loader')],
+      use: [
+        require.resolve('@storybook/addon-storysource/loader'),
+      ],
+      include: [
+        path.resolve(__dirname, '../stories/')
+      ],
       enforce: 'pre',
     }
   )
