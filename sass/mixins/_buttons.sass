@@ -1,7 +1,43 @@
-// Button variants
+// Button & variants
 //
 // Easily pump out default styles, as well as :hover, :focus, :active,
 // and disabled options for all buttons
+= button
+  display: inline-block
+  text-align: center
+  white-space: nowrap
+  vertical-align: middle
+  text-decoration: none
+  cursor: pointer
+  user-select: none
+  -webkit-appearance: none
+  border: 0
+
+  & + &
+    margin-left: 15px
+
+  i:first-child
+    margin-right: 0.5em
+
+  i:last-child
+    margin-left: 0.5em
+
+  i:first-child:last-child
+    margin-left: 0
+    margin-right: 0
+
+  // Share hover and focus styles
+  // @include hover-focus
+  //   text-decoration: none
+
+  &:focus,
+  &.focus
+    outline: 0
+
+  // Disabled comes first so active can properly restyle
+  &.disabled,
+  &:disabled
+    opacity: $button-disabled-opacity
 
 @mixin button-variant($background, $border, $hover-background: darken($background, 7.5%), $hover-border: darken($border, 10%), $active-background: darken($background, 10%), $active-border: darken($border, 12.5%))
   color: color-yiq($background)

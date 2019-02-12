@@ -1,43 +1,9 @@
 .button
+  +button
   +base-font-family
-  display: inline-block
-  text-align: center
-  white-space: nowrap
-  vertical-align: middle
-  text-decoration: none
-  cursor: pointer
-  user-select: none
-  -webkit-appearance: none
   border: $button-border-width solid transparent
   @include button-size($button-padding-vertical, $button-padding-horizontal, $base-font-size, $button-border-radius)
   // @include transition($button-transition)
-
-  & + &
-    margin-left: 15px
-
-  i:first-child
-    margin-right: 0.5em
-
-  i:last-child
-    margin-left: 0.5em
-
-  i:first-child:last-child
-    margin-left: 0
-    margin-right: 0
-
-  // Share hover and focus styles
-  // @include hover-focus
-  //   text-decoration: none
-
-  &:focus,
-  &.focus
-    outline: 0
-
-  // Disabled comes first so active can properly restyle
-  &.disabled,
-  &:disabled
-    opacity: $button-disabled-opacity
-
 
 //
 // Button Sizes
@@ -49,13 +15,14 @@
 //
 // Alternate buttons
 //
-@each $color, $value in $bemo-colors
-  .button--#{$color}
-    @include button-variant($value, $value)
+@if $enable-button-colored
+  @each $color, $value in $bemo-colors
+    .button--#{$color}
+      @include button-variant($value, $value)
 
-@each $color, $value in $bemo-colors
-  .button--outline-#{$color}
-    @include button-outline-variant($value)
+  @each $color, $value in $bemo-colors
+    .button--outline-#{$color}
+      @include button-outline-variant($value)
 
 //
 // Block button
