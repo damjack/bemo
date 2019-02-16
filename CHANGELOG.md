@@ -1,3 +1,13 @@
+# v.2.0.0
+
+### Refactor all BEMO framework!
+
+* Update directory structure
+* Add flex classes
+* Add background utilities
+* Change colors variables
+* Add new functions and mixins
+
 # v1.0.10
 
 ### Major changes to BEMO default style blocks!
