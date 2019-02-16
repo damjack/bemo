@@ -1,6 +1,13 @@
+# Files
+.DS_Store
+.ruby-version
+npm-debug.log
+
+# Folders
+.idea/
+.sass-cache
+node_modules
 build/
 temp/
 docs/node_modules/
-docs/bower_components/
-docs/.grunt/
-node_modules
+docs/build/
