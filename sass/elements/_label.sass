@@ -1,0 +1,19 @@
+.label
+  display: inline-block
+  +horizontal-padding(0.4)
+  +vertical-padding(0.2)
+  color: $label-base-color
+
+  & + &
+    margin-left: $label-margin-left
+
+.label-rounded
+  @extend .label
+  border-radius: $label-border-radius
+
+@if $enable-color-label
+  @each $color, $value in $all-colors
+    .label--#{$color}
+      @extend .label
+      +bg-variant($value)
+      color: color-invert($value)

@@ -7,8 +7,8 @@
     &:last-child
       margin-bottom: 0
 
-  ul, ol, blockquote
-    padding-left: 30px
+  ul, ol
+    +padding-left(2)
 
   ul li
     list-style-type: disc
@@ -17,7 +17,6 @@
     list-style-type: decimal
 
   h1, h2, h3, h4, h5, h6
-    +heading-font-family
     +margin-top(2)
 
     &:first-child
@@ -37,4 +36,5 @@
     font-style: italic
     font-family: $georgia
     position: relative
-    color: $gray-color
+    border-left: 0.1rem solid $gray-color
+    +padding(0.4)

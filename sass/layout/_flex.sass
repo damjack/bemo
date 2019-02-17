@@ -18,3 +18,9 @@
 
   .align--#{$content}
     align-items: $value
+
++flex-width-setup("flex-")
+
+@each $name in $grid-breakpoints
+  +at-breakpoint($name)
+    +flex-width-setup("flex-#{$name}-")

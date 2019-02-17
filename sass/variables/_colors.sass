@@ -3,35 +3,27 @@
 //
 $enable-color-gradients: false
 
-// stylelint-disable
 $white-color:    #fff
 $gray-color:     #6c757d
 $black-color:    #000
 
 $blue-color:    #007bff !default
-$indigo-color:  #6610f2 !default
 $purple-color:  #6f42c1 !default
-$pink-color:    #e83e8c !default
 $red-color:     #dc3545 !default
 $orange-color:  #fd7e14 !default
 $yellow-color:  #ffc107 !default
 $green-color:   #28a745 !default
-$teal-color:    #20c997 !default
-$cyan-color:    #17a2b8 !default
 
-$colors: ()
-$colors: map-merge(("blue": $blue-color, "indigo": $indigo-color, "purple": $purple-color, "pink": $pink-color, "red": $red-color, "orange": $orange-color, "yellow": $yellow-color, "green": $green-color, "teal": $teal-color, "cyan": $cyan-color, "white": $white-color, "gray": $gray-color, "gray-dark": $black-color), $colors)
-
-$primary-color:       $indigo-color
-$secondary-color:     $teal-color
-$notice-color:        $cyan-color
-$alert-color:         $red-color
-$light-color:         $gray-color
-$dark-color:          $black-color
+// stylelint-disable
+$base-colors: () !default
+$base-colors: map-merge(("white": $white-color, "gray": $gray-color, "black": $black-color), $base-colors)
 
 $bemo-colors: () !default
-$bemo-colors: map-merge(("primary": $primary-color, "secondary": $secondary-color, "notice": $notice-color, "alert": $alert-color, "light": $light-color, "dark": $dark-color), $bemo-colors)
+$bemo-colors: map-merge(("blue": $blue-color, "purple": $purple-color, "red": $red-color, "orange": $orange-color, "yellow": $yellow-color, "green": $green-color), $bemo-colors)
 // stylelint-enable
+
+// derived
+$all-colors:    map-merge($base-colors, $bemo-colors)
 
 $base-body-color: $white-color
 
@@ -51,4 +43,3 @@ $yiq-text-light:   $white-color
 
 $body-bg-color:    $white-color
 $body-color:       $black-color
-$border-color:     $gray-color

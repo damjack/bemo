@@ -14,21 +14,11 @@
   border: 0
 
   & + &
-    margin-left: 15px
-
-  i:first-child
-    margin-right: 0.5em
-
-  i:last-child
-    margin-left: 0.5em
-
-  i:first-child:last-child
-    margin-left: 0
-    margin-right: 0
+    margin-left: $button-margin-left
 
   // Share hover and focus styles
-  // @include hover-focus
-  //   text-decoration: none
+  @include hover-focus
+    text-decoration: none
 
   &:focus,
   &.focus
@@ -41,13 +31,13 @@
 
 @mixin button-variant($background, $border, $hover-background: darken($background, 7.5%), $hover-border: darken($border, 10%), $active-background: darken($background, 10%), $active-border: darken($border, 12.5%))
   color: color-yiq($background)
-  @include gradient-bg($background)
+  +bg-variant($background)
   border-color: $border
 
-  // @include hover
-  //   color: color-yiq($hover-background)
-  //   @include gradient-bg($hover-background)
-  //   border-color: $hover-border
+  @include hover
+     color: color-yiq($hover-background)
+     +bg-variant($hover-background)
+     border-color: $hover-border
 
   // Disabled comes first so active can properly restyle
   &.disabled,
@@ -91,7 +81,6 @@
 @mixin button-size($padding-vertical, $padding-horizontal, $font-size, $border-radius)
   padding: $padding-vertical $padding-horizontal
   +font-size($font-size)
-  +line-height($font-size)
   // Manually declare to provide an override to the browser default
   @if $enable-button-rounded
     border-radius: $border-radius

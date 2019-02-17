@@ -1,44 +1,26 @@
-@mixin font-size($unit)
-  @if type-of($unit) == "number" and unit($unit) == "px"
-    +rem-rule(font-size, $unit)
+@mixin font-size($unit-font, $unit-line: false)
+  @if type-of($unit-font) == "number" and unit($unit-font) == "px"
+    +rem-rule(font-size, $unit-font)
 
-  @else if type-of($unit) == "string"
-    @if map-has-key($all-font-sizes, $unit)
-      +rem-rule(font-size, map-get($all-font-sizes, $unit))
+  @else if type-of($unit-font) == "string"
+    @if map-has-key($all-font-sizes, $unit-font)
+      +rem-rule(font-size, map-get($all-font-sizes, $unit-font))
     @else
-      @warn "size ‘#{$unit}’ does not exist"
+      @warn "size ‘#{$unit-font}’ does not exist"
 
   @else
-    @warn "size ‘#{$unit}’ invalid"
+    @warn "size ‘#{$unit-font}’ invalid"
 
-@mixin line-height($unit)
-  @if type-of($unit) == "number" and unit($unit) == "px"
-    +rem-rule(line-height, $unit)
+  @if $unit-line
+    line-height: ($unit-line / $unit-font)
+    @if type-of($unit-line) == "number" and unit($unit-line) == "px"
+      +rem-rule(line-height, $unit-line)
 
-  @else if type-of($unit) == "string"
-    @if map-has-key($line-heights, $unit)
-      +rem-rule(line-height, map-get($line-heights, $unit))
+    @else if type-of($unit-line) == "string"
+      @if map-has-key($all-line-heights, $unit-line)
+        +rem-rule(line-height, map-get($all-line-heights, $unit-line))
+      @else
+        @warn "size ‘#{$unit-line}’ does not exist"
+
     @else
-      @warn "size ‘#{$unit}’ does not exist"
-
-  @else
-    @warn "size ‘#{$unit}’ invalid"
-
-// DA INSERIRE POSSIBILITÀ DI DICHIARARE ANCHE UNA SOLA VARIABILE
-@mixin line-size($unit, $line)
-  @if type-of($unit) == "number" and unit($unit) == "px" and type-of($line) == "number" and unit($line) == "px"
-    +rem-rule(font-size, $unit)
-    +rem-rule(line-height, $line)
-
-  @else if type-of($unit) == "string" and type-of($line) == "string"
-    @if map-has-key($all-font-sizes, $unit)
-      +rem-rule(font-size, map-get($all-font-sizes, $unit))
-    @else
-      @warn "size ‘#{$unit}’ does not exist"
-    @if map-has-key($line-heights, $line)
-      +rem-rule(line-height, map-get($line-heights, $line))
-    @else
-      @warn "size ‘#{$unit}’ does not exist"
-
-  @else
-    @warn "size ‘#{$unit}’ invalid"
+      @warn "size ‘#{$unit-line}’ invalid"

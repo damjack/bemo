@@ -1,6 +1,5 @@
 .button
   +button
-  +base-font-family
   border: $button-border-width solid transparent
   @include button-size($button-padding-vertical, $button-padding-horizontal, $base-font-size, $button-border-radius)
   // @include transition($button-transition)
@@ -8,20 +7,23 @@
 //
 // Button Sizes
 //
-//.button--small
-//  @extend .button
-//  @include button-size($button-padding-vertical, $button-padding-horizontal, "delta", $button-border-radius)
+@if $enable-button-size
+.button--small
+  @extend .button
+  @include button-size(8px, 12px, "delta", 4px)
 
 //
 // Alternate buttons
 //
 @if $enable-button-colored
-  @each $color, $value in $bemo-colors
+  @each $color, $value in $all-colors
     .button--#{$color}
+      @extend .button
       @include button-variant($value, $value)
 
-  @each $color, $value in $bemo-colors
+  @each $color, $value in $all-colors
     .button--outline-#{$color}
+      @extend .button
       @include button-outline-variant($value)
 
 //
