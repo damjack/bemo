@@ -19,15 +19,17 @@ Bemo is accompanied by a couple of CLI tools let you easily generate:
 A Bemo project will look like this:
 
 ```
-.
-stylesheets
-  ├-- blocks
+sass
+  |-- bemo.sass
+  |-- blocks
   |-- elements
-  ├-- functions
-  ├-- mixins
+  |-- functions
+  |-- layout
+  |-- mixins
   |-- utilities
-  ├-- variables
-  └-- application.sass
+  |-- variables
+  |-- _base.sass
+  └-- _normalize.sass
 ```
 
 The fulcrum of the whole tree lies in the `stylesheets/blocks` directory,
@@ -45,6 +47,12 @@ A preview of the BEM blocks available with Bemo is available here: http://cantie
     npm install
     bower install
     grunt dev
+
+## Browser Support
+
+Chrome | Firefox | IE | Opera | Safari
+--- | --- | --- | --- | --- |
+Latest ✔ | Latest ✔ | 10+ ✔ | Latest ✔ | 6.1+ ✔ |
 
 ## Contributing
 
