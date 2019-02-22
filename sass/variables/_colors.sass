@@ -7,19 +7,11 @@ $white-color:    #fff
 $gray-color:     #6c757d
 $black-color:    #000
 
-$blue-color:    #007bff !default
-$purple-color:  #6f42c1 !default
-$red-color:     #dc3545 !default
-$orange-color:  #fd7e14 !default
-$yellow-color:  #ffc107 !default
-$green-color:   #28a745 !default
-
 // stylelint-disable
 $base-colors: () !default
 $base-colors: map-merge(("white": $white-color, "gray": $gray-color, "black": $black-color), $base-colors)
 
 $bemo-colors: () !default
-$bemo-colors: map-merge(("blue": $blue-color, "purple": $purple-color, "red": $red-color, "orange": $orange-color, "yellow": $yellow-color, "green": $green-color), $bemo-colors)
 // stylelint-enable
 
 // derived
@@ -36,10 +28,3 @@ $yiq-contrasted-threshold: 150 !default
 // Customize the light and dark text colors for use in our YIQ color contrast function.
 $yiq-text-dark:    $black-color
 $yiq-text-light:   $white-color
-
-// Body
-//
-// Settings for the `<body>` element.
-
-$body-bg-color:    $white-color
-$body-color:       $black-color
