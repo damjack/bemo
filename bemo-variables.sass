@@ -20,8 +20,7 @@ $teal-color:                #20c997
 
 $bemo-colors:               () !default
 $bemo-colors:               map-merge(("blue": $blue-color, "purple": $purple-color, "red": $red-color, "orange": $orange-color, "yellow": $yellow-color, "green": $green-color, "teal": $teal-color), $bemo-colors)
-
-$all-colors:    map-merge($base-colors, $bemo-colors)
+$all-colors:                map-merge($base-colors, $bemo-colors)
 
 $enable-flex-grid:          true
 $flex-cols:                 ( 12 )
@@ -36,3 +35,8 @@ $space-directions:          ( top bottom left )
 $space-breakpoints:         ( tab lap desk )
 
 $base-wrap-width:           1440px
+
+$enable-flash-colored:     true
+$flash-colors:             () !default
+$flash-colors:             map-merge(("notice": "purple", "alert": "red", "warning": "orange"), $flash-colors)
+$notice-colors:            notice-colors($flash-colors, $bemo-colors)

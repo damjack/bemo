@@ -29,18 +29,18 @@
 //
 // Block button
 //
-.button--block
+.button--expand
   @extend .button
   display: block
   width: 100%
 
   // Vertically space out multiple block buttons
-  + .button--block
-    margin-top: 1rem
+  + .button--expand
+    +margin-top(1)
 
 // Specificity overrides
 input[type="submit"],
 input[type="reset"],
 input[type="button"]
-  &.button---block
+  &.button--expand
     width: 100%

@@ -4,22 +4,22 @@ html, body
   position: relative
 
 html
-  -webkit-tap-highlight-color: transparent
   box-sizing: border-box
   +rem-html-reset(0.9)
+  -webkit-tap-highlight-color: transparent
 
   +at-breakpoint(desk)
     +rem-html-reset(1)
 
 body
   +body-font-family
-  -webkit-text-size-adjust: 100%
+  color: $base-body-color
   text-size-adjust: 100%
   min-height: 100%
   line-height: 1.5
-  color: $base-body-color
   text-rendering: optimizeLegibility
   -webkit-font-smoothing: antialiased
+  -webkit-text-size-adjust: 100%
 
 a
   color: $base-body-color
@@ -49,8 +49,8 @@ input[type=week], textarea
   display: block
   box-sizing: border-box
   width: 100%
-  padding: 10px
-  border: 1px solid $black-color
+  +padding(0.8)
+  border: 1px solid $gray-color
   -webkit-appearance: none
   border-radius: 0
   background-image: none
@@ -88,7 +88,7 @@ input[type=email]:focus, input[type=number]:focus, input[type=password]:focus, i
 input[type=tel]:focus, input[type=text]:focus, input[type=url]:focus, input[type=color]:focus, input[type=date]:focus,
 input[type=datetime]:focus, input[type=datetime-local]:focus, input[type=month]:focus, input[type=time]:focus,
 input[type=week]:focus, textarea:focus
-  border-color: $base-body-color
+  border-color: $gray-color
 
 input[type="checkbox"]
   display: inline-block
@@ -110,7 +110,7 @@ th, td
 
 img
   max-width: 100%
-  vertical-align: middle
+  vertical-align: top
 
 legend
   +heading-font-family

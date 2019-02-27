@@ -2,25 +2,17 @@
   text-align: center
   border: 1px solid $gray-color
   +heading-font-family
-  +padding(1)
+  +padding(0.5)
   border-radius: 4px
-  color: $black-color
 
-.flash--notice
-  @extend .flash
-  border-color: $orange-color
-  color: $orange-color
-
-  &::before
-    margin-right: 0.5em
-
-.flash--alert
-  @extend .flash
-  border-color: $red-color
-  color: $red-color
-
-  &::before
-    margin-right: 0.5em
+@if $enable-flash-colored
+  @each $color, $value in $notice-colors
+    .flash--#{$color}
+      @extend .flash
+      border-color: $value
+      color: $value
+      &::before
+        +margin-right(0.5)
 
 .flash--full
   @extend .flash
