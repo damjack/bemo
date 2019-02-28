@@ -26,6 +26,6 @@
       @warn "size ‘#{$unit-line}’ invalid"
 
   @else
-    @if type-of($unit-line) == "string"
-      @if map-has-key($all-line-heights, $unit-line)
-        +rem-rule(line-height, map-get($all-line-heights, $unit-line))
+    @if type-of($unit-font) == "string"
+      @if map-has-key($all-line-heights, $unit-font)
+        +rem-rule(line-height, map-get($all-line-heights, $unit-font))
