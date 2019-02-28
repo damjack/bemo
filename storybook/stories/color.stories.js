@@ -7,7 +7,7 @@ const colorRows = {
   white: {
     class: ".white",
     property: "color: #fff",
-    sample: <Block className="text--white">White</Block>
+    sample: <Block className="background--black text--white">White</Block>
   },
   gray: {
     class: ".gray",
@@ -56,12 +56,20 @@ const colorRows = {
   },
 };
 
-storiesOf('TYPOGRAPHY', module)
+storiesOf('UTILITIES', module)
   .add('Color', () => (
     <Main className="wrap">
       <Title className="markdown">Text Color</Title>
       <p className="text">Utilities for controlling the text color of an element</p>
 
       <Table className="table">{colorRows}</Table>
+
+      <div className="code">
+        <Code>
+          {`    <section class="text--white">deafult</section>
+    <section class="text--blue">blue</section>
+    <section class="text--red">reg</section>`}
+        </Code>
+      </div>
     </Main>
   ));

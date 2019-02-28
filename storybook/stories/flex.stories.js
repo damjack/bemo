@@ -72,7 +72,7 @@ storiesOf('LAYOUT', module)
             </div>
           </div>
         </div>
-        <div className="clearfix space-m--both-2"></div>
+        <div className="clearfix margin--both-2"></div>
         <div className='flex'>
           <div className='flex__item flex-2-12'>
             <div className='blurb'>
@@ -105,7 +105,7 @@ storiesOf('LAYOUT', module)
             </div>
           </div>
         </div>
-        <div className="clearfix space-m--both-2"></div>
+        <div className="clearfix margin--both-2"></div>
         <div className='flex'>
           <div className='flex__item flex-6-12'>
             <div className='blurb'>
@@ -160,7 +160,7 @@ storiesOf('LAYOUT', module)
         Col 1/12
       </div>
 
-      <div className="clearfix space-m--both-2"></div>
+      <div className="clearfix margin--both-2"></div>
 
       <div class="flex__item flex-2-12">
         Col 2/12
@@ -181,7 +181,7 @@ storiesOf('LAYOUT', module)
         Col 2/12
       </div>
 
-      <div className="clearfix space-m--both-2"></div>
+      <div className="clearfix margin--both-2"></div>
 
       <div class="flex__item flex-6-12">
         Col 6/12

@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 
 import { Main, Title, Button, Preview, Code } from '../components/Base';
 
-storiesOf('COMPONENT', module)
+storiesOf('BLOCKS', module)
   .add('Label', () => (
     <Main className="wrap">
       <Title className="markdown">Label</Title>

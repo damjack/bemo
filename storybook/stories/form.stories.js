@@ -1,14 +1,21 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-storiesOf('COMPONENT', module)
-  .add('Form', () =>
-    <div className="wrap--large">
-      <div className="flex">
-        <div className="flex__item flex-12-12">
-          <h1>BEMO storybook</h1>
-          <p>Start your next project with the right foot: a scalable frontend architecture.</p>
-        </div>
+import { Main, Title, Block, Preview, Code, Table } from '../components/Base';
+
+storiesOf('BLOCKS', module)
+  .add('Form', () => (
+    <Main className="wrap">
+      <Title className="markdown">Form</Title>
+      <p className="text">Examples of building form block with Bemo CSS.</p>
+
+      <div className="code">
+        <Preview>
+
+        </Preview>
+        <Code>
+          {``}
+        </Code>
       </div>
-    </div>
-  );
+    </Main>
+  ));

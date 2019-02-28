@@ -56,11 +56,14 @@ const colorRows = {
   }
 };
 
-storiesOf('BACKGROUNDS', module)
+storiesOf('UTILITIES', module)
   .add('Background Color', () => (
     <Main className="wrap">
       <Title className="markdown">Background Color</Title>
       <p className="text">Utilities for controlling an element's background color</p>
+
+      <Table className="table">{colorRows}</Table>
+
       <div className="code">
         <Code>
           {`    <section class="background">deafult</section>
@@ -68,8 +71,5 @@ storiesOf('BACKGROUNDS', module)
     <section class="background--red">reg</section>`}
         </Code>
       </div>
-
-      <div className="background--blue height-10"></div>
-      <Table className="table">{colorRows}</Table>
     </Main>
   ));

@@ -1,14 +1,21 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-storiesOf('TYPOGRAPHY', module)
+import { Main, Title, Block, Preview, Code, Table } from '../components/Base';
+
+storiesOf('UTILITIES', module)
   .add('Font Family', () =>
-    <div className="wrap--large">
-      <div className="flex">
-        <div className="flex__item flex-12-12">
-          <h1>BEMO storybook</h1>
-          <p>Start your next project with the right foot: a scalable frontend architecture.</p>
-        </div>
+    <Main className="wrap">
+      <Title className="markdown">Font Family</Title>
+      <p className="text">Utilities for controlling the font family of an element.</p>
+
+      <div className="code">
+        <Preview>
+
+        </Preview>
+        <Code>
+          {``}
+        </Code>
       </div>
-    </div>
+    </Main>
   );
