@@ -22,9 +22,7 @@ A Bemo project will look like this:
 sass
   |-- bemo.sass
   |-- blocks
-  |-- elements
   |-- functions
-  |-- layout
   |-- mixins
   |-- utilities
   |-- variables
@@ -39,14 +37,13 @@ which will contain all the blocks that compose your frontend styling.
 
 A preview of the BEM blocks available with Bemo is available here: http://cantierecreativo.github.io/bemo/
 
-## Development
+## Test
 
-    npm install
-    npm link
-    cd docs && npm link grunt-bemo
-    npm install
-    bower install
-    grunt dev
+To test and check sass with stylelint:
+
+```bash
+./tools/lint-scss
+```
 
 ## Browser Support
 
