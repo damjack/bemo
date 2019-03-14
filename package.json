@@ -30,10 +30,10 @@
   },
   "scripts": {
     "build": "yarn run build-clean && yarn run build-sass && yarn run build-autoprefix && yarn run build-cleancss",
-    "build-autoprefix": "postcss --use autoprefixer --map false --output css/bemo.css css/bemo.css",
-    "build-cleancss": "cleancss -o css/bemo.min.css css/bemo.css",
+    "build-autoprefix": "postcss --use autoprefixer --map false --output dist/css/bemo.css dist/css/bemo.css",
+    "build-cleancss": "cleancss -o dist/css/bemo.min.css dist/css/bemo.css",
     "build-clean": "rimraf css",
-    "build-sass": "node-sass --output-style expanded --source-map true bemo-theme.sass css/bemo.css",
+    "build-sass": "node-sass --output-style expanded --source-map true bemo-theme.sass dist/css/bemo.css",
     "deploy": "yarn run build",
     "start": "yarn run build-sass -- --watch"
   },
