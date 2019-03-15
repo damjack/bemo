@@ -1,0 +1,13 @@
+//
+// Wrap Size
+//
+
+$base-wrap-width:             1200px
+
+// stylelint-disable
+$wrap-widths: () !default
+$wrap-widths: map-merge(("large": 1920px, "small": 940px), $wrap-widths)
+// stylelint-enable
+
+// derived
+$all-wrap-widths:             map-merge($wrap-widths, ('regular': $base-wrap-width))

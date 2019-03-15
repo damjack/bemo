@@ -1,8 +1,9 @@
-# Bemo
+# BEMO
 
-Bemo is a Sass-based project starter meant to be a starting point and structural 
-guide rather than a full framework. It's bare enough to not interfere with your 
-custom styles or scripts, but yet has enough functioning modules to jumpstart 
+## Refactor
+Bemo is a Sass-based project starter meant to be a starting point and structural
+guide rather than a full framework. It's bare enough to not interfere with your
+custom styles or scripts, but yet has enough functioning modules to jumpstart
 a project in no time.
 
 Bemo strictly follows the [BEM naming methodology](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/),
@@ -18,17 +19,15 @@ Bemo is accompanied by a couple of CLI tools let you easily generate:
 A Bemo project will look like this:
 
 ```
-.
-├── fonts
-│   └── svg
-└── stylesheets
-    ├── blocks
-    ├── formats
-    ├── functions
-    ├── keyframes
-    ├── mixins
-    ├── variables
-    └── application.sass
+sass
+  |-- bemo.sass
+  |-- blocks
+  |-- functions
+  |-- mixins
+  |-- utilities
+  |-- variables
+  |-- _base.sass
+  └-- _normalize.sass
 ```
 
 The fulcrum of the whole tree lies in the `stylesheets/blocks` directory,
@@ -38,31 +37,27 @@ which will contain all the blocks that compose your frontend styling.
 
 A preview of the BEM blocks available with Bemo is available here: http://cantierecreativo.github.io/bemo/
 
-## Rails one-liner setup (for the lazy ones)
+## Test
 
-Just type this into you project folder:
+To test and check sass with stylelint:
 
+```bash
+./tools/lint-scss
 ```
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/cantierecreativo/bemo/master/installer/install)"
-```
 
-## bemo-webfont, bemo-scaffold
+## Browser Support
 
-Please take a look at the following repositories if you want to setup 
-build tools manually:
-
-* https://github.com/cantierecreativo/bemo-scaffold
-* https://github.com/cantierecreativo/bemo-webfonts
-
-## Development
-
-    npm install
-    npm link
-    cd docs && npm link grunt-bemo
-    npm install
-    bower install
-    grunt dev
+Chrome | Firefox | IE | Opera | Safari
+--- | --- | --- | --- | --- |
+Latest ✔ | Latest ✔ | 10+ ✔ | Latest ✔ | 6.1+ ✔ |
 
 ## Contributing
 
-In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
+We welcome contributions to Storybook!
+
+- ⇄ Pull requests and ★ Stars are always welcome.
+- Read our [contributing guide](CONTRIBUTING.md) to get started.
+
+## License
+
+Project License is [MIT](LICENSE.md)

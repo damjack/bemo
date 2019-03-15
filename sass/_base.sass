@@ -1,0 +1,114 @@
+html, body
+  min-height: 100%
+  width: 100%
+  position: relative
+
+html
+  box-sizing: border-box
+  -webkit-tap-highlight-color: transparent
+  +rem-html-reset(1)
+
+body
+  +body-font-family
+  color: $base-body-color
+  text-size-adjust: 100%
+  min-height: 100%
+  line-height: 1.5
+  text-rendering: optimizeLegibility
+  -webkit-font-smoothing: antialiased
+  -webkit-text-size-adjust: 100%
+
+a
+  color: $base-body-color
+  text-decoration: underline
+
+ul, ol, blockquote
+  padding-left: 0
+  margin: 0
+
+li
+  list-style-type: none
+
+h1, h2, h3, h4, h5, h6, hgroup,
+ul, ol, dd, p, figure, pre, table,
+fieldset, hr, form
+  margin: 0
+
+h1, h2, h3, h4, h5, h6
+  font-size: inherit
+  font-family: inherit
+  font-weight: inherit
+
+input[type=email], input[type=number], input[type=password], input[type=search],
+input[type=tel], input[type=text], input[type=url], input[type=color], input[type=date],
+input[type=datetime], input[type=datetime-local], input[type=month], input[type=time],
+input[type=week], textarea
+  display: block
+  box-sizing: border-box
+  width: 100%
+  +padding(0.8)
+  border: 1px solid $gray-color
+  -webkit-appearance: none
+  border-radius: 0
+  background-image: none
+  transition: border 0.2s $material-ease
+  +font-size(regular)
+
+  &[disabled]
+    opacity: 0.9
+
+*:focus
+  outline: 0
+
+input[type=number]::-ms-tooltip
+  display: none
+
+input[type=number]
+  -moz-appearance: textfield
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button
+  -webkit-appearance: none
+  margin: 0
+
+button, input[type="submit"]
+  background-image: none
+  border-radius: 0
+
+input[type=email]:hover, input[type=number]:hover, input[type=password]:hover, input[type=search]:hover,
+input[type=tel]:hover, input[type=text]:hover, input[type=url]:hover, input[type=color]:hover, input[type=date]:hover,
+input[type=datetime]:hover, input[type=datetime-local]:hover, input[type=month]:hover, input[type=time]:hover,
+input[type=week]:hover, textarea:hover
+  border-color: darken($gray-color, 10%)
+
+input[type=email]:focus, input[type=number]:focus, input[type=password]:focus, input[type=search]:focus,
+input[type=tel]:focus, input[type=text]:focus, input[type=url]:focus, input[type=color]:focus, input[type=date]:focus,
+input[type=datetime]:focus, input[type=datetime-local]:focus, input[type=month]:focus, input[type=time]:focus,
+input[type=week]:focus, textarea:focus
+  border-color: $gray-color
+
+input[type="checkbox"]
+  display: inline-block
+  margin-right: 0.4em
+
+pre, code
+  +monospaced-font-family
+
+hr
+  border: none
+  border-bottom-width: 1px
+  border-bottom-style: solid
+
+table
+  table-layout: fixed
+
+th, td
+  text-align: left
+
+img
+  max-width: 100%
+  vertical-align: top
+
+legend
+  +heading-font-family
+  color: $gray-color

@@ -1,0 +1,50 @@
+//
+// Bemo default theme variables
+//
+
+$align-breakpoints:         ( tab lap desk wall )
+
+$enable-button-rounded:     true
+$enable-button-colored:     true
+$enable-color-label:        true
+
+$enable-color-gradients:    false
+
+$blue-color:                #007bff
+$purple-color:              #6f42c1
+$red-color:                 #dc3545
+$orange-color:              #fd7e14
+$yellow-color:              #ffc107
+$green-color:               #28a745
+$teal-color:                #20c997
+
+$bemo-colors:               () !default
+$bemo-colors:               map-merge(("blue": $blue-color, "purple": $purple-color, "red": $red-color, "orange": $orange-color, "yellow": $yellow-color, "green": $green-color, "teal": $teal-color), $bemo-colors)
+$all-colors:                map-merge($base-colors, $bemo-colors)
+
+$enable-flex-grid:          true
+$flex-cols:                 ( 12 )
+$flex-breakpoints:          ( tab lap desk wall )
+
+$enable-grid:               true
+$grid-cols:                 ( 12 )
+$grid-breakpoints:          ( tab lap desk wall )
+
+$space-amounts:             ( 1, 2, 3, 5, 8 )
+$space-directions:          ( top bottom left )
+$space-breakpoints:         ( tab lap desk )
+
+$base-wrap-width:           1440px
+
+$enable-flash-colored:     true
+$flash-colors:             () !default
+$flash-colors:             map-merge(("notice": "purple", "alert": "red", "warning": "orange"), $flash-colors)
+$notice-colors:            notice-colors($flash-colors, $bemo-colors)
+
+$table-color:           $black-color
+$table-bg:              $white-color
+$table-cell-padding:    12px
+$table-border-width:    1px
+$table-border-color:    #dae1e7
+$table-accent-bg:       #dae1e7
+$table-striped-order:   odd
