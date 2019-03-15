@@ -10,7 +10,7 @@ import { version } from '../package.json'
 addDecorator(
   withOptions({
     name: `BEMO v${version}`,
-    url: 'http://cantierecantiere.github.io/bemo/',
+    url: 'http://cantierecreativo.github.io/bemo/',
     goFullScreen: false,
     showStoriesPanel: true,
     showAddonPanel: true,
