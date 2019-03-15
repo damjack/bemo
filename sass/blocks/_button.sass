@@ -2,15 +2,15 @@
   +button
   border: $button-border-width solid transparent
   @include button-size($button-padding-vertical, $button-padding-horizontal, $base-font-size, $button-border-radius)
-  // @include transition($button-transition)
+  @include transition($button-transition)
 
 //
 // Button Sizes
 //
 @if $enable-button-size
-.button--small
-  @extend .button
-  @include button-size(8px, 12px, "delta", 4px)
+  .button--small
+    @extend .button
+    @include button-size(8px, 12px, "delta", 4px)
 
 //
 // Alternate buttons
