@@ -1,0 +1,6 @@
+script:
+ - "test/sass-compiler.sh"
+
+language: sass
+before_install:
+ - gem install sass
