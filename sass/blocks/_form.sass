@@ -14,15 +14,24 @@
   hr
     +vertical-margin(2)
 
-.form__label
-  display: block
-  +margin-bottom(1)
-
 .form__field
   +margin-bottom(2)
 
   &:last-child
     margin-bottom: 0
+
+.form__label
+  display: block
+  +margin-bottom(1)
+
+.form__input
+  width: 100%
+  +vertical-padding(0.5)
+  +horizontal-padding(1)
+  border: 1px solid $gray-color
+  border-radius: 0.1rem
+  @include transition(border 0.2s $material-ease)
+  +font-size(regular)
 
 .form__actions
   +margin-top(2)
@@ -41,9 +50,6 @@
   +margin-top(1)
   +font-size(milli)
 
-.form__input--large
-  +font-size(gamma)
-
 .form__block
   +margin-bottom(3)
   +padding-bottom(3)
@@ -60,4 +66,3 @@
 
   .form__field__input *
     padding-left: 2.5em
-

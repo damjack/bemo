@@ -19,30 +19,71 @@
 
 .input__label:before
   user-select: none
-  margin-right: 0.5em
-  font-size: 1.5em
+  +margin-right(0.5)
+  +font-size(regular)
   color: $base-body-color
   vertical-align: middle
-//  +icon-setup
 
 .input--radio
   @extend .input
+
+  & ~ .input--radio
+    +margin-left(2)
+
+  .input__label
+    +padding-left(2)
+
+  .input__label::before
+    content: ""
+    +position(absolute, 1px null null 1px)
+    width: 16px
+    height: 16px
+    border: 1px solid $base-body-color
+    border-radius: 100%
+
+  .input__label::after
+    content: ""
+    width: 10px
+    height: 10px
+    background: $base-body-color
+    +position(absolute, 4px null null 4px)
+    border-radius: 100%
+    @include transition(all 0.2s ease)
+    opacity: 0
+    transform: scale(0)
+
+  input:checked + .input__label::after
+    opacity: 1
+    transform: scale(1)
 
 .input--checkbox
   @extend .input
 
-//  .input__label:before
-//    +icon-content(checkbox-off)
+  ~ .input--checkbox
+    +margin-left(2)
 
-//  input:checked ~ .input__label:before
-//    +icon-content(checkbox-on)
+  .input__label
+    +padding-left(2)
 
-.input--radio
-  @extend .input
+  .input__label::before
+    content: ""
+    display: inline-block
+    +position(absolute, 3px null null 0)
+    height: 16px
+    width: 16px
+    border: 1px solid $base-body-color
 
-//  .input__label:before
-//    +icon-content(radio-off)
+  .input__label::after
+    content: ""
+    display: inline-block
+    +position(absolute, 7px null null 4px)
+    height: 5px
+    width: 9px
+    border-left: 2px solid $base-body-color
+    border-bottom: 2px solid $base-body-color
+    transform: rotate(-45deg)
+    @include transition(all 0.2s ease)
+    opacity: 0
 
-//  input:checked ~ .input__label:before
-//    +icon-content(radio-on)
-
+  input:checked + .input__label::after
+    opacity: 1
