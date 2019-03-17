@@ -13,17 +13,10 @@ storiesOf('ABOUT', module)
       <p className="text--secondary">To install Bemo with NPM</p>
       <Code>
         {`    # Using npm
-    npm install bemo --save-dev
+    npm install bemo-sass --save-dev
 
     # Using Yarn
-    yarn add bemo --dev`}
-      </Code>
-
-      <h3 className="title--secondary">RUBY Installer</h3>
-      <p className="text--secondary">To install Bemo with Ruby script</p>
-      <Code>
-        {`    # Using ruby
-    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/cantierecreativo/bemo/master/installer/install)"`}
+    yarn add bemo-sass --dev`}
       </Code>
     </Main>
   ));
