@@ -1,18 +1,41 @@
-# BEMO
+# BEMO 2
 
-## Refactor
 Bemo is a Sass-based project starter meant to be a starting point and structural
 guide rather than a full framework. It's bare enough to not interfere with your
 custom styles or scripts, but yet has enough functioning modules to jumpstart
 a project in no time.
 
 Bemo strictly follows the [BEM naming methodology](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/),
-and is heavily inspired by the [inuit.css framework](https://github.com/csswizardry/inuit.css/).
+and is heavily inspired by many modern sass framework and lot of works.
 
-Bemo is accompanied by a couple of CLI tools let you easily generate:
+## Installation
 
-1. a basic bemo skeleton
-1. custom icon webfonts starting from a set of SVGs
+Bemo is disteributed with NPM package:
+
+```
+npm install bemo-sass --save-dev
+```
+
+or with Yarn:
+
+```
+yarn add -D bemo-sass
+```
+
+after this you can run:
+
+```node
+Usage: bemo [options]
+
+Options:
+   -d, --directory DIRECTORY       Directory where BEMO will be installed
+   -e, --extension EXTENSION       Extension to use for SASS files (default: `sass`)
+   -b, --basename FILE_BASENAME    Final name of base filename (default: `application`)
+
+Other options:
+   -m, --merge-var             Custom file with merge variables
+   -w, --webfont               WebFont system
+```
 
 ## Structure
 
@@ -33,7 +56,7 @@ sass
 The fulcrum of the whole tree lies in the `stylesheets/blocks` directory,
 which will contain all the blocks that compose your frontend styling.
 
-## Demo
+## Storybook and preview
 
 A preview of the BEM blocks available with Bemo is available here: http://cantierecreativo.github.io/bemo/
 
