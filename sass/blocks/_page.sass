@@ -1,10 +1,28 @@
 .page
+  margin: -0.25rem !default
 
 .page__list
+  align-items: center
+  display: flex
+  justify-content: center
+  text-align: center
+  flex-wrap: wrap
 
-.page__link
+.page__link,
+.page__previous,
+.page__next
+  border-color: $base-body-color
+  justify-content: center
+  text-align: center
 
 .page__ellipsis
+  pointer-events: none
+
+.page__previous,
+.page__next
+  padding-left: 0.75em
+  padding-right: 0.75em
+  white-space: nowrap
 
 .page__previous
 

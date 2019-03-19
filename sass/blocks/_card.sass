@@ -1,7 +1,12 @@
 .card
-  background-color: $base-body-background
+  background-color: transparent
   max-width: 100%
   position: relative
+
+@each $color, $value in $all-colors
+  .card--#{$color}
+    +bg-variant($value)
+    color: color-invert($value)
 
 .card__image
   display: block
