@@ -38,8 +38,8 @@
     "start": "yarn run build-sass -- --watch"
   },
   "bin": {
-    "scaffold": "./tools/scaffold.js",
-    "component": "./tools/component.js"
+    "bemo": "./tools/scaffold.js",
+    "bemo-theme": "./tools/theme.js"
   },
   "files": [
     "dist",

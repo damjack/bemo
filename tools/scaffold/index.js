@@ -8,10 +8,20 @@ const simpleGit = require('simple-git');
 module.exports = {
   generate: function(options, cb) {
     this.cloneDirTo(
-      'https://github.com/cantierecreativo/bemo.git',
+      'https://github.com/damjack/bemo.git',
       'sass',
       options.directory,
       function() {
+        if (options.basename) {
+          let basenameFile = path.join(options.directory, "bemo.sass")
+          let newBasename = basenameFile.replace(/bemo/, options.basename);
+          fs.renameSync(basenameFile, newBasename);
+        } else {
+          let basenameFile = path.join(options.directory, "bemo.sass")
+          let newBasename = basenameFile.replace(/bemo/, "application");
+          fs.renameSync(basenameFile, newBasename);
+        }
+
         if (options.extension) {
           let sassFiles = glob.sync(path.join(options.directory, "**/*.sass"));
 
@@ -20,12 +30,8 @@ module.exports = {
             fs.renameSync(sassFile, newPath);
           });
         }
-        if (options.basename) {
-          console.log("basename required: " + options.basename)
-        } else {
-          console.log("default basename application.sass")
-        }
-       if (options.mergeVar) {
+
+        if (options.mergeVar) {
           console.log("Merge var: " + options.mergeVar)
         }
 

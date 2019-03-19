@@ -1,28 +1,32 @@
 #!/usr/bin/env node
+'use strict';
 
 const meow = require("meow");
 const bemoScaffold = require("./scaffold/index");
 const fs = require("fs-extra");
 
 const parseOptions = {
-  string: ['directory', 'extension', 'basename', 'merge-var'],
+  string: ['directory', 'extension', 'basename'],
+  boolean: ['merge-var', 'webfont'],
   alias: {
-    'directory': ['d'],
-    'extension': ['e'],
-    'basename': ['b'],
-    'merge-var': ['m', 'mergeVar']
+    d: "directory",
+    e: "extension",
+    b: "basename",
+    m: "merge-var",
+    w: "webfont"
   },
 };
 
 const description = [
-  "Usage",
-  "  $ scaffold -d <DIRECTORY> -e <EXTENSION> -b <FILE_BASENAME> -m <MERGE_THEME_VARIABLES>",
+  "Usage: bemo [options]",
+  "Options:",
+  "   -d, --directory DIRECTORY       Directory where BEMO will be installed",
+  "   -e, --extension EXTENSION       Extension to use for SASS files (default: `sass`)",
+  "   -b, --basename FILE_BASENAME    Final name of base filename (default: `application`)",
   "",
-  "Options",
-  "  -d, --directory        Directory where BEMO will be installed",
-  "  -e, --extension        Extension to use for SASS files (default: `sass`)",
-  "  -b, --basename         Final name of base filename (default: `application`)",
-  "  -m, --merge-var        Custom file with merge variables"
+  "Other options:",
+  "   -m, --merge-var             Custom file with merge variables",
+  "   -w, --webfont               WebFont system",
 ];
 
 const cli = meow(description.join("\n"), parseOptions);
