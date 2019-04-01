@@ -1,13 +1,24 @@
 // Ellipses Text Helper
 // ------------------------------------------------------------------------------------
-= ellipses
+@mixin ellipses
   overflow: hidden
   text-overflow: ellipsis
   white-space: nowrap
 
 // Hidetext Helper
 //-------------------------------------------------------------------------- */
-=hidetext
+@mixin hidetext
   text-indent: 100%
   white-space: nowrap
   overflow: hidden
+
+// reset user agent style
+//-------------------------------------------------------------------------- */
+@mixin reset
+  background-color: transparent
+  padding: 0
+  border: 0
+  border-radius: 0
+  color: inherit
+  line-height: inherit
+  appearance: none
