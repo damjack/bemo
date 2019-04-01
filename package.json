@@ -56,7 +56,7 @@
     "readline-sync": "^1.4.9",
     "simple-git": "^1.107.0",
     "stylelint": "^9.10.1",
-    "stylelint-config-bemo": "file:../stylelint-config-bemo",
+    "stylelint-config-bemo": "damjack/stylelint-config-bemo#master",
     "tmp": "^0.0.33"
   },
   "devDependencies": {

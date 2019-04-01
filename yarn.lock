@@ -3054,8 +3054,9 @@ style-search@^0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/style-search/-/style-search-0.1.0.tgz#7958c793e47e32e07d2b5cafe5c0bf8e12e77902"
 
-"stylelint-config-bemo@file:../stylelint-config-bemo":
+stylelint-config-bemo@damjack/stylelint-config-bemo#master:
   version "0.1.0"
+  resolved "https://codeload.github.com/damjack/stylelint-config-bemo/tar.gz/dd10a1937803ee33abe6426a03eea555be9e5145"
   dependencies:
     stylelint-order ">=2.0.0"
     stylelint-scss "^3.5.4"
