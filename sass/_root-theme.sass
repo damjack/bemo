@@ -1,0 +1,14 @@
+@supports (--css: variables)
+  \:root
+    +root-var($all-colors, 'color')
+    +root-var($breakpoint-widths, 'breakpoint')
+    // animations
+    // credits: https://github.com/ai/easings.net
+    --transition-bounce: cubic-bezier(0.175, 0.885, 0.32, 1.275)
+    --transition-ease-in-out: cubic-bezier(0.645, 0.045, 0.355, 1)
+    --transition-ease-in: cubic-bezier(0.55, 0.055, 0.675, 0.19)
+    --transition-ease-out: cubic-bezier(0.215, 0.61, 0.355, 1)
+
+  [data-theme="default"]
+    +root-var($all-colors, 'color')
+    +root-var($breakpoint-widths, 'breakpoint')

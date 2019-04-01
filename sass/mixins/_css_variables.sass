@@ -1,0 +1,4 @@
+// Use if browser support css variables
+@mixin root-var($maps, $prefix)
+  @each $name, $value in $maps
+    --#{$prefix}-#{$name}: #{$value}
