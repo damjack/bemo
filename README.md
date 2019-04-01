@@ -28,13 +28,13 @@ after this you can run:
 Usage: bemo [options]
 
 Options:
-   -d, --directory DIRECTORY       Directory where BEMO will be installed
-   -e, --extension EXTENSION       Extension to use for SASS files (default: `sass`)
-   -b, --basename FILE_BASENAME    Final name of base filename (default: `application`)
+   --directory DIRECTORY       Directory where BEMO will be installed
+   --extension EXTENSION       Extension to use for SASS files (default: `sass`)
+   --basename FILE_BASENAME    Final name of base filename (default: `application`)
 
 Other options:
-   -m, --merge-var             Custom file with merge variables
-   -w, --webfont               WebFont system
+   --merge-var             Custom file with merge variables
+   --webfont               WebFont system
 ```
 
 ## Structure
