@@ -6,7 +6,7 @@
     overflow: hidden
 
 .canvas__main
-  @include transition(transform 0.5s $material-ease)
+  @include transition()
 
 .canvas__aside
   z-index: 2
@@ -16,7 +16,7 @@
   box-shadow: 0 0 0 transparent
   top: 0
   bottom: 0
-  @include transition(transform 0.5s $material-ease, box-shadow 0.5s $material-ease)
+  @include transition(transform 0.5s cubic-bezier(.55,0,.1,1), box-shadow 0.5s cubic-bezier(.55,0,.1,1))
 
   .canvas.is-shifted &
     box-shadow: 3px 0 5px rgba($gray-color, 0.5)

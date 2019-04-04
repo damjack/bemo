@@ -1,11 +1,25 @@
+// Transition and animation
 // stylelint-disable property-blacklist
-@mixin transition($transition...)
+@mixin transition($custom-transition...)
   @if $enable-transitions
-    @if length($transition) == 0
-      transition: $transition-base
+    @if length($custom-transition) == 0
+      +transition-type('material')
     @else
-      transition: $transition
+      transition: $custom-transition
 
   @if $enable-prefers-reduced-motion-media-query
     @media (prefers-reduced-motion: reduce)
       transition: none
+
+@mixin transition-type($easing, $propriety: 'base')
+  @if type-of($easing) == "string"
+    @if map-has-key($transition-functions, $easing)
+      @if $propriety == 'base'
+        transition: $transition-base map-get($transition-functions, $easing)
+      @else
+        transition: $transition-advanced map-get($transition-functions, $easing)
+    @else
+      @warn "easing ‘#{$easing}’ does not exist"
+
+  @else
+    @warn "easing ‘#{$easing}’ invalid"
