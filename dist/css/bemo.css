@@ -24,12 +24,14 @@
     --breakpoint-monitor: 1280px;
     --breakpoint-wall: 1440px;
     --breakpoint-full: 1920px;
+    --transition-material: cubic-bezier(0.55, 0, 0.1, 1);
+    --transition-inertial: cubic-bezier(0.19, 1, 0.22, 1);
     --transition-bounce: cubic-bezier(0.175, 0.885, 0.32, 1.275);
     --transition-ease-in-out: cubic-bezier(0.645, 0.045, 0.355, 1);
     --transition-ease-in: cubic-bezier(0.55, 0.055, 0.675, 0.19);
     --transition-ease-out: cubic-bezier(0.215, 0.61, 0.355, 1);
   }
-  /* line 12, sass/_root-theme.sass */
+  /* line 7, sass/_root-theme.sass */
   [data-theme="default"] {
     --color-white: #ffffff;
     --color-gray: #6c757d;
@@ -48,6 +50,12 @@
     --breakpoint-monitor: 1280px;
     --breakpoint-wall: 1440px;
     --breakpoint-full: 1920px;
+    --transition-material: cubic-bezier(0.55, 0, 0.1, 1);
+    --transition-inertial: cubic-bezier(0.19, 1, 0.22, 1);
+    --transition-bounce: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    --transition-ease-in-out: cubic-bezier(0.645, 0.045, 0.355, 1);
+    --transition-ease-in: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    --transition-ease-out: cubic-bezier(0.215, 0.61, 0.355, 1);
   }
 }
 
@@ -5366,9 +5374,7 @@ input[type="button"].button--expand {
 
 /* line 8, sass/blocks/_canvas.sass */
 .canvas__main {
-  transition: -webkit-transform 0.5s cubic-bezier(0.55, 0, 0.1, 1);
-  transition: transform 0.5s cubic-bezier(0.55, 0, 0.1, 1);
-  transition: transform 0.5s cubic-bezier(0.55, 0, 0.1, 1), -webkit-transform 0.5s cubic-bezier(0.55, 0, 0.1, 1);
+  transition: all 1s cubic-bezier(0.55, 0, 0.1, 1);
 }
 
 /* line 11, sass/blocks/_canvas.sass */
