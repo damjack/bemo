@@ -71,6 +71,7 @@ DEPENDENCIES
   bourbon (~> 4.3)
   jekyll (~> 3.8.5)
   jekyll-compose
+  jekyll-sass-converter
   json (~> 2)
   kramdown
   pygments.rb

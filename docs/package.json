@@ -1,0 +1,41 @@
+{
+  "name": "bemo-jekyll",
+  "version": "1.0.0",
+  "description": "Bemo Sass Jekyll",
+  "main": "index.js",
+  "author": "damjack <giacomello.damiano@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build:jekyll": "JEKYLL_ENV=production bundle exec jekyll build",
+    "build:assets": "webpack --mode production -p",
+    "build": "yarn build:jekyll && yarn build:assets",
+    "start:jekyll": "bundle exec jekyll server --incremental",
+    "start:assets": "webpack --mode development --watch",
+    "start:livereload": "livereload public -p 5678 -d",
+    "dev": "concurrently -p \"[{name}]\" -c \"blue,red,green\" -k -n jekyll,webpack,livereload \"yarn start:jekyll\" \"yarn start:assets\" \"yarn start:livereload\""
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "autoprefixer": "^9.1.4",
+    "babel-core": "^6.26.3",
+    "babel-loader": "8.0.0-beta.0",
+    "babel-preset-es2015": "^6.24.1",
+    "concurrently": "^3.1.0",
+    "css-loader": "^0.26.1",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "file-loader": "^2.0.0",
+    "import-glob-loader": "^1.1.0",
+    "jquery": "^3.3.1",
+    "livereload": "^0.7.0",
+    "node-sass": "^4.9.3",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^7.1.0",
+    "sort-by": "^1.1.1",
+    "style-loader": "^0.23.0",
+    "uglifyjs-webpack-plugin": "^1.3.0",
+    "url-loader": "^1.1.1",
+    "webpack": "^4.17.1",
+    "webpack-cli": "^3.1.0"
+  }
+}

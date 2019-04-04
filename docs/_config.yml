@@ -13,8 +13,6 @@ highlighter: pygments
 markdown: kramdown
 source: source
 destination: _site
-sass:
-  sass_dir: _sass
-  style: compressed # expanded
 
-exclude: ["config.rb", "src", "Gemfile", "Gemfile.lock", "package.json","README.md", "Rakefile"]
+exclude:
+  - node_modules

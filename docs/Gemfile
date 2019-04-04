@@ -7,7 +7,6 @@ gem "jekyll", "~> 3.8.5"
 # gem "github-pages", group: :jekyll_plugins
 
 gem "rake", "~>10.5"
-gem "sass", "~>3.4"
 gem "json", "~> 2"
 
 # If you have any plugins, put them here!

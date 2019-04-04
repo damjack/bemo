@@ -1,10 +1,14 @@
 <!DOCTYPE html>
-<html>
-<head>
-  {% include head.html %}
-</head>
-<body>
-  {{ content }}
-  {% include github-corner.html %}
-</body>
+<html lang="en">
+  <head>
+    {% include head.html %}
+  </head>
+  <body>
+    <div class="canvas">
+      <div class="canvas__main">
+        {{ content }}
+        {% include github-corner.html %}
+      </div>
+    </div>
+  </body>
 </html>
