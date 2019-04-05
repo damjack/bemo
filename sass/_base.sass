@@ -1,7 +1,7 @@
 html, body
   min-height: 100%
-  width: 100%
   position: relative
+  width: 100%
 
 html
   +rem-html-reset(1)
@@ -11,10 +11,10 @@ html
 body
   +body-font-family
   color: $base-body-color
-  text-size-adjust: 100%
-  min-height: 100%
   line-height: 1.5
+  min-height: 100%
   text-rendering: optimizeLegibility
+  text-size-adjust: 100%
   -webkit-font-smoothing: antialiased
   -webkit-text-size-adjust: 100%
   -moz-osx-font-smoothing: grayscale
@@ -36,22 +36,22 @@ fieldset, hr, form
   +margin(0)
 
 h1, h2, h3, h4, h5, h6
-  font-size: inherit
   font-family: inherit
+  font-size: inherit
   font-weight: inherit
 
 input[type=email], input[type=number], input[type=password], input[type=search],
 input[type=tel], input[type=text], input[type=url], input[type=color], input[type=date],
 input[type=datetime], input[type=datetime-local], input[type=month], input[type=time],
 input[type=week], textarea
-  display: block
-  box-sizing: border-box
-  width: 100%
   -webkit-appearance: none
   appearance: none
   background-image: none
+  box-sizing: border-box
+  display: block
   font-size: inherit
   outline: 0
+  width: 100%
 
   &[disabled]
     opacity: 0.9
@@ -97,8 +97,8 @@ pre, code
 
 hr
   border: none
-  border-bottom-width: 1px
   border-bottom-style: solid
+  border-bottom-width: 1px
 
 table
   table-layout: fixed

@@ -3,27 +3,25 @@
 //
 
 .table
-  width: 100%;
-  margin-bottom: $table-gutter
-  color: $table-color
   background-color: $table-bg // Reset for nesting within parents with `background-color`.
-  border-collapse: collapse
   border: $table-border-width solid $table-border-color
+  border-collapse: collapse
+  color: $table-color
+  margin-bottom: $table-gutter
+  width: 100%;
 
-  th,
-  td
+  th, td
+    border-top: $table-border-width solid $table-border-color
     padding: $table-cell-padding
     vertical-align: top
-    border-top: $table-border-width solid $table-border-color
 
   thead th
-    vertical-align: bottom
     border-bottom: (2 * $table-border-width) solid $table-border-color
     text-align: left
+    vertical-align: bottom
 
   tbody + tbody
     border-top: (2 * $table-border-width) solid $table-border-color
-
 
 // Border versions
 //
@@ -33,15 +31,12 @@
   @extend .table
   border: $table-border-width solid $table-border-color
 
-  th,
-  td
+  th, td
     border: $table-border-width solid $table-border-color
 
   thead
-    th,
-    td
+    th, td
       border-bottom-width: 2 * $table-border-width
-
 
 // Zebra-striping
 //

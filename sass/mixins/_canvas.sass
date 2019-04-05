@@ -9,12 +9,12 @@
       transform: translateX($width + $gutter)
 
 @mixin canvas-base
-  position: absolute
   background: $canvas-background
-  z-index: $canvas-zindex
   max-height: 100%
   overflow-y: auto
+  position: absolute
   transform: translateX(0px)
+  z-index: $canvas-zindex
 
 @mixin canvas-position($position: left, $size: $canvas-size, $fixed: false)
   @if $position == left

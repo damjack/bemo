@@ -1,20 +1,20 @@
 @mixin grid
+  letter-spacing: -1000em
   list-style: none
-  margin-right: 0
   margin-left: -$grid-gutter
+  margin-right: 0
   padding-left: 0
   padding-right: 0
-  letter-spacing: -1000em
 
 @mixin grid-item
+  -moz-box-sizing: border-box
+  -webkit-box-sizing: border-box
+  box-sizing: border-box
   display: inline-block
+  letter-spacing: 0
   padding-left: $grid-gutter
   vertical-align: top
   width: 100%
-  -webkit-box-sizing: border-box
-  -moz-box-sizing: border-box
-  box-sizing: border-box
-  letter-spacing: 0
 
 @mixin grid-width-setup($namespace: "")
   .#{$namespace}fill
