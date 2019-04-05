@@ -1,0 +1,33 @@
+// Customize the jekyll site
+
+.hero--purple
+  background: linear-gradient(to top right, #524ad0 10%, #D099FA)
+
+.hero__body
+  @extend .hero__body
+  text-align: left
+
+.hero__heading
+  @extend .hero__heading
+  +font-size(50px)
+  max-width: 100rem
+
+.hero__text
+  @extend .hero__text
+  max-width: 100rem
+
+// Flag
+.flag__image
+  img
+    height: 60px
+
+.flag__body__content
+  +padding-right(3)
+
+.flag__body__title
+  +font-size(gamma)
+  +heading-font-family
+  +padding-bottom(1)
+
+.flag__body__text
+  +font-size(delta)
