@@ -35,11 +35,11 @@
     "build-clean": "rimraf css",
     "build-sass": "node-sass -r --output-style expanded --source-comments --follow --include-path sass --source-map true bemo-theme.sass dist/css/bemo.css",
     "deploy": "yarn run build",
-    "start": "yarn run build-sass -- --watch"
+    "start": "yarn run build-sass -- --watch",
+    "lint": "sass-lint --config .sasslintrc 'sass/**/*.sass' --verbose --no-exit"
   },
   "bin": {
-    "bemo": "./tools/scaffold.js",
-    "bemo-theme": "./tools/theme.js"
+    "bemo": "./tools/scaffold.js"
   },
   "files": [
     "dist",
@@ -55,8 +55,6 @@
     "meow": "^5.0.0",
     "readline-sync": "^1.4.9",
     "simple-git": "^1.107.0",
-    "stylelint": "^9.10.1",
-    "stylelint-config-bemo": "damjack/stylelint-config-bemo#master",
     "tmp": "^0.0.33"
   },
   "devDependencies": {
@@ -66,7 +64,9 @@
     "postcss-cli": "^6.1.2",
     "postcss-loader": "^3.0.0",
     "rimraf": "^2.6.3",
+    "sass-lint": "^1.12.1",
     "sass-loader": "^7.1.0",
+    "sass-true": "^4.0.0",
     "style-loader": "^0.23.1"
   }
 }
