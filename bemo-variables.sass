@@ -12,7 +12,7 @@ $enable-prefers-reduced-motion-media-query: false
 $enable-color-gradients:    false
 
 $blue-color:                #007bff
-$purple-color:              #6f42c1
+$purple-color:              #524ad0
 $red-color:                 #dc3545
 $orange-color:              #fd7e14
 $yellow-color:              #ffc107
@@ -34,6 +34,9 @@ $grid-breakpoints:          ( tab lap desk wall )
 $space-amounts:             ( 1, 2, 3, 5, 8 )
 $space-directions:          ( top bottom left )
 $space-breakpoints:         ( tab lap desk )
+
+$space-sizes:               () !default
+$space-sizes:               map-merge((15: 15%, 25: 25%, 50: 50%, 75: 75%, 100: 100%), $space-sizes)
 
 $base-wrap-width:           1440px
 
