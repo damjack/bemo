@@ -17,6 +17,9 @@
   max-width: 100rem
 
 // Flag
+.flag
+  +margin-bottom(3)
+
 .flag__image
   img
     height: 60px
@@ -31,3 +34,7 @@
 
 .flag__body__text
   +font-size(delta)
+
++at-breakpoint(desk)
+  .flag
+    +margin-bottom(0)

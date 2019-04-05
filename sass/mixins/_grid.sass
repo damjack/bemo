@@ -7,9 +7,9 @@
   padding-right: 0
 
 @mixin grid-item
-  -moz-box-sizing: border-box
-  -webkit-box-sizing: border-box
-  box-sizing: border-box
+  -moz-box-sizing: unset
+  -webkit-box-sizing: unset
+  box-sizing: unset
   display: inline-block
   letter-spacing: 0
   padding-left: $grid-gutter
@@ -23,6 +23,9 @@
   @each $total in $grid-cols
     @for $size from 1 to $total
       .#{$namespace}#{$size}-#{$total}
+        -moz-box-sizing: border-box
+        -webkit-box-sizing: border-box
+        box-sizing: border-box
         width: round-decimals($size / $total * 100%)
 
 @mixin grid-shift-setup($rule, $namespace: "")
