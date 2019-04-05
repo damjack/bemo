@@ -72,11 +72,15 @@ available here: http://cantierecreativo.github.io/bemo/
 
 ## Test
 
-To test and check sass with stylelint:
+Bemo2 use the sass-lint package to check the code.
+
+To run locally test you can run:
 
 ```bash
-./tools/lint-scss
+$ yarn lint
 ```
+
+Bemo2 integrate a test tool.
 
 ## Browser Support
 

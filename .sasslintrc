@@ -6,7 +6,10 @@
     "max-warnings": 50
   },
   "files": {
-    "include": "sass/**/*.s+(a|c)ss"
+    "include": "sass/**/*.s+(a|c)ss",
+    "ignore": [
+      "sass/_normalize.sass"
+    ]
   },
   "rules": {
     "extends-before-mixins": 2,
@@ -28,7 +31,7 @@
     "hex-notation": [
       2,
       {
-        "style": "uppercase"
+        "style": "lowercase"
       }
     ],
     "indentation": [
@@ -40,10 +43,7 @@
     "property-sort-order": [
       1,
       {
-        "order": [
-          "display",
-          "margin"
-        ],
+        "order": "alphabetical",
         "ignore-custom-properties": true
       }
     ],
@@ -51,8 +51,8 @@
       2,
       {
         "properties": [
-          "margin",
-          "content"
+          "color",
+          "font-size"
         ]
       }
     ]
