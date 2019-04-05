@@ -8,7 +8,8 @@
   "files": {
     "include": "sass/**/*.s+(a|c)ss",
     "ignore": [
-      "sass/_normalize.sass"
+      "sass/_normalize.sass",
+      "sass/mixins/_css_variables.sass"
     ]
   },
   "rules": {

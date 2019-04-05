@@ -1,5 +1,7 @@
 # BEMO 2
 
+[![Build Status](https://travis-ci.org/damjack/bemo.svg?branch=master)](https://travis-ci.org/damjack/bemo)
+
 Bemo is a Sass-based project starter meant to be a starting point and structural
 guide rather than a full framework. It's bare enough to not interfere with your
 custom styles or scripts, but yet has enough functioning modules to jumpstart

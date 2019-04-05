@@ -2,6 +2,7 @@
 //
 // Easily pump out default styles, as well as :hover, :focus, :active,
 // and disabled options for all buttons
+// sass-lint:disable-all
 @mixin button
   -webkit-appearance: none
   border: 0
@@ -35,25 +36,15 @@
   color: color-yiq($background)
 
   @include hover
-     +bg-variant($hover-background)
-     border-color: $hover-border
-     color: color-yiq($hover-background)
+    +bg-variant($hover-background)
+    border-color: $hover-border
+    color: color-yiq($hover-background)
 
   // Disabled comes first so active can properly restyle
-  &.disabled,
-  &:disabled
+  &.disabled, &:disabled
     background-color: $background
     border-color: $border
     color: color-yiq($background)
-
-  &:not(:disabled):not(.is-disabled):active,
-  &:not(:disabled):not(.is-disabled).is-active,
-    background-color: $active-background
-    color: color-yiq($active-background)
-    @if $enable-color-gradients
-      background-image: none // Remove the gradient for the pressed/active state
-
-    border-color: $active-border
 
 @mixin button-outline-variant($color, $color-hover: color-yiq($color), $active-background: $color, $active-border: $color)
   background-color: transparent
@@ -71,12 +62,6 @@
     background-color: transparent
     color: $color
 
-  &:not(:disabled):not(.disabled):active,
-  &:not(:disabled):not(.disabled).is-active,
-    background-color: $active-background
-    border-color: $active-border
-    color: color-yiq($active-background)
-
 // Button sizes
 @mixin button-size($padding-vertical, $padding-horizontal, $font-size, $border-radius)
   +font-size($font-size)
@@ -86,3 +71,4 @@
     border-radius: $border-radius
   @else
     border-radius: 0
+// sass-lint:enable-all
