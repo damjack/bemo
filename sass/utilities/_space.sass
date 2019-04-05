@@ -34,3 +34,13 @@
           +space-rule("margin-#{$direction}", $amount)
         .padding--#{$direction}-#{$amount}-on-#{$name}
           +space-rule("padding-#{$direction}", $amount)
+
+@each $space, $size in $space-sizes
+  .space-#{$space}
+    width: $size
+
+@each $name in $space-breakpoints
+  +at-breakpoint($name)
+    @each $space, $size in $space-sizes
+      .space-#{$space}-on-#{$name}
+        width: $size
