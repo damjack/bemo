@@ -48,13 +48,7 @@
       }
     ],
     "variable-for-property": [
-      2,
-      {
-        "properties": [
-          "color",
-          "font-size"
-        ]
-      }
+      0
     ]
   }
 }
