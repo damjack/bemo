@@ -24,6 +24,14 @@ yarn add -D bemo-sass
 
 after this you can run:
 
+```sh
+$ bemo --directory {{DEST-SASS}} --basename {{BASE-SASS-IMPORT}}
+```
+
+## Usage
+
+To manage and install Bemo you can use a install script
+
 ```node
 Usage: bemo [options]
 
@@ -49,6 +57,7 @@ sass
   |-- mixins
   |-- utilities
   |-- variables
+  |-- _root-theme.sass
   |-- _base.sass
   └-- _normalize.sass
 ```
@@ -58,7 +67,8 @@ which will contain all the blocks that compose your frontend styling.
 
 ## Storybook and preview
 
-A preview of the BEM blocks available with Bemo is available here: http://cantierecreativo.github.io/bemo/
+A preview of the BEM blocks and all utilities distributed with Bemo is
+available here: http://cantierecreativo.github.io/bemo/
 
 ## Test
 
