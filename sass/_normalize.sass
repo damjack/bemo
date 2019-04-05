@@ -17,21 +17,23 @@ html
     width: device-width
 
 body
-  margin: 0
+  +margin(0)
 
 article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, section
   display: block
 
 h1
+  +vertical-margin(0.67em)
+  +horizontal-margin(0)
   font-size: 2em
-  margin: 0.67em 0
 
 figcaption, figure, main
   /* 1
   display: block
 
 figure
-  margin: 1em 40px
+  +vertical-margin(1em)
+  +horizontal-margin(40px)
 
 hr
   box-sizing: content-box
@@ -71,8 +73,8 @@ dfn
   font-style: italic
 
 mark
-  background-color: #ff0
-  color: #000
+  background-color: #FF0000
+  color: #000000
 
 small
   font-size: 80%
@@ -136,8 +138,8 @@ button, html [type="button"], [type="reset"], [type="submit"]
   -webkit-appearance: button
 
 button::-moz-focus-inner, [type="button"]::-moz-focus-inner, [type="reset"]::-moz-focus-inner, [type="submit"]::-moz-focus-inner
+  +padding(0)
   border-style: none
-  padding: 0
 
 button:-moz-focusring, [type="button"]:-moz-focusring, [type="reset"]:-moz-focusring, [type="submit"]:-moz-focusring
   outline: 1px dotted ButtonText
@@ -147,20 +149,20 @@ textarea
   resize: vertical
 
 fieldset
+  +margin(0)
+  +padding(0)
   min-width: 0
-  padding: 0
-  margin: 0
   border: 0
 
 legend
+  +padding(0)
   box-sizing: border-box
+  color: inherit
   display: block
-  width: 100%
-  max-width: 100%
-  padding: 0
   font-size: 1.5rem
   line-height: inherit
-  color: inherit
+  max-width: 100%
+  width: 100%
   white-space: normal
 
 progress
@@ -168,8 +170,8 @@ progress
   vertical-align: baseline
 
 [type="checkbox"], [type="radio"]
+  +padding(0)
   box-sizing: border-box
-  padding: 0
 
 [type="number"]
   &::-webkit-inner-spin-button, &::-webkit-outer-spin-button

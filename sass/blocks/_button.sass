@@ -1,15 +1,17 @@
-.button
+%button
   +button
-  border: $button-border-width solid transparent
   @include button-size($button-padding-vertical, $button-padding-horizontal, $base-font-size, $button-border-radius)
   @include transition($button-transition)
+  border: $button-border-width solid transparent
 
 //
 // Button Sizes
 //
+.button--base
+  @extend %button
 @if $enable-button-size
   .button--small
-    @extend .button
+    @extend %button
     @include button-size(8px, 12px, "delta", 4px)
 
 //
@@ -18,19 +20,19 @@
 @if $enable-button-colored
   @each $color, $value in $all-colors
     .button--#{$color}
-      @extend .button
+      @extend %button
       @include button-variant($value, $value)
 
   @each $color, $value in $all-colors
     .button--outline-#{$color}
-      @extend .button
+      @extend %button
       @include button-outline-variant($value)
 
 //
 // Block button
 //
 .button--expand
-  @extend .button
+  @extend %button
   display: block
   width: 100%
 
