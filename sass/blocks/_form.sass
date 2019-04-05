@@ -8,8 +8,8 @@
 
     legend
       +font-size(beta)
-      padding: 0 10px
       margin: 0 -10px
+      padding: 0 10px
 
   hr
     +vertical-margin(2)
@@ -21,17 +21,17 @@
     margin-bottom: 0
 
 .form__label
-  display: block
   +margin-bottom(1)
+  display: block
 
 .form__input
-  width: 100%
-  +vertical-padding(0.5)
+  +font-size(regular)
   +horizontal-padding(1)
+  +vertical-padding(0.5)
+  @include transition(border 0.2s cubic-bezier(.55,0,.1,1))
   border: 1px solid $gray-color
   border-radius: 0.1rem
-  @include transition(border 0.2s cubic-bezier(.55,0,.1,1))
-  +font-size(regular)
+  width: 100%
 
 .form__actions
   +margin-top(2)
@@ -41,14 +41,14 @@
     border: 1px solid $red-color
 
 .form__error
-  color: $red-color
-  +margin-top(1)
   +font-size(milli)
+  +margin-top(1)
+  color: $red-color
 
 .form__hint
-  color: $base-body-color
-  +margin-top(1)
   +font-size(milli)
+  +margin-top(1)
+  color: $base-body-color
 
 .form__block
   +margin-bottom(3)
@@ -60,8 +60,8 @@
   .form__field__prefix
     +center-vertically
     left: 0px
-    width: 2em
     text-align: right
+    width: 2em
     z-index: 2
 
   .form__field__input *

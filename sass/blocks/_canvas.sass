@@ -9,14 +9,14 @@
   @include transition()
 
 .canvas__aside
-  z-index: 2
-  overflow-y: auto
-  background-color: $gray-color
-  position: absolute
-  box-shadow: 0 0 0 transparent
-  top: 0
-  bottom: 0
   @include transition(transform 0.5s cubic-bezier(.55,0,.1,1), box-shadow 0.5s cubic-bezier(.55,0,.1,1))
+  background-color: $gray-color
+  bottom: 0
+  box-shadow: 0 0 0 transparent
+  overflow-y: auto
+  position: absolute
+  top: 0
+  z-index: 2
 
   .canvas.is-shifted &
     box-shadow: 3px 0 5px rgba($gray-color, 0.5)

@@ -1,11 +1,11 @@
 .input
-  position: relative
-  display: inline-block
   cursor: pointer
+  display: inline-block
+  position: relative
 
   input
-    position: absolute
     opacity: 0
+    position: absolute
     z-index: -1
 
     &:focus ~ .input__label:before
@@ -18,10 +18,10 @@
       opacity: 0.5
 
 .input__label:before
-  user-select: none
-  +margin-right(0.5)
   +font-size(regular)
+  +margin-right(0.5)
   color: $base-body-color
+  user-select: none
   vertical-align: middle
 
 .input--radio
@@ -34,23 +34,23 @@
     +padding-left(2)
 
   .input__label::before
-    content: ""
     +position(absolute, 1px null null 1px)
-    width: 16px
-    height: 16px
     border: 1px solid $base-body-color
     border-radius: 100%
+    content: ""
+    height: 16px
+    width: 16px
 
   .input__label::after
-    content: ""
-    width: 10px
-    height: 10px
-    background: $base-body-color
     +position(absolute, 4px null null 4px)
-    border-radius: 100%
     @include transition(all 0.2s ease)
+    background: $base-body-color
+    border-radius: 100%
+    content: ""
+    height: 10px
     opacity: 0
     transform: scale(0)
+    width: 10px
 
   input:checked + .input__label::after
     opacity: 1
@@ -66,24 +66,24 @@
     +padding-left(2)
 
   .input__label::before
+    +position(absolute, 3px null null 0)
+    border: 1px solid $base-body-color
     content: ""
     display: inline-block
-    +position(absolute, 3px null null 0)
     height: 16px
     width: 16px
-    border: 1px solid $base-body-color
 
   .input__label::after
+    +position(absolute, 7px null null 4px)
+    @include transition(all 0.2s ease)
+    border-bottom: 2px solid $base-body-color
+    border-left: 2px solid $base-body-color
     content: ""
     display: inline-block
-    +position(absolute, 7px null null 4px)
     height: 5px
-    width: 9px
-    border-left: 2px solid $base-body-color
-    border-bottom: 2px solid $base-body-color
-    transform: rotate(-45deg)
-    @include transition(all 0.2s ease)
     opacity: 0
+    transform: rotate(-45deg)
+    width: 9px
 
   input:checked + .input__label::after
     opacity: 1

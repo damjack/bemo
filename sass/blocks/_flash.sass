@@ -1,9 +1,9 @@
 .flash
-  text-align: center
-  border: 1px solid $gray-color
   +heading-font-family
   +padding(0.5)
+  border: 1px solid $gray-color
   border-radius: 4px
+  text-align: center
 
 @if $enable-flash-colored
   @each $color, $value in $notice-colors
@@ -16,6 +16,6 @@
 
 .flash--full
   @extend .flash
-  margin-top: -1px
-  border-width: 1px 0
   border-radius: 0
+  border-width: 1px 0
+  margin-top: -1px
