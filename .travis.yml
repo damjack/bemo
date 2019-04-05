@@ -1,6 +1,10 @@
-script:
- - "test/sass-compiler.sh"
+### Bemo2 travis ###
+language: node_js
+node_js:
+  - "6"
+  - "8"
+  - "10"
 
-language: sass
-before_install:
- - gem install sass
+branches:
+  only:
+    - master

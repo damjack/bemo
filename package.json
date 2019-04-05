@@ -34,9 +34,10 @@
     "build-cleancss": "cleancss -o dist/css/bemo.min.css dist/css/bemo.css",
     "build-clean": "rimraf css",
     "build-sass": "node-sass -r --output-style expanded --source-comments --follow --include-path sass --source-map true bemo-theme.sass dist/css/bemo.css",
+    "lint": "sass-lint --config .sasslintrc --verbose --no-exit",
     "deploy": "yarn run build",
     "start": "yarn run build-sass -- --watch",
-    "lint": "sass-lint --config .sasslintrc --verbose --no-exit"
+    "test": "yarn lint"
   },
   "bin": {
     "bemo": "./tools/scaffold.js"
