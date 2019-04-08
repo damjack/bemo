@@ -55,7 +55,6 @@
     "globby": "^9.1.0",
     "meow": "^5.0.0",
     "readline-sync": "^1.4.9",
-    "simple-git": "^1.107.0",
     "tmp": "^0.0.33"
   },
   "devDependencies": {

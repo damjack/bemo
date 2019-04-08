@@ -3,12 +3,11 @@ const path = require("path");
 const rl = require('readline-sync');
 const glob = require("globby");
 const tmp = require("tmp");
-const simpleGit = require('simple-git');
 
 module.exports = {
   generate: function(options, cb) {
     this.cloneDirTo(
-      'https://github.com/damjack/bemo.git',
+      'node_modules/bemo',
       'sass',
       options.directory,
       function() {
@@ -70,11 +69,13 @@ module.exports = {
   cloneDirTo: function(repo, repoPath, dest, cb) {
     this.confirmCleanDir(dest);
 
-    let git = simpleGit();
     let tmpDir = tmp.dirSync();
-    git.clone(repo, tmpDir.name, function() {
-      fs.copySync(path.join(tmpDir.name, repoPath), dest);
+    try {
+      fs.copySync(path.join(repo, repoPath), tmpDir.name);
+      fs.copySync(tmpDir.name, dest);
       cb(null);
-    });
+    } catch (err) {
+      console.error(err)
+    }
   }
 }
