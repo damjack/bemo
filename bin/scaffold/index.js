@@ -7,7 +7,7 @@ const tmp = require("tmp");
 module.exports = {
   generate: function(options, cb) {
     this.cloneDirTo(
-      'node_modules/bemo',
+      'node_modules/bemo-sass',
       'sass',
       options.directory,
       function() {
