@@ -11,7 +11,7 @@
     --color-gray: #6c757d;
     --color-black: #000000;
     --color-blue: #007bff;
-    --color-purple: #6f42c1;
+    --color-purple: #524ad0;
     --color-red: #dc3545;
     --color-orange: #fd7e14;
     --color-yellow: #ffc107;
@@ -37,7 +37,7 @@
     --color-gray: #6c757d;
     --color-black: #000000;
     --color-blue: #007bff;
-    --color-purple: #6f42c1;
+    --color-purple: #524ad0;
     --color-red: #dc3545;
     --color-orange: #fd7e14;
     --color-yellow: #ffc107;
@@ -60,13 +60,6 @@
 }
 
 /* line 1, sass/_normalize.sass */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-/* line 6, sass/_normalize.sass */
 html {
   font-family: sans-serif;
   line-height: 1.15;
@@ -80,47 +73,62 @@ html {
   width: device-width;
 }
 
-/* line 19, sass/_normalize.sass */
+/* line 14, sass/_normalize.sass */
 body {
-  margin: 0;
+  margin: 0px;
+  margin: 0rem;
 }
 
-/* line 22, sass/_normalize.sass */
+/* line 17, sass/_normalize.sass */
 article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block;
 }
 
-/* line 25, sass/_normalize.sass */
+/* line 20, sass/_normalize.sass */
 h1 {
+  margin-top: 8.04px;
+  margin-top: 0.5025rem;
+  margin-bottom: 8.04px;
+  margin-bottom: 0.5025rem;
+  margin-left: 0px;
+  margin-left: 0rem;
+  margin-right: 0px;
+  margin-right: 0rem;
   font-size: 2em;
-  margin: 0.67em 0;
 }
 
-/* line 29, sass/_normalize.sass */
+/* line 25, sass/_normalize.sass */
 figcaption, figure, main {
   /* 1 */
   display: block;
 }
 
-/* line 33, sass/_normalize.sass */
+/* line 29, sass/_normalize.sass */
 figure {
-  margin: 1em 40px;
+  margin-top: 12px;
+  margin-top: 0.75rem;
+  margin-bottom: 12px;
+  margin-bottom: 0.75rem;
+  margin-left: 480px;
+  margin-left: 30rem;
+  margin-right: 480px;
+  margin-right: 30rem;
 }
 
-/* line 36, sass/_normalize.sass */
+/* line 33, sass/_normalize.sass */
 hr {
   box-sizing: content-box;
   height: 0;
   overflow: visible;
 }
 
-/* line 41, sass/_normalize.sass */
+/* line 38, sass/_normalize.sass */
 pre {
   font-family: monospace, monospace;
   font-size: 1em;
 }
 
-/* line 45, sass/_normalize.sass */
+/* line 42, sass/_normalize.sass */
 a {
   color: inherit;
   text-decoration: none;
@@ -128,13 +136,13 @@ a {
   -webkit-text-decoration-skip: objects;
 }
 
-/* line 51, sass/_normalize.sass */
+/* line 48, sass/_normalize.sass */
 a:active, a:hover {
   outline-width: 0;
   color: inherit;
 }
 
-/* line 55, sass/_normalize.sass */
+/* line 52, sass/_normalize.sass */
 abbr[title] {
   border-bottom: none;
   text-decoration: underline;
@@ -142,39 +150,39 @@ abbr[title] {
           text-decoration: underline dotted;
 }
 
-/* line 60, sass/_normalize.sass */
+/* line 57, sass/_normalize.sass */
 b, strong {
   font-weight: inherit;
 }
 
-/* line 63, sass/_normalize.sass */
+/* line 60, sass/_normalize.sass */
 b, strong {
   font-weight: bolder;
 }
 
-/* line 66, sass/_normalize.sass */
+/* line 63, sass/_normalize.sass */
 code, kbd, samp {
   font-family: monospace, monospace;
   font-size: 1em;
 }
 
-/* line 70, sass/_normalize.sass */
+/* line 67, sass/_normalize.sass */
 dfn {
   font-style: italic;
 }
 
-/* line 73, sass/_normalize.sass */
+/* line 70, sass/_normalize.sass */
 mark {
-  background-color: #ff0;
-  color: #000;
+  background-color: #FF0000;
+  color: #000000;
 }
 
-/* line 77, sass/_normalize.sass */
+/* line 74, sass/_normalize.sass */
 small {
   font-size: 80%;
 }
 
-/* line 80, sass/_normalize.sass */
+/* line 77, sass/_normalize.sass */
 sub, sup {
   font-size: 75%;
   line-height: 0;
@@ -182,38 +190,38 @@ sub, sup {
   vertical-align: baseline;
 }
 
-/* line 86, sass/_normalize.sass */
+/* line 83, sass/_normalize.sass */
 sub {
   bottom: -0.25em;
 }
 
-/* line 89, sass/_normalize.sass */
+/* line 86, sass/_normalize.sass */
 sup {
   top: -0.5em;
 }
 
-/* line 92, sass/_normalize.sass */
+/* line 89, sass/_normalize.sass */
 audio, video {
   display: inline-block;
 }
 
-/* line 95, sass/_normalize.sass */
+/* line 92, sass/_normalize.sass */
 audio:not([controls]) {
   display: none;
   height: 0;
 }
 
-/* line 99, sass/_normalize.sass */
+/* line 96, sass/_normalize.sass */
 img {
   border-style: none;
 }
 
-/* line 102, sass/_normalize.sass */
+/* line 99, sass/_normalize.sass */
 svg:not(:root) {
   overflow: hidden;
 }
 
-/* line 105, sass/_normalize.sass */
+/* line 102, sass/_normalize.sass */
 button {
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -223,13 +231,13 @@ button {
   border-radius: 0;
 }
 
-/* line 111, sass/_normalize.sass */
+/* line 108, sass/_normalize.sass */
 button:focus {
   outline: 1px dotted;
   outline: 5px auto -webkit-focus-ring-color;
 }
 
-/* line 115, sass/_normalize.sass */
+/* line 112, sass/_normalize.sass */
 input,
 button,
 select,
@@ -241,7 +249,7 @@ textarea {
   margin: 0;
 }
 
-/* line 125, sass/_normalize.sass */
+/* line 122, sass/_normalize.sass */
 select {
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -249,191 +257,205 @@ select {
   padding: 0;
 }
 
-/* line 129, sass/_normalize.sass */
+/* line 126, sass/_normalize.sass */
 button, input {
   overflow: visible;
 }
 
-/* line 132, sass/_normalize.sass */
+/* line 129, sass/_normalize.sass */
 button, select {
   text-transform: none;
 }
 
-/* line 135, sass/_normalize.sass */
+/* line 132, sass/_normalize.sass */
 button, html [type="button"], [type="reset"], [type="submit"] {
   -webkit-appearance: button;
 }
 
-/* line 138, sass/_normalize.sass */
+/* line 135, sass/_normalize.sass */
 button::-moz-focus-inner, [type="button"]::-moz-focus-inner, [type="reset"]::-moz-focus-inner, [type="submit"]::-moz-focus-inner {
+  padding: 0px;
+  padding: 0rem;
   border-style: none;
-  padding: 0;
 }
 
-/* line 142, sass/_normalize.sass */
+/* line 139, sass/_normalize.sass */
 button:-moz-focusring, [type="button"]:-moz-focusring, [type="reset"]:-moz-focusring, [type="submit"]:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
-/* line 145, sass/_normalize.sass */
+/* line 142, sass/_normalize.sass */
 textarea {
   overflow: auto;
   resize: vertical;
 }
 
-/* line 149, sass/_normalize.sass */
+/* line 146, sass/_normalize.sass */
 fieldset {
+  margin: 0px;
+  margin: 0rem;
+  padding: 0px;
+  padding: 0rem;
   min-width: 0;
-  padding: 0;
-  margin: 0;
   border: 0;
 }
 
-/* line 155, sass/_normalize.sass */
+/* line 152, sass/_normalize.sass */
 legend {
+  padding: 0px;
+  padding: 0rem;
   box-sizing: border-box;
+  color: inherit;
   display: block;
-  width: 100%;
-  max-width: 100%;
-  padding: 0;
   font-size: 1.5rem;
   line-height: inherit;
-  color: inherit;
+  max-width: 100%;
+  width: 100%;
   white-space: normal;
 }
 
-/* line 166, sass/_normalize.sass */
+/* line 163, sass/_normalize.sass */
 progress {
   display: inline-block;
   vertical-align: baseline;
 }
 
-/* line 170, sass/_normalize.sass */
+/* line 167, sass/_normalize.sass */
 [type="checkbox"], [type="radio"] {
+  padding: 0px;
+  padding: 0rem;
   box-sizing: border-box;
-  padding: 0;
 }
 
-/* line 175, sass/_normalize.sass */
+/* line 172, sass/_normalize.sass */
 [type="number"]::-webkit-inner-spin-button, [type="number"]::-webkit-outer-spin-button {
   height: auto;
 }
 
-/* line 178, sass/_normalize.sass */
+/* line 175, sass/_normalize.sass */
 [type="search"] {
   -webkit-appearance: textfield;
   outline-offset: -2px;
 }
 
-/* line 182, sass/_normalize.sass */
+/* line 179, sass/_normalize.sass */
 [type="search"]::-webkit-search-cancel-button, [type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
-/* line 185, sass/_normalize.sass */
+/* line 182, sass/_normalize.sass */
 ::-webkit-file-upload-button {
   -webkit-appearance: button;
   font: inherit;
 }
 
-/* line 189, sass/_normalize.sass */
+/* line 186, sass/_normalize.sass */
 details, menu {
   display: block;
 }
 
-/* line 192, sass/_normalize.sass */
+/* line 189, sass/_normalize.sass */
 summary {
   display: list-item;
 }
 
-/* line 195, sass/_normalize.sass */
+/* line 192, sass/_normalize.sass */
 canvas {
   display: inline-block;
 }
 
-/* line 198, sass/_normalize.sass */
+/* line 195, sass/_normalize.sass */
 template, [hidden] {
   display: none;
 }
 
 /* line 1, sass/_base.sass */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* line 8, sass/_base.sass */
 html, body {
   min-height: 100%;
-  width: 100%;
   position: relative;
+  width: 100%;
 }
 
-/* line 6, sass/_base.sass */
+/* line 13, sass/_base.sass */
 html {
-  box-sizing: border-box;
-  -webkit-tap-highlight-color: transparent;
   font-size: 16px;
+  -webkit-tap-highlight-color: transparent;
 }
 
-/* line 11, sass/_base.sass */
+/* line 17, sass/_base.sass */
 body {
   font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-weight: 300;
   color: #000000;
+  line-height: 1.5;
+  min-height: 100%;
+  text-rendering: optimizeLegibility;
   -moz-text-size-adjust: 100%;
    -ms-text-size-adjust: 100%;
        text-size-adjust: 100%;
-  min-height: 100%;
-  line-height: 1.5;
-  text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* line 22, sass/_base.sass */
+/* line 28, sass/_base.sass */
 a {
   color: #000000;
   text-decoration: underline;
 }
 
-/* line 26, sass/_base.sass */
+/* line 32, sass/_base.sass */
 ul, ol, blockquote {
-  padding-left: 0;
-  margin: 0;
+  margin: 0px;
+  margin: 0rem;
+  padding-left: 0px;
+  padding-left: 0rem;
 }
 
-/* line 30, sass/_base.sass */
+/* line 36, sass/_base.sass */
 li {
   list-style-type: none;
 }
 
-/* line 33, sass/_base.sass */
+/* line 39, sass/_base.sass */
 h1, h2, h3, h4, h5, h6, hgroup,
 ul, ol, dd, p, figure, pre, table,
 fieldset, hr, form {
-  margin: 0;
+  margin: 0px;
+  margin: 0rem;
 }
 
-/* line 38, sass/_base.sass */
+/* line 44, sass/_base.sass */
 h1, h2, h3, h4, h5, h6 {
-  font-size: inherit;
   font-family: inherit;
+  font-size: inherit;
   font-weight: inherit;
 }
 
-/* line 43, sass/_base.sass */
+/* line 49, sass/_base.sass */
 input[type=email], input[type=number], input[type=password], input[type=search],
 input[type=tel], input[type=text], input[type=url], input[type=color], input[type=date],
 input[type=datetime], input[type=datetime-local], input[type=month], input[type=time],
 input[type=week], textarea {
-  display: block;
-  box-sizing: border-box;
-  width: 100%;
   -webkit-appearance: none;
   -moz-appearance: none;
        appearance: none;
   background-image: none;
+  box-sizing: border-box;
+  display: block;
   font-size: inherit;
   outline: 0;
+  width: 100%;
 }
 
-/* line 56, sass/_base.sass */
+/* line 62, sass/_base.sass */
 input[type=email][disabled], input[type=number][disabled], input[type=password][disabled], input[type=search][disabled],
 input[type=tel][disabled], input[type=text][disabled], input[type=url][disabled], input[type=color][disabled], input[type=date][disabled],
 input[type=datetime][disabled], input[type=datetime-local][disabled], input[type=month][disabled], input[type=time][disabled],
@@ -441,38 +463,39 @@ input[type=week][disabled], textarea[disabled] {
   opacity: 0.9;
 }
 
-/* line 59, sass/_base.sass */
+/* line 65, sass/_base.sass */
 *:focus {
   outline: 0;
 }
 
-/* line 62, sass/_base.sass */
+/* line 68, sass/_base.sass */
 input[type=number]::-ms-tooltip {
   display: none;
 }
 
-/* line 65, sass/_base.sass */
+/* line 71, sass/_base.sass */
 input[type=number] {
   -moz-appearance: textfield;
   -webkit-appearance: textfield;
           appearance: textfield;
 }
 
-/* line 69, sass/_base.sass */
+/* line 75, sass/_base.sass */
 input[type=number]::-webkit-outer-spin-button,
 input[type=number]::-webkit-inner-spin-button {
+  margin: 0px;
+  margin: 0rem;
   -webkit-appearance: none;
   appearance: none;
-  margin: 0;
 }
 
-/* line 75, sass/_base.sass */
+/* line 81, sass/_base.sass */
 button, input[type="submit"] {
   background-image: none;
   border-radius: 0;
 }
 
-/* line 79, sass/_base.sass */
+/* line 85, sass/_base.sass */
 input[type=email]:hover, input[type=number]:hover, input[type=password]:hover, input[type=search]:hover,
 input[type=tel]:hover, input[type=text]:hover, input[type=url]:hover, input[type=color]:hover, input[type=date]:hover,
 input[type=datetime]:hover, input[type=datetime-local]:hover, input[type=month]:hover, input[type=time]:hover,
@@ -480,7 +503,7 @@ input[type=week]:hover, textarea:hover {
   border-color: #545b62;
 }
 
-/* line 85, sass/_base.sass */
+/* line 91, sass/_base.sass */
 input[type=email]:focus, input[type=number]:focus, input[type=password]:focus, input[type=search]:focus,
 input[type=tel]:focus, input[type=text]:focus, input[type=url]:focus, input[type=color]:focus, input[type=date]:focus,
 input[type=datetime]:focus, input[type=datetime-local]:focus, input[type=month]:focus, input[type=time]:focus,
@@ -488,42 +511,42 @@ input[type=week]:focus, textarea:focus {
   border-color: #6c757d;
 }
 
-/* line 91, sass/_base.sass */
+/* line 97, sass/_base.sass */
 input[type="checkbox"] {
   display: inline-block;
   margin-right: 0.4em;
 }
 
-/* line 95, sass/_base.sass */
+/* line 101, sass/_base.sass */
 pre, code {
   font-family: "Bitstream Vera Sans Mono", Consolas, Courier, monospace;
   font-weight: normal;
 }
 
-/* line 98, sass/_base.sass */
+/* line 104, sass/_base.sass */
 hr {
   border: none;
-  border-bottom-width: 1px;
   border-bottom-style: solid;
+  border-bottom-width: 1px;
 }
 
-/* line 103, sass/_base.sass */
+/* line 109, sass/_base.sass */
 table {
   table-layout: fixed;
 }
 
-/* line 106, sass/_base.sass */
+/* line 112, sass/_base.sass */
 th, td {
   text-align: left;
 }
 
-/* line 109, sass/_base.sass */
+/* line 115, sass/_base.sass */
 img {
   max-width: 100%;
   vertical-align: top;
 }
 
-/* line 113, sass/_base.sass */
+/* line 119, sass/_base.sass */
 legend {
   font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-weight: 600;
@@ -605,145 +628,145 @@ legend {
   }
 }
 
-/* line 2, sass/utilities/_background.sass */
+/* line 1, sass/utilities/_background.sass */
 .background--transparent {
   background-color: transparent;
 }
 
-/* line 6, sass/utilities/_background.sass */
+/* line 5, sass/utilities/_background.sass */
 .background--white {
   background-color: #ffffff;
   color: rgba(0, 0, 0, 0.7);
 }
 
 @supports (--css: variables) {
-  /* line 6, sass/utilities/_background.sass */
+  /* line 5, sass/utilities/_background.sass */
   .background--white {
     background-color: var(--color-white);
     color: var(--color-white);
   }
 }
 
-/* line 6, sass/utilities/_background.sass */
+/* line 5, sass/utilities/_background.sass */
 .background--gray {
   background-color: #6c757d;
-  color: #fff;
+  color: #ffffff;
 }
 
 @supports (--css: variables) {
-  /* line 6, sass/utilities/_background.sass */
+  /* line 5, sass/utilities/_background.sass */
   .background--gray {
     background-color: var(--color-gray);
     color: var(--color-white);
   }
 }
 
-/* line 6, sass/utilities/_background.sass */
+/* line 5, sass/utilities/_background.sass */
 .background--black {
   background-color: #000000;
-  color: #fff;
+  color: #ffffff;
 }
 
 @supports (--css: variables) {
-  /* line 6, sass/utilities/_background.sass */
+  /* line 5, sass/utilities/_background.sass */
   .background--black {
     background-color: var(--color-black);
     color: var(--color-white);
   }
 }
 
-/* line 6, sass/utilities/_background.sass */
+/* line 5, sass/utilities/_background.sass */
 .background--blue {
   background-color: #007bff;
-  color: #fff;
+  color: #ffffff;
 }
 
 @supports (--css: variables) {
-  /* line 6, sass/utilities/_background.sass */
+  /* line 5, sass/utilities/_background.sass */
   .background--blue {
     background-color: var(--color-blue);
     color: var(--color-white);
   }
 }
 
-/* line 6, sass/utilities/_background.sass */
+/* line 5, sass/utilities/_background.sass */
 .background--purple {
-  background-color: #6f42c1;
-  color: #fff;
+  background-color: #524ad0;
+  color: #ffffff;
 }
 
 @supports (--css: variables) {
-  /* line 6, sass/utilities/_background.sass */
+  /* line 5, sass/utilities/_background.sass */
   .background--purple {
     background-color: var(--color-purple);
     color: var(--color-white);
   }
 }
 
-/* line 6, sass/utilities/_background.sass */
+/* line 5, sass/utilities/_background.sass */
 .background--red {
   background-color: #dc3545;
-  color: #fff;
+  color: #ffffff;
 }
 
 @supports (--css: variables) {
-  /* line 6, sass/utilities/_background.sass */
+  /* line 5, sass/utilities/_background.sass */
   .background--red {
     background-color: var(--color-red);
     color: var(--color-white);
   }
 }
 
-/* line 6, sass/utilities/_background.sass */
+/* line 5, sass/utilities/_background.sass */
 .background--orange {
   background-color: #fd7e14;
-  color: #fff;
+  color: #ffffff;
 }
 
 @supports (--css: variables) {
-  /* line 6, sass/utilities/_background.sass */
+  /* line 5, sass/utilities/_background.sass */
   .background--orange {
     background-color: var(--color-orange);
     color: var(--color-white);
   }
 }
 
-/* line 6, sass/utilities/_background.sass */
+/* line 5, sass/utilities/_background.sass */
 .background--yellow {
   background-color: #ffc107;
   color: rgba(0, 0, 0, 0.7);
 }
 
 @supports (--css: variables) {
-  /* line 6, sass/utilities/_background.sass */
+  /* line 5, sass/utilities/_background.sass */
   .background--yellow {
     background-color: var(--color-yellow);
     color: var(--color-white);
   }
 }
 
-/* line 6, sass/utilities/_background.sass */
+/* line 5, sass/utilities/_background.sass */
 .background--green {
   background-color: #28a745;
-  color: #fff;
+  color: #ffffff;
 }
 
 @supports (--css: variables) {
-  /* line 6, sass/utilities/_background.sass */
+  /* line 5, sass/utilities/_background.sass */
   .background--green {
     background-color: var(--color-green);
     color: var(--color-white);
   }
 }
 
-/* line 6, sass/utilities/_background.sass */
+/* line 5, sass/utilities/_background.sass */
 .background--teal {
   background-color: #20c997;
-  color: #fff;
+  color: #ffffff;
 }
 
 @supports (--css: variables) {
-  /* line 6, sass/utilities/_background.sass */
+  /* line 5, sass/utilities/_background.sass */
   .background--teal {
     background-color: var(--color-teal);
     color: var(--color-white);
@@ -752,8 +775,8 @@ legend {
 
 /* line 1, sass/utilities/_center.sass */
 .center {
-  position: absolute;
   left: 50%;
+  position: absolute;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -769,127 +792,127 @@ legend {
 
 /* line 7, sass/utilities/_center.sass */
 .center--h {
-  position: absolute;
   left: 50%;
+  position: absolute;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
 
-/* line 3, sass/utilities/_color.sass */
+/* line 2, sass/utilities/_color.sass */
 .text--white {
   color: #ffffff;
 }
 
 @supports (--css: variables) {
-  /* line 3, sass/utilities/_color.sass */
+  /* line 2, sass/utilities/_color.sass */
   .text--white {
     color: var(--color-white);
   }
 }
 
-/* line 3, sass/utilities/_color.sass */
+/* line 2, sass/utilities/_color.sass */
 .text--gray {
   color: #6c757d;
 }
 
 @supports (--css: variables) {
-  /* line 3, sass/utilities/_color.sass */
+  /* line 2, sass/utilities/_color.sass */
   .text--gray {
     color: var(--color-gray);
   }
 }
 
-/* line 3, sass/utilities/_color.sass */
+/* line 2, sass/utilities/_color.sass */
 .text--black {
   color: #000000;
 }
 
 @supports (--css: variables) {
-  /* line 3, sass/utilities/_color.sass */
+  /* line 2, sass/utilities/_color.sass */
   .text--black {
     color: var(--color-black);
   }
 }
 
-/* line 3, sass/utilities/_color.sass */
+/* line 2, sass/utilities/_color.sass */
 .text--blue {
   color: #007bff;
 }
 
 @supports (--css: variables) {
-  /* line 3, sass/utilities/_color.sass */
+  /* line 2, sass/utilities/_color.sass */
   .text--blue {
     color: var(--color-blue);
   }
 }
 
-/* line 3, sass/utilities/_color.sass */
+/* line 2, sass/utilities/_color.sass */
 .text--purple {
-  color: #6f42c1;
+  color: #524ad0;
 }
 
 @supports (--css: variables) {
-  /* line 3, sass/utilities/_color.sass */
+  /* line 2, sass/utilities/_color.sass */
   .text--purple {
     color: var(--color-purple);
   }
 }
 
-/* line 3, sass/utilities/_color.sass */
+/* line 2, sass/utilities/_color.sass */
 .text--red {
   color: #dc3545;
 }
 
 @supports (--css: variables) {
-  /* line 3, sass/utilities/_color.sass */
+  /* line 2, sass/utilities/_color.sass */
   .text--red {
     color: var(--color-red);
   }
 }
 
-/* line 3, sass/utilities/_color.sass */
+/* line 2, sass/utilities/_color.sass */
 .text--orange {
   color: #fd7e14;
 }
 
 @supports (--css: variables) {
-  /* line 3, sass/utilities/_color.sass */
+  /* line 2, sass/utilities/_color.sass */
   .text--orange {
     color: var(--color-orange);
   }
 }
 
-/* line 3, sass/utilities/_color.sass */
+/* line 2, sass/utilities/_color.sass */
 .text--yellow {
   color: #ffc107;
 }
 
 @supports (--css: variables) {
-  /* line 3, sass/utilities/_color.sass */
+  /* line 2, sass/utilities/_color.sass */
   .text--yellow {
     color: var(--color-yellow);
   }
 }
 
-/* line 3, sass/utilities/_color.sass */
+/* line 2, sass/utilities/_color.sass */
 .text--green {
   color: #28a745;
 }
 
 @supports (--css: variables) {
-  /* line 3, sass/utilities/_color.sass */
+  /* line 2, sass/utilities/_color.sass */
   .text--green {
     color: var(--color-green);
   }
 }
 
-/* line 3, sass/utilities/_color.sass */
+/* line 2, sass/utilities/_color.sass */
 .text--teal {
   color: #20c997;
 }
 
 @supports (--css: variables) {
-  /* line 3, sass/utilities/_color.sass */
+  /* line 2, sass/utilities/_color.sass */
   .text--teal {
     color: var(--color-teal);
   }
@@ -898,20 +921,20 @@ legend {
 /* line 1, sass/utilities/_flex.sass */
 .flex, .flex--reverse, .flex--reverse-column {
   display: flex;
-  flex-wrap: wrap;
   flex: 0 1 auto;
   flex-direction: row;
+  flex-wrap: wrap;
   letter-spacing: -1000em;
   margin: 0 -12px;
 }
 
 /* line 4, sass/utilities/_flex.sass */
 .flex__item {
-  flex: 0 0 auto;
-  width: 100%;
   box-sizing: border-box;
+  flex: 0 0 auto;
   letter-spacing: 0;
   padding: 0 12px;
+  width: 100%;
 }
 
 /* line 7, sass/utilities/_flex.sass */
@@ -1408,22 +1431,22 @@ legend {
 
 /* line 1, sass/utilities/_grid.sass */
 .grid, .grid--rev, .grid--full, .grid--right, .grid--center, .grid--middle, .grid--bottom, .grid--narrow, .grid--wide {
+  letter-spacing: -1000em;
   list-style: none;
-  margin-right: 0;
   margin-left: -24px;
+  margin-right: 0;
   padding-left: 0;
   padding-right: 0;
-  letter-spacing: -1000em;
 }
 
 /* line 4, sass/utilities/_grid.sass */
 .grid__item {
+  box-sizing: border-box;
   display: inline-block;
+  letter-spacing: 0;
   padding-left: 24px;
   vertical-align: top;
   width: 100%;
-  box-sizing: border-box;
-  letter-spacing: 0;
 }
 
 /* line 7, sass/utilities/_grid.sass */
@@ -2541,20 +2564,20 @@ legend {
 
 /* line 1, sass/utilities/_label.sass */
 .label, .label-rounded, .label--white, .label--gray, .label--black, .label--blue, .label--purple, .label--red, .label--orange, .label--yellow, .label--green, .label--teal {
-  display: inline-block;
   padding-left: 7.2px;
   padding-left: 0.45rem;
   padding-right: 7.2px;
   padding-right: 0.45rem;
+  font-size: 13px;
+  font-size: 0.8125rem;
+  line-height: 19px;
+  line-height: 1.1875rem;
   padding-top: 1.2px;
   padding-top: 0.075rem;
   padding-bottom: 1.2px;
   padding-bottom: 0.075rem;
   color: #455060;
-  font-size: 13px;
-  font-size: 0.8125rem;
-  line-height: 19px;
-  line-height: 1.1875rem;
+  display: inline-block;
 }
 
 /* line 8, sass/utilities/_label.sass */
@@ -2576,37 +2599,37 @@ legend {
 /* line 17, sass/utilities/_label.sass */
 .label--gray {
   background-color: #6c757d;
-  color: #fff;
+  color: #ffffff;
 }
 
 /* line 17, sass/utilities/_label.sass */
 .label--black {
   background-color: #000000;
-  color: #fff;
+  color: #ffffff;
 }
 
 /* line 17, sass/utilities/_label.sass */
 .label--blue {
   background-color: #007bff;
-  color: #fff;
+  color: #ffffff;
 }
 
 /* line 17, sass/utilities/_label.sass */
 .label--purple {
-  background-color: #6f42c1;
-  color: #fff;
+  background-color: #524ad0;
+  color: #ffffff;
 }
 
 /* line 17, sass/utilities/_label.sass */
 .label--red {
   background-color: #dc3545;
-  color: #fff;
+  color: #ffffff;
 }
 
 /* line 17, sass/utilities/_label.sass */
 .label--orange {
   background-color: #fd7e14;
-  color: #fff;
+  color: #ffffff;
 }
 
 /* line 17, sass/utilities/_label.sass */
@@ -2618,21 +2641,21 @@ legend {
 /* line 17, sass/utilities/_label.sass */
 .label--green {
   background-color: #28a745;
-  color: #fff;
+  color: #ffffff;
 }
 
 /* line 17, sass/utilities/_label.sass */
 .label--teal {
   background-color: #20c997;
-  color: #fff;
+  color: #ffffff;
 }
 
 /* line 1, sass/utilities/_list.sass */
 .list, .list--horizontal {
   display: flex;
   flex-direction: column;
-  padding-left: 0;
   margin-bottom: 0;
+  padding-left: 0;
 }
 
 /* line 7, sass/utilities/_list.sass */
@@ -2642,14 +2665,14 @@ legend {
 
 /* line 11, sass/utilities/_list.sass */
 .list__item {
-  position: relative;
-  display: block;
-  padding: 12px;
-  padding: 0.75rem;
   margin-bottom: -12px;
   margin-bottom: -0.75rem;
+  padding: 12px;
+  padding: 0.75rem;
   background-color: #ffffff;
   border: 0.05rem solid #6c757d;
+  display: block;
+  position: relative;
 }
 
 /* line 18, sass/utilities/_list.sass */
@@ -3648,6 +3671,100 @@ legend {
   }
 }
 
+/* line 39, sass/utilities/_space.sass */
+.space-15 {
+  width: 15%;
+}
+
+/* line 39, sass/utilities/_space.sass */
+.space-25 {
+  width: 25%;
+}
+
+/* line 39, sass/utilities/_space.sass */
+.space-50 {
+  width: 50%;
+}
+
+/* line 39, sass/utilities/_space.sass */
+.space-75 {
+  width: 75%;
+}
+
+/* line 39, sass/utilities/_space.sass */
+.space-100 {
+  width: 100%;
+}
+
+@media screen and (min-width: 480px) {
+  /* line 45, sass/utilities/_space.sass */
+  .space-15-on-tab {
+    width: 15%;
+  }
+  /* line 45, sass/utilities/_space.sass */
+  .space-25-on-tab {
+    width: 25%;
+  }
+  /* line 45, sass/utilities/_space.sass */
+  .space-50-on-tab {
+    width: 50%;
+  }
+  /* line 45, sass/utilities/_space.sass */
+  .space-75-on-tab {
+    width: 75%;
+  }
+  /* line 45, sass/utilities/_space.sass */
+  .space-100-on-tab {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  /* line 45, sass/utilities/_space.sass */
+  .space-15-on-lap {
+    width: 15%;
+  }
+  /* line 45, sass/utilities/_space.sass */
+  .space-25-on-lap {
+    width: 25%;
+  }
+  /* line 45, sass/utilities/_space.sass */
+  .space-50-on-lap {
+    width: 50%;
+  }
+  /* line 45, sass/utilities/_space.sass */
+  .space-75-on-lap {
+    width: 75%;
+  }
+  /* line 45, sass/utilities/_space.sass */
+  .space-100-on-lap {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* line 45, sass/utilities/_space.sass */
+  .space-15-on-desk {
+    width: 15%;
+  }
+  /* line 45, sass/utilities/_space.sass */
+  .space-25-on-desk {
+    width: 25%;
+  }
+  /* line 45, sass/utilities/_space.sass */
+  .space-50-on-desk {
+    width: 50%;
+  }
+  /* line 45, sass/utilities/_space.sass */
+  .space-75-on-desk {
+    width: 75%;
+  }
+  /* line 45, sass/utilities/_space.sass */
+  .space-100-on-desk {
+    width: 100%;
+  }
+}
+
 @media screen and (min-width: 480px) {
   /* line 2, sass/utilities/_visible.sass */
   .visible--on-eq-palm {
@@ -3769,11 +3886,11 @@ legend {
 
 /* line 1, sass/utilities/_wrap.sass */
 .wrap {
+  box-sizing: border-box;
   margin-left: auto;
   margin-right: auto;
   padding-left: 24px;
   padding-right: 24px;
-  box-sizing: border-box;
   max-width: 1440px;
 }
 
@@ -3786,11 +3903,11 @@ legend {
 
 /* line 6, sass/utilities/_wrap.sass */
 .wrap--large {
+  box-sizing: border-box;
   margin-left: auto;
   margin-right: auto;
   padding-left: 24px;
   padding-right: 24px;
-  box-sizing: border-box;
   max-width: 1920px;
 }
 
@@ -3803,11 +3920,11 @@ legend {
 
 /* line 6, sass/utilities/_wrap.sass */
 .wrap--small {
+  box-sizing: border-box;
   margin-left: auto;
   margin-right: auto;
   padding-left: 24px;
   padding-right: 24px;
-  box-sizing: border-box;
   max-width: 940px;
 }
 
@@ -3821,11 +3938,11 @@ legend {
 @media screen and (max-width: 479px) {
   /* line 11, sass/utilities/_wrap.sass */
   .wrap--on-eq-palm {
+    box-sizing: border-box;
     margin-left: auto;
     margin-right: auto;
     padding-left: 24px;
     padding-right: 24px;
-    box-sizing: border-box;
     max-width: 1440px;
   }
   /* line 2, sass/mixins/_clearfix.sass */
@@ -3839,11 +3956,11 @@ legend {
 @media screen and (max-width: 479px) {
   /* line 17, sass/utilities/_wrap.sass */
   .wrap--large-on-eq-palm {
+    box-sizing: border-box;
     margin-left: auto;
     margin-right: auto;
     padding-left: 24px;
     padding-right: 24px;
-    box-sizing: border-box;
     max-width: 1920px;
   }
   /* line 2, sass/mixins/_clearfix.sass */
@@ -3857,11 +3974,11 @@ legend {
 @media screen and (max-width: 479px) {
   /* line 17, sass/utilities/_wrap.sass */
   .wrap--small-on-eq-palm {
+    box-sizing: border-box;
     margin-left: auto;
     margin-right: auto;
     padding-left: 24px;
     padding-right: 24px;
-    box-sizing: border-box;
     max-width: 940px;
   }
   /* line 2, sass/mixins/_clearfix.sass */
@@ -3875,11 +3992,11 @@ legend {
 @media screen and (min-width: 480px) {
   /* line 11, sass/utilities/_wrap.sass */
   .wrap--on-tab {
+    box-sizing: border-box;
     margin-left: auto;
     margin-right: auto;
     padding-left: 24px;
     padding-right: 24px;
-    box-sizing: border-box;
     max-width: 1440px;
   }
   /* line 2, sass/mixins/_clearfix.sass */
@@ -3893,11 +4010,11 @@ legend {
 @media screen and (min-width: 480px) {
   /* line 17, sass/utilities/_wrap.sass */
   .wrap--large-on-tab {
+    box-sizing: border-box;
     margin-left: auto;
     margin-right: auto;
     padding-left: 24px;
     padding-right: 24px;
-    box-sizing: border-box;
     max-width: 1920px;
   }
   /* line 2, sass/mixins/_clearfix.sass */
@@ -3911,11 +4028,11 @@ legend {
 @media screen and (min-width: 480px) {
   /* line 17, sass/utilities/_wrap.sass */
   .wrap--small-on-tab {
+    box-sizing: border-box;
     margin-left: auto;
     margin-right: auto;
     padding-left: 24px;
     padding-right: 24px;
-    box-sizing: border-box;
     max-width: 940px;
   }
   /* line 2, sass/mixins/_clearfix.sass */
@@ -3929,11 +4046,11 @@ legend {
 @media screen and (min-width: 480px) and (max-width: 719px) {
   /* line 11, sass/utilities/_wrap.sass */
   .wrap--on-eq-tab {
+    box-sizing: border-box;
     margin-left: auto;
     margin-right: auto;
     padding-left: 24px;
     padding-right: 24px;
-    box-sizing: border-box;
     max-width: 1440px;
   }
   /* line 2, sass/mixins/_clearfix.sass */
@@ -3947,11 +4064,11 @@ legend {
 @media screen and (min-width: 480px) and (max-width: 719px) {
   /* line 17, sass/utilities/_wrap.sass */
   .wrap--large-on-eq-tab {
+    box-sizing: border-box;
     margin-left: auto;
     margin-right: auto;
     padding-left: 24px;
     padding-right: 24px;
-    box-sizing: border-box;
     max-width: 1920px;
   }
   /* line 2, sass/mixins/_clearfix.sass */
@@ -3965,11 +4082,11 @@ legend {
 @media screen and (min-width: 480px) and (max-width: 719px) {
   /* line 17, sass/utilities/_wrap.sass */
   .wrap--small-on-eq-tab {
+    box-sizing: border-box;
     margin-left: auto;
     margin-right: auto;
     padding-left: 24px;
     padding-right: 24px;
-    box-sizing: border-box;
     max-width: 940px;
   }
   /* line 2, sass/mixins/_clearfix.sass */
@@ -3983,11 +4100,11 @@ legend {
 @media screen and (max-width: 719px) {
   /* line 11, sass/utilities/_wrap.sass */
   .wrap--on-lte-tab {
+    box-sizing: border-box;
     margin-left: auto;
     margin-right: auto;
     padding-left: 24px;
     padding-right: 24px;
-    box-sizing: border-box;
     max-width: 1440px;
   }
   /* line 2, sass/mixins/_clearfix.sass */
@@ -4001,11 +4118,11 @@ legend {
 @media screen and (max-width: 719px) {
   /* line 17, sass/utilities/_wrap.sass */
   .wrap--large-on-lte-tab {
+    box-sizing: border-box;
     margin-left: auto;
     margin-right: auto;
     padding-left: 24px;
     padding-right: 24px;
-    box-sizing: border-box;
     max-width: 1920px;
   }
   /* line 2, sass/mixins/_clearfix.sass */
@@ -4019,11 +4136,11 @@ legend {
 @media screen and (max-width: 719px) {
   /* line 17, sass/utilities/_wrap.sass */
   .wrap--small-on-lte-tab {
+    box-sizing: border-box;
     margin-left: auto;
     margin-right: auto;
     padding-left: 24px;
     padding-right: 24px;
-    box-sizing: border-box;
     max-width: 940px;
   }
   /* line 2, sass/mixins/_clearfix.sass */
@@ -4037,11 +4154,11 @@ legend {
 @media screen and (min-width: 720px) {
   /* line 11, sass/utilities/_wrap.sass */
   .wrap--on-lap {
+    box-sizing: border-box;
     margin-left: auto;
     margin-right: auto;
     padding-left: 24px;
     padding-right: 24px;
-    box-sizing: border-box;
     max-width: 1440px;
   }
   /* line 2, sass/mixins/_clearfix.sass */
@@ -4055,11 +4172,11 @@ legend {
 @media screen and (min-width: 720px) {
   /* line 17, sass/utilities/_wrap.sass */
   .wrap--large-on-lap {
+    box-sizing: border-box;
     margin-left: auto;
     margin-right: auto;
     padding-left: 24px;
     padding-right: 24px;
-    box-sizing: border-box;
     max-width: 1920px;
   }
   /* line 2, sass/mixins/_clearfix.sass */
@@ -4073,11 +4190,11 @@ legend {
 @media screen and (min-width: 720px) {
   /* line 17, sass/utilities/_wrap.sass */
   .wrap--small-on-lap {
+    box-sizing: border-box;
     margin-left: auto;
     margin-right: auto;
     padding-left: 24px;
     padding-right: 24px;
-    box-sizing: border-box;
     max-width: 940px;
   }
   /* line 2, sass/mixins/_clearfix.sass */
@@ -4091,11 +4208,11 @@ legend {
 @media screen and (min-width: 720px) and (max-width: 1023px) {
   /* line 11, sass/utilities/_wrap.sass */
   .wrap--on-eq-lap {
+    box-sizing: border-box;
     margin-left: auto;
     margin-right: auto;
     padding-left: 24px;
     padding-right: 24px;
-    box-sizing: border-box;
     max-width: 1440px;
   }
   /* line 2, sass/mixins/_clearfix.sass */
@@ -4109,11 +4226,11 @@ legend {
 @media screen and (min-width: 720px) and (max-width: 1023px) {
   /* line 17, sass/utilities/_wrap.sass */
   .wrap--large-on-eq-lap {
+    box-sizing: border-box;
     margin-left: auto;
     margin-right: auto;
     padding-left: 24px;
     padding-right: 24px;
-    box-sizing: border-box;
     max-width: 1920px;
   }
   /* line 2, sass/mixins/_clearfix.sass */
@@ -4127,11 +4244,11 @@ legend {
 @media screen and (min-width: 720px) and (max-width: 1023px) {
   /* line 17, sass/utilities/_wrap.sass */
   .wrap--small-on-eq-lap {
+    box-sizing: border-box;
     margin-left: auto;
     margin-right: auto;
     padding-left: 24px;
     padding-right: 24px;
-    box-sizing: border-box;
     max-width: 940px;
   }
   /* line 2, sass/mixins/_clearfix.sass */
@@ -4145,11 +4262,11 @@ legend {
 @media screen and (max-width: 1023px) {
   /* line 11, sass/utilities/_wrap.sass */
   .wrap--on-lte-lap {
+    box-sizing: border-box;
     margin-left: auto;
     margin-right: auto;
     padding-left: 24px;
     padding-right: 24px;
-    box-sizing: border-box;
     max-width: 1440px;
   }
   /* line 2, sass/mixins/_clearfix.sass */
@@ -4163,11 +4280,11 @@ legend {
 @media screen and (max-width: 1023px) {
   /* line 17, sass/utilities/_wrap.sass */
   .wrap--large-on-lte-lap {
+    box-sizing: border-box;
     margin-left: auto;
     margin-right: auto;
     padding-left: 24px;
     padding-right: 24px;
-    box-sizing: border-box;
     max-width: 1920px;
   }
   /* line 2, sass/mixins/_clearfix.sass */
@@ -4181,11 +4298,11 @@ legend {
 @media screen and (max-width: 1023px) {
   /* line 17, sass/utilities/_wrap.sass */
   .wrap--small-on-lte-lap {
+    box-sizing: border-box;
     margin-left: auto;
     margin-right: auto;
     padding-left: 24px;
     padding-right: 24px;
-    box-sizing: border-box;
     max-width: 940px;
   }
   /* line 2, sass/mixins/_clearfix.sass */
@@ -4199,11 +4316,11 @@ legend {
 @media screen and (min-width: 1024px) {
   /* line 11, sass/utilities/_wrap.sass */
   .wrap--on-desk {
+    box-sizing: border-box;
     margin-left: auto;
     margin-right: auto;
     padding-left: 24px;
     padding-right: 24px;
-    box-sizing: border-box;
     max-width: 1440px;
   }
   /* line 2, sass/mixins/_clearfix.sass */
@@ -4217,11 +4334,11 @@ legend {
 @media screen and (min-width: 1024px) {
   /* line 17, sass/utilities/_wrap.sass */
   .wrap--large-on-desk {
+    box-sizing: border-box;
     margin-left: auto;
     margin-right: auto;
     padding-left: 24px;
     padding-right: 24px;
-    box-sizing: border-box;
     max-width: 1920px;
   }
   /* line 2, sass/mixins/_clearfix.sass */
@@ -4235,11 +4352,11 @@ legend {
 @media screen and (min-width: 1024px) {
   /* line 17, sass/utilities/_wrap.sass */
   .wrap--small-on-desk {
+    box-sizing: border-box;
     margin-left: auto;
     margin-right: auto;
     padding-left: 24px;
     padding-right: 24px;
-    box-sizing: border-box;
     max-width: 940px;
   }
   /* line 2, sass/mixins/_clearfix.sass */
@@ -4253,11 +4370,11 @@ legend {
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
   /* line 11, sass/utilities/_wrap.sass */
   .wrap--on-eq-desk {
+    box-sizing: border-box;
     margin-left: auto;
     margin-right: auto;
     padding-left: 24px;
     padding-right: 24px;
-    box-sizing: border-box;
     max-width: 1440px;
   }
   /* line 2, sass/mixins/_clearfix.sass */
@@ -4271,11 +4388,11 @@ legend {
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
   /* line 17, sass/utilities/_wrap.sass */
   .wrap--large-on-eq-desk {
+    box-sizing: border-box;
     margin-left: auto;
     margin-right: auto;
     padding-left: 24px;
     padding-right: 24px;
-    box-sizing: border-box;
     max-width: 1920px;
   }
   /* line 2, sass/mixins/_clearfix.sass */
@@ -4289,11 +4406,11 @@ legend {
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
   /* line 17, sass/utilities/_wrap.sass */
   .wrap--small-on-eq-desk {
+    box-sizing: border-box;
     margin-left: auto;
     margin-right: auto;
     padding-left: 24px;
     padding-right: 24px;
-    box-sizing: border-box;
     max-width: 940px;
   }
   /* line 2, sass/mixins/_clearfix.sass */
@@ -4307,11 +4424,11 @@ legend {
 @media screen and (max-width: 1279px) {
   /* line 11, sass/utilities/_wrap.sass */
   .wrap--on-lte-desk {
+    box-sizing: border-box;
     margin-left: auto;
     margin-right: auto;
     padding-left: 24px;
     padding-right: 24px;
-    box-sizing: border-box;
     max-width: 1440px;
   }
   /* line 2, sass/mixins/_clearfix.sass */
@@ -4325,11 +4442,11 @@ legend {
 @media screen and (max-width: 1279px) {
   /* line 17, sass/utilities/_wrap.sass */
   .wrap--large-on-lte-desk {
+    box-sizing: border-box;
     margin-left: auto;
     margin-right: auto;
     padding-left: 24px;
     padding-right: 24px;
-    box-sizing: border-box;
     max-width: 1920px;
   }
   /* line 2, sass/mixins/_clearfix.sass */
@@ -4343,11 +4460,11 @@ legend {
 @media screen and (max-width: 1279px) {
   /* line 17, sass/utilities/_wrap.sass */
   .wrap--small-on-lte-desk {
+    box-sizing: border-box;
     margin-left: auto;
     margin-right: auto;
     padding-left: 24px;
     padding-right: 24px;
-    box-sizing: border-box;
     max-width: 940px;
   }
   /* line 2, sass/mixins/_clearfix.sass */
@@ -4361,11 +4478,11 @@ legend {
 @media screen and (min-width: 1280px) {
   /* line 11, sass/utilities/_wrap.sass */
   .wrap--on-monitor {
+    box-sizing: border-box;
     margin-left: auto;
     margin-right: auto;
     padding-left: 24px;
     padding-right: 24px;
-    box-sizing: border-box;
     max-width: 1440px;
   }
   /* line 2, sass/mixins/_clearfix.sass */
@@ -4379,11 +4496,11 @@ legend {
 @media screen and (min-width: 1280px) {
   /* line 17, sass/utilities/_wrap.sass */
   .wrap--large-on-monitor {
+    box-sizing: border-box;
     margin-left: auto;
     margin-right: auto;
     padding-left: 24px;
     padding-right: 24px;
-    box-sizing: border-box;
     max-width: 1920px;
   }
   /* line 2, sass/mixins/_clearfix.sass */
@@ -4397,11 +4514,11 @@ legend {
 @media screen and (min-width: 1280px) {
   /* line 17, sass/utilities/_wrap.sass */
   .wrap--small-on-monitor {
+    box-sizing: border-box;
     margin-left: auto;
     margin-right: auto;
     padding-left: 24px;
     padding-right: 24px;
-    box-sizing: border-box;
     max-width: 940px;
   }
   /* line 2, sass/mixins/_clearfix.sass */
@@ -4415,11 +4532,11 @@ legend {
 @media screen and (min-width: 1280px) and (max-width: 1439px) {
   /* line 11, sass/utilities/_wrap.sass */
   .wrap--on-eq-monitor {
+    box-sizing: border-box;
     margin-left: auto;
     margin-right: auto;
     padding-left: 24px;
     padding-right: 24px;
-    box-sizing: border-box;
     max-width: 1440px;
   }
   /* line 2, sass/mixins/_clearfix.sass */
@@ -4433,11 +4550,11 @@ legend {
 @media screen and (min-width: 1280px) and (max-width: 1439px) {
   /* line 17, sass/utilities/_wrap.sass */
   .wrap--large-on-eq-monitor {
+    box-sizing: border-box;
     margin-left: auto;
     margin-right: auto;
     padding-left: 24px;
     padding-right: 24px;
-    box-sizing: border-box;
     max-width: 1920px;
   }
   /* line 2, sass/mixins/_clearfix.sass */
@@ -4451,11 +4568,11 @@ legend {
 @media screen and (min-width: 1280px) and (max-width: 1439px) {
   /* line 17, sass/utilities/_wrap.sass */
   .wrap--small-on-eq-monitor {
+    box-sizing: border-box;
     margin-left: auto;
     margin-right: auto;
     padding-left: 24px;
     padding-right: 24px;
-    box-sizing: border-box;
     max-width: 940px;
   }
   /* line 2, sass/mixins/_clearfix.sass */
@@ -4469,11 +4586,11 @@ legend {
 @media screen and (max-width: 1439px) {
   /* line 11, sass/utilities/_wrap.sass */
   .wrap--on-lte-monitor {
+    box-sizing: border-box;
     margin-left: auto;
     margin-right: auto;
     padding-left: 24px;
     padding-right: 24px;
-    box-sizing: border-box;
     max-width: 1440px;
   }
   /* line 2, sass/mixins/_clearfix.sass */
@@ -4487,11 +4604,11 @@ legend {
 @media screen and (max-width: 1439px) {
   /* line 17, sass/utilities/_wrap.sass */
   .wrap--large-on-lte-monitor {
+    box-sizing: border-box;
     margin-left: auto;
     margin-right: auto;
     padding-left: 24px;
     padding-right: 24px;
-    box-sizing: border-box;
     max-width: 1920px;
   }
   /* line 2, sass/mixins/_clearfix.sass */
@@ -4505,11 +4622,11 @@ legend {
 @media screen and (max-width: 1439px) {
   /* line 17, sass/utilities/_wrap.sass */
   .wrap--small-on-lte-monitor {
+    box-sizing: border-box;
     margin-left: auto;
     margin-right: auto;
     padding-left: 24px;
     padding-right: 24px;
-    box-sizing: border-box;
     max-width: 940px;
   }
   /* line 2, sass/mixins/_clearfix.sass */
@@ -4523,11 +4640,11 @@ legend {
 @media screen and (min-width: 1440px) {
   /* line 11, sass/utilities/_wrap.sass */
   .wrap--on-wall {
+    box-sizing: border-box;
     margin-left: auto;
     margin-right: auto;
     padding-left: 24px;
     padding-right: 24px;
-    box-sizing: border-box;
     max-width: 1440px;
   }
   /* line 2, sass/mixins/_clearfix.sass */
@@ -4541,11 +4658,11 @@ legend {
 @media screen and (min-width: 1440px) {
   /* line 17, sass/utilities/_wrap.sass */
   .wrap--large-on-wall {
+    box-sizing: border-box;
     margin-left: auto;
     margin-right: auto;
     padding-left: 24px;
     padding-right: 24px;
-    box-sizing: border-box;
     max-width: 1920px;
   }
   /* line 2, sass/mixins/_clearfix.sass */
@@ -4559,11 +4676,11 @@ legend {
 @media screen and (min-width: 1440px) {
   /* line 17, sass/utilities/_wrap.sass */
   .wrap--small-on-wall {
+    box-sizing: border-box;
     margin-left: auto;
     margin-right: auto;
     padding-left: 24px;
     padding-right: 24px;
-    box-sizing: border-box;
     max-width: 940px;
   }
   /* line 2, sass/mixins/_clearfix.sass */
@@ -4577,11 +4694,11 @@ legend {
 @media screen and (min-width: 1440px) and (max-width: 1919px) {
   /* line 11, sass/utilities/_wrap.sass */
   .wrap--on-eq-wall {
+    box-sizing: border-box;
     margin-left: auto;
     margin-right: auto;
     padding-left: 24px;
     padding-right: 24px;
-    box-sizing: border-box;
     max-width: 1440px;
   }
   /* line 2, sass/mixins/_clearfix.sass */
@@ -4595,11 +4712,11 @@ legend {
 @media screen and (min-width: 1440px) and (max-width: 1919px) {
   /* line 17, sass/utilities/_wrap.sass */
   .wrap--large-on-eq-wall {
+    box-sizing: border-box;
     margin-left: auto;
     margin-right: auto;
     padding-left: 24px;
     padding-right: 24px;
-    box-sizing: border-box;
     max-width: 1920px;
   }
   /* line 2, sass/mixins/_clearfix.sass */
@@ -4613,11 +4730,11 @@ legend {
 @media screen and (min-width: 1440px) and (max-width: 1919px) {
   /* line 17, sass/utilities/_wrap.sass */
   .wrap--small-on-eq-wall {
+    box-sizing: border-box;
     margin-left: auto;
     margin-right: auto;
     padding-left: 24px;
     padding-right: 24px;
-    box-sizing: border-box;
     max-width: 940px;
   }
   /* line 2, sass/mixins/_clearfix.sass */
@@ -4631,11 +4748,11 @@ legend {
 @media screen and (max-width: 1919px) {
   /* line 11, sass/utilities/_wrap.sass */
   .wrap--on-lte-wall {
+    box-sizing: border-box;
     margin-left: auto;
     margin-right: auto;
     padding-left: 24px;
     padding-right: 24px;
-    box-sizing: border-box;
     max-width: 1440px;
   }
   /* line 2, sass/mixins/_clearfix.sass */
@@ -4649,11 +4766,11 @@ legend {
 @media screen and (max-width: 1919px) {
   /* line 17, sass/utilities/_wrap.sass */
   .wrap--large-on-lte-wall {
+    box-sizing: border-box;
     margin-left: auto;
     margin-right: auto;
     padding-left: 24px;
     padding-right: 24px;
-    box-sizing: border-box;
     max-width: 1920px;
   }
   /* line 2, sass/mixins/_clearfix.sass */
@@ -4667,11 +4784,11 @@ legend {
 @media screen and (max-width: 1919px) {
   /* line 17, sass/utilities/_wrap.sass */
   .wrap--small-on-lte-wall {
+    box-sizing: border-box;
     margin-left: auto;
     margin-right: auto;
     padding-left: 24px;
     padding-right: 24px;
-    box-sizing: border-box;
     max-width: 940px;
   }
   /* line 2, sass/mixins/_clearfix.sass */
@@ -4685,11 +4802,11 @@ legend {
 @media screen and (min-width: 1920px) {
   /* line 11, sass/utilities/_wrap.sass */
   .wrap--on-full {
+    box-sizing: border-box;
     margin-left: auto;
     margin-right: auto;
     padding-left: 24px;
     padding-right: 24px;
-    box-sizing: border-box;
     max-width: 1440px;
   }
   /* line 2, sass/mixins/_clearfix.sass */
@@ -4703,11 +4820,11 @@ legend {
 @media screen and (min-width: 1920px) {
   /* line 17, sass/utilities/_wrap.sass */
   .wrap--large-on-full {
+    box-sizing: border-box;
     margin-left: auto;
     margin-right: auto;
     padding-left: 24px;
     padding-right: 24px;
-    box-sizing: border-box;
     max-width: 1920px;
   }
   /* line 2, sass/mixins/_clearfix.sass */
@@ -4721,11 +4838,11 @@ legend {
 @media screen and (min-width: 1920px) {
   /* line 17, sass/utilities/_wrap.sass */
   .wrap--small-on-full {
+    box-sizing: border-box;
     margin-left: auto;
     margin-right: auto;
     padding-left: 24px;
     padding-right: 24px;
-    box-sizing: border-box;
     max-width: 940px;
   }
   /* line 2, sass/mixins/_clearfix.sass */
@@ -4738,27 +4855,27 @@ legend {
 
 /* line 1, sass/blocks/_button.sass */
 .button, .button--white, .button--gray, .button--black, .button--blue, .button--purple, .button--red, .button--orange, .button--yellow, .button--green, .button--teal, .button--outline-white, .button--outline-gray, .button--outline-black, .button--outline-blue, .button--outline-purple, .button--outline-red, .button--outline-orange, .button--outline-yellow, .button--outline-green, .button--outline-teal, .button--expand {
+  -webkit-appearance: none;
+  border: 0;
+  cursor: pointer;
   display: inline-block;
   text-align: center;
-  white-space: nowrap;
-  vertical-align: middle;
   text-decoration: none;
-  cursor: pointer;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  -webkit-appearance: none;
-  border: 0;
-  border: 1px solid transparent;
-  padding: 0.375rem 0.75rem;
+  vertical-align: middle;
+  white-space: nowrap;
   font-size: 16px;
   font-size: 1rem;
+  padding: 0.375rem 0.75rem;
   border-radius: 8px;
+  border: 1px solid transparent;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
-/* line 16, sass/mixins/_buttons.sass */
+/* line 17, sass/mixins/_buttons.sass */
 .button + .button, .button--white + .button, .button--gray + .button, .button--black + .button, .button--blue + .button, .button--purple + .button, .button--red + .button, .button--orange + .button, .button--yellow + .button, .button--green + .button, .button--teal + .button, .button--outline-white + .button, .button--outline-gray + .button, .button--outline-black + .button, .button--outline-blue + .button, .button--outline-purple + .button, .button--outline-red + .button, .button--outline-orange + .button, .button--outline-yellow + .button, .button--outline-green + .button, .button--outline-teal + .button, .button--expand + .button, .button + .button--white, .button--white + .button--white, .button--gray + .button--white, .button--black + .button--white, .button--blue + .button--white, .button--purple + .button--white, .button--red + .button--white, .button--orange + .button--white, .button--yellow + .button--white, .button--green + .button--white, .button--teal + .button--white, .button--outline-white + .button--white, .button--outline-gray + .button--white, .button--outline-black + .button--white, .button--outline-blue + .button--white, .button--outline-purple + .button--white, .button--outline-red + .button--white, .button--outline-orange + .button--white, .button--outline-yellow + .button--white, .button--outline-green + .button--white, .button--outline-teal + .button--white, .button--expand + .button--white, .button + .button--gray, .button--white + .button--gray, .button--gray + .button--gray, .button--black + .button--gray, .button--blue + .button--gray, .button--purple + .button--gray, .button--red + .button--gray, .button--orange + .button--gray, .button--yellow + .button--gray, .button--green + .button--gray, .button--teal + .button--gray, .button--outline-white + .button--gray, .button--outline-gray + .button--gray, .button--outline-black + .button--gray, .button--outline-blue + .button--gray, .button--outline-purple + .button--gray, .button--outline-red + .button--gray, .button--outline-orange + .button--gray, .button--outline-yellow + .button--gray, .button--outline-green + .button--gray, .button--outline-teal + .button--gray, .button--expand + .button--gray, .button + .button--black, .button--white + .button--black, .button--gray + .button--black, .button--black + .button--black, .button--blue + .button--black, .button--purple + .button--black, .button--red + .button--black, .button--orange + .button--black, .button--yellow + .button--black, .button--green + .button--black, .button--teal + .button--black, .button--outline-white + .button--black, .button--outline-gray + .button--black, .button--outline-black + .button--black, .button--outline-blue + .button--black, .button--outline-purple + .button--black, .button--outline-red + .button--black, .button--outline-orange + .button--black, .button--outline-yellow + .button--black, .button--outline-green + .button--black, .button--outline-teal + .button--black, .button--expand + .button--black, .button + .button--blue, .button--white + .button--blue, .button--gray + .button--blue, .button--black + .button--blue, .button--blue + .button--blue, .button--purple + .button--blue, .button--red + .button--blue, .button--orange + .button--blue, .button--yellow + .button--blue, .button--green + .button--blue, .button--teal + .button--blue, .button--outline-white + .button--blue, .button--outline-gray + .button--blue, .button--outline-black + .button--blue, .button--outline-blue + .button--blue, .button--outline-purple + .button--blue, .button--outline-red + .button--blue, .button--outline-orange + .button--blue, .button--outline-yellow + .button--blue, .button--outline-green + .button--blue, .button--outline-teal + .button--blue, .button--expand + .button--blue, .button + .button--purple, .button--white + .button--purple, .button--gray + .button--purple, .button--black + .button--purple, .button--blue + .button--purple, .button--purple + .button--purple, .button--red + .button--purple, .button--orange + .button--purple, .button--yellow + .button--purple, .button--green + .button--purple, .button--teal + .button--purple, .button--outline-white + .button--purple, .button--outline-gray + .button--purple, .button--outline-black + .button--purple, .button--outline-blue + .button--purple, .button--outline-purple + .button--purple, .button--outline-red + .button--purple, .button--outline-orange + .button--purple, .button--outline-yellow + .button--purple, .button--outline-green + .button--purple, .button--outline-teal + .button--purple, .button--expand + .button--purple, .button + .button--red, .button--white + .button--red, .button--gray + .button--red, .button--black + .button--red, .button--blue + .button--red, .button--purple + .button--red, .button--red + .button--red, .button--orange + .button--red, .button--yellow + .button--red, .button--green + .button--red, .button--teal + .button--red, .button--outline-white + .button--red, .button--outline-gray + .button--red, .button--outline-black + .button--red, .button--outline-blue + .button--red, .button--outline-purple + .button--red, .button--outline-red + .button--red, .button--outline-orange + .button--red, .button--outline-yellow + .button--red, .button--outline-green + .button--red, .button--outline-teal + .button--red, .button--expand + .button--red, .button + .button--orange, .button--white + .button--orange, .button--gray + .button--orange, .button--black + .button--orange, .button--blue + .button--orange, .button--purple + .button--orange, .button--red + .button--orange, .button--orange + .button--orange, .button--yellow + .button--orange, .button--green + .button--orange, .button--teal + .button--orange, .button--outline-white + .button--orange, .button--outline-gray + .button--orange, .button--outline-black + .button--orange, .button--outline-blue + .button--orange, .button--outline-purple + .button--orange, .button--outline-red + .button--orange, .button--outline-orange + .button--orange, .button--outline-yellow + .button--orange, .button--outline-green + .button--orange, .button--outline-teal + .button--orange, .button--expand + .button--orange, .button + .button--yellow, .button--white + .button--yellow, .button--gray + .button--yellow, .button--black + .button--yellow, .button--blue + .button--yellow, .button--purple + .button--yellow, .button--red + .button--yellow, .button--orange + .button--yellow, .button--yellow + .button--yellow, .button--green + .button--yellow, .button--teal + .button--yellow, .button--outline-white + .button--yellow, .button--outline-gray + .button--yellow, .button--outline-black + .button--yellow, .button--outline-blue + .button--yellow, .button--outline-purple + .button--yellow, .button--outline-red + .button--yellow, .button--outline-orange + .button--yellow, .button--outline-yellow + .button--yellow, .button--outline-green + .button--yellow, .button--outline-teal + .button--yellow, .button--expand + .button--yellow, .button + .button--green, .button--white + .button--green, .button--gray + .button--green, .button--black + .button--green, .button--blue + .button--green, .button--purple + .button--green, .button--red + .button--green, .button--orange + .button--green, .button--yellow + .button--green, .button--green + .button--green, .button--teal + .button--green, .button--outline-white + .button--green, .button--outline-gray + .button--green, .button--outline-black + .button--green, .button--outline-blue + .button--green, .button--outline-purple + .button--green, .button--outline-red + .button--green, .button--outline-orange + .button--green, .button--outline-yellow + .button--green, .button--outline-green + .button--green, .button--outline-teal + .button--green, .button--expand + .button--green, .button + .button--teal, .button--white + .button--teal, .button--gray + .button--teal, .button--black + .button--teal, .button--blue + .button--teal, .button--purple + .button--teal, .button--red + .button--teal, .button--orange + .button--teal, .button--yellow + .button--teal, .button--green + .button--teal, .button--teal + .button--teal, .button--outline-white + .button--teal, .button--outline-gray + .button--teal, .button--outline-black + .button--teal, .button--outline-blue + .button--teal, .button--outline-purple + .button--teal, .button--outline-red + .button--teal, .button--outline-orange + .button--teal, .button--outline-yellow + .button--teal, .button--outline-green + .button--teal, .button--outline-teal + .button--teal, .button--expand + .button--teal, .button + .button--outline-white, .button--white + .button--outline-white, .button--gray + .button--outline-white, .button--black + .button--outline-white, .button--blue + .button--outline-white, .button--purple + .button--outline-white, .button--red + .button--outline-white, .button--orange + .button--outline-white, .button--yellow + .button--outline-white, .button--green + .button--outline-white, .button--teal + .button--outline-white, .button--outline-white + .button--outline-white, .button--outline-gray + .button--outline-white, .button--outline-black + .button--outline-white, .button--outline-blue + .button--outline-white, .button--outline-purple + .button--outline-white, .button--outline-red + .button--outline-white, .button--outline-orange + .button--outline-white, .button--outline-yellow + .button--outline-white, .button--outline-green + .button--outline-white, .button--outline-teal + .button--outline-white, .button--expand + .button--outline-white, .button + .button--outline-gray, .button--white + .button--outline-gray, .button--gray + .button--outline-gray, .button--black + .button--outline-gray, .button--blue + .button--outline-gray, .button--purple + .button--outline-gray, .button--red + .button--outline-gray, .button--orange + .button--outline-gray, .button--yellow + .button--outline-gray, .button--green + .button--outline-gray, .button--teal + .button--outline-gray, .button--outline-white + .button--outline-gray, .button--outline-gray + .button--outline-gray, .button--outline-black + .button--outline-gray, .button--outline-blue + .button--outline-gray, .button--outline-purple + .button--outline-gray, .button--outline-red + .button--outline-gray, .button--outline-orange + .button--outline-gray, .button--outline-yellow + .button--outline-gray, .button--outline-green + .button--outline-gray, .button--outline-teal + .button--outline-gray, .button--expand + .button--outline-gray, .button + .button--outline-black, .button--white + .button--outline-black, .button--gray + .button--outline-black, .button--black + .button--outline-black, .button--blue + .button--outline-black, .button--purple + .button--outline-black, .button--red + .button--outline-black, .button--orange + .button--outline-black, .button--yellow + .button--outline-black, .button--green + .button--outline-black, .button--teal + .button--outline-black, .button--outline-white + .button--outline-black, .button--outline-gray + .button--outline-black, .button--outline-black + .button--outline-black, .button--outline-blue + .button--outline-black, .button--outline-purple + .button--outline-black, .button--outline-red + .button--outline-black, .button--outline-orange + .button--outline-black, .button--outline-yellow + .button--outline-black, .button--outline-green + .button--outline-black, .button--outline-teal + .button--outline-black, .button--expand + .button--outline-black, .button + .button--outline-blue, .button--white + .button--outline-blue, .button--gray + .button--outline-blue, .button--black + .button--outline-blue, .button--blue + .button--outline-blue, .button--purple + .button--outline-blue, .button--red + .button--outline-blue, .button--orange + .button--outline-blue, .button--yellow + .button--outline-blue, .button--green + .button--outline-blue, .button--teal + .button--outline-blue, .button--outline-white + .button--outline-blue, .button--outline-gray + .button--outline-blue, .button--outline-black + .button--outline-blue, .button--outline-blue + .button--outline-blue, .button--outline-purple + .button--outline-blue, .button--outline-red + .button--outline-blue, .button--outline-orange + .button--outline-blue, .button--outline-yellow + .button--outline-blue, .button--outline-green + .button--outline-blue, .button--outline-teal + .button--outline-blue, .button--expand + .button--outline-blue, .button + .button--outline-purple, .button--white + .button--outline-purple, .button--gray + .button--outline-purple, .button--black + .button--outline-purple, .button--blue + .button--outline-purple, .button--purple + .button--outline-purple, .button--red + .button--outline-purple, .button--orange + .button--outline-purple, .button--yellow + .button--outline-purple, .button--green + .button--outline-purple, .button--teal + .button--outline-purple, .button--outline-white + .button--outline-purple, .button--outline-gray + .button--outline-purple, .button--outline-black + .button--outline-purple, .button--outline-blue + .button--outline-purple, .button--outline-purple + .button--outline-purple, .button--outline-red + .button--outline-purple, .button--outline-orange + .button--outline-purple, .button--outline-yellow + .button--outline-purple, .button--outline-green + .button--outline-purple, .button--outline-teal + .button--outline-purple, .button--expand + .button--outline-purple, .button + .button--outline-red, .button--white + .button--outline-red, .button--gray + .button--outline-red, .button--black + .button--outline-red, .button--blue + .button--outline-red, .button--purple + .button--outline-red, .button--red + .button--outline-red, .button--orange + .button--outline-red, .button--yellow + .button--outline-red, .button--green + .button--outline-red, .button--teal + .button--outline-red, .button--outline-white + .button--outline-red, .button--outline-gray + .button--outline-red, .button--outline-black + .button--outline-red, .button--outline-blue + .button--outline-red, .button--outline-purple + .button--outline-red, .button--outline-red + .button--outline-red, .button--outline-orange + .button--outline-red, .button--outline-yellow + .button--outline-red, .button--outline-green + .button--outline-red, .button--outline-teal + .button--outline-red, .button--expand + .button--outline-red, .button + .button--outline-orange, .button--white + .button--outline-orange, .button--gray + .button--outline-orange, .button--black + .button--outline-orange, .button--blue + .button--outline-orange, .button--purple + .button--outline-orange, .button--red + .button--outline-orange, .button--orange + .button--outline-orange, .button--yellow + .button--outline-orange, .button--green + .button--outline-orange, .button--teal + .button--outline-orange, .button--outline-white + .button--outline-orange, .button--outline-gray + .button--outline-orange, .button--outline-black + .button--outline-orange, .button--outline-blue + .button--outline-orange, .button--outline-purple + .button--outline-orange, .button--outline-red + .button--outline-orange, .button--outline-orange + .button--outline-orange, .button--outline-yellow + .button--outline-orange, .button--outline-green + .button--outline-orange, .button--outline-teal + .button--outline-orange, .button--expand + .button--outline-orange, .button + .button--outline-yellow, .button--white + .button--outline-yellow, .button--gray + .button--outline-yellow, .button--black + .button--outline-yellow, .button--blue + .button--outline-yellow, .button--purple + .button--outline-yellow, .button--red + .button--outline-yellow, .button--orange + .button--outline-yellow, .button--yellow + .button--outline-yellow, .button--green + .button--outline-yellow, .button--teal + .button--outline-yellow, .button--outline-white + .button--outline-yellow, .button--outline-gray + .button--outline-yellow, .button--outline-black + .button--outline-yellow, .button--outline-blue + .button--outline-yellow, .button--outline-purple + .button--outline-yellow, .button--outline-red + .button--outline-yellow, .button--outline-orange + .button--outline-yellow, .button--outline-yellow + .button--outline-yellow, .button--outline-green + .button--outline-yellow, .button--outline-teal + .button--outline-yellow, .button--expand + .button--outline-yellow, .button + .button--outline-green, .button--white + .button--outline-green, .button--gray + .button--outline-green, .button--black + .button--outline-green, .button--blue + .button--outline-green, .button--purple + .button--outline-green, .button--red + .button--outline-green, .button--orange + .button--outline-green, .button--yellow + .button--outline-green, .button--green + .button--outline-green, .button--teal + .button--outline-green, .button--outline-white + .button--outline-green, .button--outline-gray + .button--outline-green, .button--outline-black + .button--outline-green, .button--outline-blue + .button--outline-green, .button--outline-purple + .button--outline-green, .button--outline-red + .button--outline-green, .button--outline-orange + .button--outline-green, .button--outline-yellow + .button--outline-green, .button--outline-green + .button--outline-green, .button--outline-teal + .button--outline-green, .button--expand + .button--outline-green, .button + .button--outline-teal, .button--white + .button--outline-teal, .button--gray + .button--outline-teal, .button--black + .button--outline-teal, .button--blue + .button--outline-teal, .button--purple + .button--outline-teal, .button--red + .button--outline-teal, .button--orange + .button--outline-teal, .button--yellow + .button--outline-teal, .button--green + .button--outline-teal, .button--teal + .button--outline-teal, .button--outline-white + .button--outline-teal, .button--outline-gray + .button--outline-teal, .button--outline-black + .button--outline-teal, .button--outline-blue + .button--outline-teal, .button--outline-purple + .button--outline-teal, .button--outline-red + .button--outline-teal, .button--outline-orange + .button--outline-teal, .button--outline-yellow + .button--outline-teal, .button--outline-green + .button--outline-teal, .button--outline-teal + .button--outline-teal, .button--expand + .button--outline-teal, .button + .button--expand, .button--white + .button--expand, .button--gray + .button--expand, .button--black + .button--expand, .button--blue + .button--expand, .button--purple + .button--expand, .button--red + .button--expand, .button--orange + .button--expand, .button--yellow + .button--expand, .button--green + .button--expand, .button--teal + .button--expand, .button--outline-white + .button--expand, .button--outline-gray + .button--expand, .button--outline-black + .button--expand, .button--outline-blue + .button--expand, .button--outline-purple + .button--expand, .button--outline-red + .button--expand, .button--outline-orange + .button--expand, .button--outline-yellow + .button--expand, .button--outline-green + .button--expand, .button--outline-teal + .button--expand, .button--expand + .button--expand {
   margin-left: 12px;
 }
@@ -4768,574 +4885,434 @@ legend {
   text-decoration: none;
 }
 
-/* line 23, sass/mixins/_buttons.sass */
+/* line 24, sass/mixins/_buttons.sass */
 .button:focus, .button--white:focus, .button--gray:focus, .button--black:focus, .button--blue:focus, .button--purple:focus, .button--red:focus, .button--orange:focus, .button--yellow:focus, .button--green:focus, .button--teal:focus, .button--outline-white:focus, .button--outline-gray:focus, .button--outline-black:focus, .button--outline-blue:focus, .button--outline-purple:focus, .button--outline-red:focus, .button--outline-orange:focus, .button--outline-yellow:focus, .button--outline-green:focus, .button--outline-teal:focus, .button--expand:focus, .button.focus, .focus.button--white, .focus.button--gray, .focus.button--black, .focus.button--blue, .focus.button--purple, .focus.button--red, .focus.button--orange, .focus.button--yellow, .focus.button--green, .focus.button--teal, .focus.button--outline-white, .focus.button--outline-gray, .focus.button--outline-black, .focus.button--outline-blue, .focus.button--outline-purple, .focus.button--outline-red, .focus.button--outline-orange, .focus.button--outline-yellow, .focus.button--outline-green, .focus.button--outline-teal, .focus.button--expand {
   outline: 0;
 }
 
-/* line 28, sass/mixins/_buttons.sass */
+/* line 29, sass/mixins/_buttons.sass */
 .button.disabled, .disabled.button--white, .disabled.button--gray, .disabled.button--black, .disabled.button--blue, .disabled.button--purple, .disabled.button--red, .disabled.button--orange, .disabled.button--yellow, .disabled.button--green, .disabled.button--teal, .disabled.button--outline-white, .disabled.button--outline-gray, .disabled.button--outline-black, .disabled.button--outline-blue, .disabled.button--outline-purple, .disabled.button--outline-red, .disabled.button--outline-orange, .disabled.button--outline-yellow, .disabled.button--outline-green, .disabled.button--outline-teal, .disabled.button--expand, .button:disabled, .button--white:disabled, .button--gray:disabled, .button--black:disabled, .button--blue:disabled, .button--purple:disabled, .button--red:disabled, .button--orange:disabled, .button--yellow:disabled, .button--green:disabled, .button--teal:disabled, .button--outline-white:disabled, .button--outline-gray:disabled, .button--outline-black:disabled, .button--outline-blue:disabled, .button--outline-purple:disabled, .button--outline-red:disabled, .button--outline-orange:disabled, .button--outline-yellow:disabled, .button--outline-green:disabled, .button--outline-teal:disabled, .button--expand:disabled {
   opacity: 0.65;
 }
 
 /* line 20, sass/blocks/_button.sass */
 .button--white {
-  color: #000000;
   background-color: #ffffff;
   border-color: #ffffff;
+  color: #000000;
 }
 
 /* line 11, sass/mixins/_hover.sass */
 .button--white:hover {
-  color: #000000;
   background-color: #ececec;
   border-color: #e6e6e6;
+  color: #000000;
 }
 
-/* line 43, sass/mixins/_buttons.sass */
+/* line 44, sass/mixins/_buttons.sass */
 .button--white.disabled, .button--white:disabled {
-  color: #000000;
   background-color: #ffffff;
   border-color: #ffffff;
-}
-
-/* line 49, sass/mixins/_buttons.sass */
-.button--white:not(:disabled):not(.disabled):active, .button--white:not(:disabled):not(.disabled).is-active {
   color: #000000;
-  background-color: #e6e6e6;
-  border-color: #dfdfdf;
 }
 
 /* line 20, sass/blocks/_button.sass */
 .button--gray {
-  color: #ffffff;
   background-color: #6c757d;
   border-color: #6c757d;
+  color: #ffffff;
 }
 
 /* line 11, sass/mixins/_hover.sass */
 .button--gray:hover {
-  color: #ffffff;
   background-color: #5a6268;
   border-color: #545b62;
+  color: #ffffff;
 }
 
-/* line 43, sass/mixins/_buttons.sass */
+/* line 44, sass/mixins/_buttons.sass */
 .button--gray.disabled, .button--gray:disabled {
-  color: #ffffff;
   background-color: #6c757d;
   border-color: #6c757d;
-}
-
-/* line 49, sass/mixins/_buttons.sass */
-.button--gray:not(:disabled):not(.disabled):active, .button--gray:not(:disabled):not(.disabled).is-active {
   color: #ffffff;
-  background-color: #545b62;
-  border-color: #4e555b;
 }
 
 /* line 20, sass/blocks/_button.sass */
 .button--black {
-  color: #ffffff;
   background-color: #000000;
   border-color: #000000;
+  color: #ffffff;
 }
 
 /* line 11, sass/mixins/_hover.sass */
 .button--black:hover {
-  color: #ffffff;
   background-color: black;
   border-color: black;
+  color: #ffffff;
 }
 
-/* line 43, sass/mixins/_buttons.sass */
+/* line 44, sass/mixins/_buttons.sass */
 .button--black.disabled, .button--black:disabled {
-  color: #ffffff;
   background-color: #000000;
   border-color: #000000;
-}
-
-/* line 49, sass/mixins/_buttons.sass */
-.button--black:not(:disabled):not(.disabled):active, .button--black:not(:disabled):not(.disabled).is-active {
   color: #ffffff;
-  background-color: black;
-  border-color: black;
 }
 
 /* line 20, sass/blocks/_button.sass */
 .button--blue {
-  color: #ffffff;
   background-color: #007bff;
   border-color: #007bff;
+  color: #ffffff;
 }
 
 /* line 11, sass/mixins/_hover.sass */
 .button--blue:hover {
-  color: #ffffff;
   background-color: #0069d9;
   border-color: #0062cc;
+  color: #ffffff;
 }
 
-/* line 43, sass/mixins/_buttons.sass */
+/* line 44, sass/mixins/_buttons.sass */
 .button--blue.disabled, .button--blue:disabled {
-  color: #ffffff;
   background-color: #007bff;
   border-color: #007bff;
-}
-
-/* line 49, sass/mixins/_buttons.sass */
-.button--blue:not(:disabled):not(.disabled):active, .button--blue:not(:disabled):not(.disabled).is-active {
   color: #ffffff;
-  background-color: #0062cc;
-  border-color: #005cbf;
 }
 
 /* line 20, sass/blocks/_button.sass */
 .button--purple {
+  background-color: #524ad0;
+  border-color: #524ad0;
   color: #ffffff;
-  background-color: #6f42c1;
-  border-color: #6f42c1;
 }
 
 /* line 11, sass/mixins/_hover.sass */
 .button--purple:hover {
+  background-color: #3b32c2;
+  border-color: #3830b7;
   color: #ffffff;
-  background-color: #5e37a6;
-  border-color: #59339d;
 }
 
-/* line 43, sass/mixins/_buttons.sass */
+/* line 44, sass/mixins/_buttons.sass */
 .button--purple.disabled, .button--purple:disabled {
+  background-color: #524ad0;
+  border-color: #524ad0;
   color: #ffffff;
-  background-color: #6f42c1;
-  border-color: #6f42c1;
-}
-
-/* line 49, sass/mixins/_buttons.sass */
-.button--purple:not(:disabled):not(.disabled):active, .button--purple:not(:disabled):not(.disabled).is-active {
-  color: #ffffff;
-  background-color: #59339d;
-  border-color: #533093;
 }
 
 /* line 20, sass/blocks/_button.sass */
 .button--red {
-  color: #ffffff;
   background-color: #dc3545;
   border-color: #dc3545;
+  color: #ffffff;
 }
 
 /* line 11, sass/mixins/_hover.sass */
 .button--red:hover {
-  color: #ffffff;
   background-color: #c82333;
   border-color: #bd2130;
+  color: #ffffff;
 }
 
-/* line 43, sass/mixins/_buttons.sass */
+/* line 44, sass/mixins/_buttons.sass */
 .button--red.disabled, .button--red:disabled {
-  color: #ffffff;
   background-color: #dc3545;
   border-color: #dc3545;
-}
-
-/* line 49, sass/mixins/_buttons.sass */
-.button--red:not(:disabled):not(.disabled):active, .button--red:not(:disabled):not(.disabled).is-active {
   color: #ffffff;
-  background-color: #bd2130;
-  border-color: #b21f2d;
 }
 
 /* line 20, sass/blocks/_button.sass */
 .button--orange {
-  color: #000000;
   background-color: #fd7e14;
   border-color: #fd7e14;
+  color: #000000;
 }
 
 /* line 11, sass/mixins/_hover.sass */
 .button--orange:hover {
-  color: #ffffff;
   background-color: #e96b02;
   border-color: #dc6502;
+  color: #ffffff;
 }
 
-/* line 43, sass/mixins/_buttons.sass */
+/* line 44, sass/mixins/_buttons.sass */
 .button--orange.disabled, .button--orange:disabled {
-  color: #000000;
   background-color: #fd7e14;
   border-color: #fd7e14;
-}
-
-/* line 49, sass/mixins/_buttons.sass */
-.button--orange:not(:disabled):not(.disabled):active, .button--orange:not(:disabled):not(.disabled).is-active {
-  color: #ffffff;
-  background-color: #dc6502;
-  border-color: #cf5f02;
+  color: #000000;
 }
 
 /* line 20, sass/blocks/_button.sass */
 .button--yellow {
-  color: #000000;
   background-color: #ffc107;
   border-color: #ffc107;
+  color: #000000;
 }
 
 /* line 11, sass/mixins/_hover.sass */
 .button--yellow:hover {
-  color: #000000;
   background-color: #e0a800;
   border-color: #d39e00;
+  color: #000000;
 }
 
-/* line 43, sass/mixins/_buttons.sass */
+/* line 44, sass/mixins/_buttons.sass */
 .button--yellow.disabled, .button--yellow:disabled {
-  color: #000000;
   background-color: #ffc107;
   border-color: #ffc107;
-}
-
-/* line 49, sass/mixins/_buttons.sass */
-.button--yellow:not(:disabled):not(.disabled):active, .button--yellow:not(:disabled):not(.disabled).is-active {
   color: #000000;
-  background-color: #d39e00;
-  border-color: #c69500;
 }
 
 /* line 20, sass/blocks/_button.sass */
 .button--green {
-  color: #ffffff;
   background-color: #28a745;
   border-color: #28a745;
+  color: #ffffff;
 }
 
 /* line 11, sass/mixins/_hover.sass */
 .button--green:hover {
-  color: #ffffff;
   background-color: #218838;
   border-color: #1e7e34;
+  color: #ffffff;
 }
 
-/* line 43, sass/mixins/_buttons.sass */
+/* line 44, sass/mixins/_buttons.sass */
 .button--green.disabled, .button--green:disabled {
-  color: #ffffff;
   background-color: #28a745;
   border-color: #28a745;
-}
-
-/* line 49, sass/mixins/_buttons.sass */
-.button--green:not(:disabled):not(.disabled):active, .button--green:not(:disabled):not(.disabled).is-active {
   color: #ffffff;
-  background-color: #1e7e34;
-  border-color: #1c7430;
 }
 
 /* line 20, sass/blocks/_button.sass */
 .button--teal {
-  color: #ffffff;
   background-color: #20c997;
   border-color: #20c997;
+  color: #ffffff;
 }
 
 /* line 11, sass/mixins/_hover.sass */
 .button--teal:hover {
-  color: #ffffff;
   background-color: #1ba87e;
   border-color: #199d76;
+  color: #ffffff;
 }
 
-/* line 43, sass/mixins/_buttons.sass */
+/* line 44, sass/mixins/_buttons.sass */
 .button--teal.disabled, .button--teal:disabled {
-  color: #ffffff;
   background-color: #20c997;
   border-color: #20c997;
-}
-
-/* line 49, sass/mixins/_buttons.sass */
-.button--teal:not(:disabled):not(.disabled):active, .button--teal:not(:disabled):not(.disabled).is-active {
   color: #ffffff;
-  background-color: #199d76;
-  border-color: #17926e;
 }
 
 /* line 25, sass/blocks/_button.sass */
 .button--outline-white {
-  color: #ffffff;
   background-color: transparent;
   background-image: none;
   border-color: #ffffff;
-}
-
-/* line 64, sass/mixins/_buttons.sass */
-.button--outline-white:hover {
-  color: #000000;
-  background-color: #ffffff;
-  border-color: #ffffff;
-}
-
-/* line 69, sass/mixins/_buttons.sass */
-.button--outline-white.disabled, .button--outline-white:disabled {
   color: #ffffff;
-  background-color: transparent;
 }
 
-/* line 74, sass/mixins/_buttons.sass */
-.button--outline-white:not(:disabled):not(.disabled):active, .button--outline-white:not(:disabled):not(.disabled).is-active {
-  color: #000000;
+/* line 55, sass/mixins/_buttons.sass */
+.button--outline-white:hover {
   background-color: #ffffff;
   border-color: #ffffff;
+  color: #000000;
+}
+
+/* line 60, sass/mixins/_buttons.sass */
+.button--outline-white.disabled, .button--outline-white:disabled {
+  background-color: transparent;
+  color: #ffffff;
 }
 
 /* line 25, sass/blocks/_button.sass */
 .button--outline-gray {
-  color: #6c757d;
   background-color: transparent;
   background-image: none;
   border-color: #6c757d;
-}
-
-/* line 64, sass/mixins/_buttons.sass */
-.button--outline-gray:hover {
-  color: #ffffff;
-  background-color: #6c757d;
-  border-color: #6c757d;
-}
-
-/* line 69, sass/mixins/_buttons.sass */
-.button--outline-gray.disabled, .button--outline-gray:disabled {
   color: #6c757d;
-  background-color: transparent;
 }
 
-/* line 74, sass/mixins/_buttons.sass */
-.button--outline-gray:not(:disabled):not(.disabled):active, .button--outline-gray:not(:disabled):not(.disabled).is-active {
-  color: #ffffff;
+/* line 55, sass/mixins/_buttons.sass */
+.button--outline-gray:hover {
   background-color: #6c757d;
   border-color: #6c757d;
+  color: #ffffff;
+}
+
+/* line 60, sass/mixins/_buttons.sass */
+.button--outline-gray.disabled, .button--outline-gray:disabled {
+  background-color: transparent;
+  color: #6c757d;
 }
 
 /* line 25, sass/blocks/_button.sass */
 .button--outline-black {
-  color: #000000;
   background-color: transparent;
   background-image: none;
   border-color: #000000;
-}
-
-/* line 64, sass/mixins/_buttons.sass */
-.button--outline-black:hover {
-  color: #ffffff;
-  background-color: #000000;
-  border-color: #000000;
-}
-
-/* line 69, sass/mixins/_buttons.sass */
-.button--outline-black.disabled, .button--outline-black:disabled {
   color: #000000;
-  background-color: transparent;
 }
 
-/* line 74, sass/mixins/_buttons.sass */
-.button--outline-black:not(:disabled):not(.disabled):active, .button--outline-black:not(:disabled):not(.disabled).is-active {
-  color: #ffffff;
+/* line 55, sass/mixins/_buttons.sass */
+.button--outline-black:hover {
   background-color: #000000;
   border-color: #000000;
+  color: #ffffff;
+}
+
+/* line 60, sass/mixins/_buttons.sass */
+.button--outline-black.disabled, .button--outline-black:disabled {
+  background-color: transparent;
+  color: #000000;
 }
 
 /* line 25, sass/blocks/_button.sass */
 .button--outline-blue {
-  color: #007bff;
   background-color: transparent;
   background-image: none;
   border-color: #007bff;
-}
-
-/* line 64, sass/mixins/_buttons.sass */
-.button--outline-blue:hover {
-  color: #ffffff;
-  background-color: #007bff;
-  border-color: #007bff;
-}
-
-/* line 69, sass/mixins/_buttons.sass */
-.button--outline-blue.disabled, .button--outline-blue:disabled {
   color: #007bff;
-  background-color: transparent;
 }
 
-/* line 74, sass/mixins/_buttons.sass */
-.button--outline-blue:not(:disabled):not(.disabled):active, .button--outline-blue:not(:disabled):not(.disabled).is-active {
-  color: #ffffff;
+/* line 55, sass/mixins/_buttons.sass */
+.button--outline-blue:hover {
   background-color: #007bff;
   border-color: #007bff;
+  color: #ffffff;
+}
+
+/* line 60, sass/mixins/_buttons.sass */
+.button--outline-blue.disabled, .button--outline-blue:disabled {
+  background-color: transparent;
+  color: #007bff;
 }
 
 /* line 25, sass/blocks/_button.sass */
 .button--outline-purple {
-  color: #6f42c1;
   background-color: transparent;
   background-image: none;
-  border-color: #6f42c1;
+  border-color: #524ad0;
+  color: #524ad0;
 }
 
-/* line 64, sass/mixins/_buttons.sass */
+/* line 55, sass/mixins/_buttons.sass */
 .button--outline-purple:hover {
+  background-color: #524ad0;
+  border-color: #524ad0;
   color: #ffffff;
-  background-color: #6f42c1;
-  border-color: #6f42c1;
 }
 
-/* line 69, sass/mixins/_buttons.sass */
+/* line 60, sass/mixins/_buttons.sass */
 .button--outline-purple.disabled, .button--outline-purple:disabled {
-  color: #6f42c1;
   background-color: transparent;
-}
-
-/* line 74, sass/mixins/_buttons.sass */
-.button--outline-purple:not(:disabled):not(.disabled):active, .button--outline-purple:not(:disabled):not(.disabled).is-active {
-  color: #ffffff;
-  background-color: #6f42c1;
-  border-color: #6f42c1;
+  color: #524ad0;
 }
 
 /* line 25, sass/blocks/_button.sass */
 .button--outline-red {
-  color: #dc3545;
   background-color: transparent;
   background-image: none;
   border-color: #dc3545;
-}
-
-/* line 64, sass/mixins/_buttons.sass */
-.button--outline-red:hover {
-  color: #ffffff;
-  background-color: #dc3545;
-  border-color: #dc3545;
-}
-
-/* line 69, sass/mixins/_buttons.sass */
-.button--outline-red.disabled, .button--outline-red:disabled {
   color: #dc3545;
-  background-color: transparent;
 }
 
-/* line 74, sass/mixins/_buttons.sass */
-.button--outline-red:not(:disabled):not(.disabled):active, .button--outline-red:not(:disabled):not(.disabled).is-active {
-  color: #ffffff;
+/* line 55, sass/mixins/_buttons.sass */
+.button--outline-red:hover {
   background-color: #dc3545;
   border-color: #dc3545;
+  color: #ffffff;
+}
+
+/* line 60, sass/mixins/_buttons.sass */
+.button--outline-red.disabled, .button--outline-red:disabled {
+  background-color: transparent;
+  color: #dc3545;
 }
 
 /* line 25, sass/blocks/_button.sass */
 .button--outline-orange {
-  color: #fd7e14;
   background-color: transparent;
   background-image: none;
   border-color: #fd7e14;
-}
-
-/* line 64, sass/mixins/_buttons.sass */
-.button--outline-orange:hover {
-  color: #000000;
-  background-color: #fd7e14;
-  border-color: #fd7e14;
-}
-
-/* line 69, sass/mixins/_buttons.sass */
-.button--outline-orange.disabled, .button--outline-orange:disabled {
   color: #fd7e14;
-  background-color: transparent;
 }
 
-/* line 74, sass/mixins/_buttons.sass */
-.button--outline-orange:not(:disabled):not(.disabled):active, .button--outline-orange:not(:disabled):not(.disabled).is-active {
-  color: #000000;
+/* line 55, sass/mixins/_buttons.sass */
+.button--outline-orange:hover {
   background-color: #fd7e14;
   border-color: #fd7e14;
+  color: #000000;
+}
+
+/* line 60, sass/mixins/_buttons.sass */
+.button--outline-orange.disabled, .button--outline-orange:disabled {
+  background-color: transparent;
+  color: #fd7e14;
 }
 
 /* line 25, sass/blocks/_button.sass */
 .button--outline-yellow {
-  color: #ffc107;
   background-color: transparent;
   background-image: none;
   border-color: #ffc107;
-}
-
-/* line 64, sass/mixins/_buttons.sass */
-.button--outline-yellow:hover {
-  color: #000000;
-  background-color: #ffc107;
-  border-color: #ffc107;
-}
-
-/* line 69, sass/mixins/_buttons.sass */
-.button--outline-yellow.disabled, .button--outline-yellow:disabled {
   color: #ffc107;
-  background-color: transparent;
 }
 
-/* line 74, sass/mixins/_buttons.sass */
-.button--outline-yellow:not(:disabled):not(.disabled):active, .button--outline-yellow:not(:disabled):not(.disabled).is-active {
-  color: #000000;
+/* line 55, sass/mixins/_buttons.sass */
+.button--outline-yellow:hover {
   background-color: #ffc107;
   border-color: #ffc107;
+  color: #000000;
+}
+
+/* line 60, sass/mixins/_buttons.sass */
+.button--outline-yellow.disabled, .button--outline-yellow:disabled {
+  background-color: transparent;
+  color: #ffc107;
 }
 
 /* line 25, sass/blocks/_button.sass */
 .button--outline-green {
-  color: #28a745;
   background-color: transparent;
   background-image: none;
   border-color: #28a745;
-}
-
-/* line 64, sass/mixins/_buttons.sass */
-.button--outline-green:hover {
-  color: #ffffff;
-  background-color: #28a745;
-  border-color: #28a745;
-}
-
-/* line 69, sass/mixins/_buttons.sass */
-.button--outline-green.disabled, .button--outline-green:disabled {
   color: #28a745;
-  background-color: transparent;
 }
 
-/* line 74, sass/mixins/_buttons.sass */
-.button--outline-green:not(:disabled):not(.disabled):active, .button--outline-green:not(:disabled):not(.disabled).is-active {
-  color: #ffffff;
+/* line 55, sass/mixins/_buttons.sass */
+.button--outline-green:hover {
   background-color: #28a745;
   border-color: #28a745;
+  color: #ffffff;
+}
+
+/* line 60, sass/mixins/_buttons.sass */
+.button--outline-green.disabled, .button--outline-green:disabled {
+  background-color: transparent;
+  color: #28a745;
 }
 
 /* line 25, sass/blocks/_button.sass */
 .button--outline-teal {
-  color: #20c997;
   background-color: transparent;
   background-image: none;
   border-color: #20c997;
-}
-
-/* line 64, sass/mixins/_buttons.sass */
-.button--outline-teal:hover {
-  color: #ffffff;
-  background-color: #20c997;
-  border-color: #20c997;
-}
-
-/* line 69, sass/mixins/_buttons.sass */
-.button--outline-teal.disabled, .button--outline-teal:disabled {
   color: #20c997;
-  background-color: transparent;
 }
 
-/* line 74, sass/mixins/_buttons.sass */
-.button--outline-teal:not(:disabled):not(.disabled):active, .button--outline-teal:not(:disabled):not(.disabled).is-active {
-  color: #ffffff;
+/* line 55, sass/mixins/_buttons.sass */
+.button--outline-teal:hover {
   background-color: #20c997;
   border-color: #20c997;
+  color: #ffffff;
+}
+
+/* line 60, sass/mixins/_buttons.sass */
+.button--outline-teal.disabled, .button--outline-teal:disabled {
+  background-color: transparent;
+  color: #20c997;
 }
 
 /* line 32, sass/blocks/_button.sass */
@@ -5359,10 +5336,11 @@ input[type="button"].button--expand {
 
 /* line 1, sass/blocks/_canvas.sass */
 .canvas {
+  overflow: hidden;
   position: relative;
 }
 
-/* line 4, sass/blocks/_canvas.sass */
+/* line 5, sass/blocks/_canvas.sass */
 .canvas.is-shifted {
   position: absolute;
   top: 0px;
@@ -5372,26 +5350,26 @@ input[type="button"].button--expand {
   overflow: hidden;
 }
 
-/* line 8, sass/blocks/_canvas.sass */
+/* line 9, sass/blocks/_canvas.sass */
 .canvas__main {
   transition: all 1s cubic-bezier(0.55, 0, 0.1, 1);
 }
 
-/* line 11, sass/blocks/_canvas.sass */
+/* line 12, sass/blocks/_canvas.sass */
 .canvas__aside {
-  z-index: 2;
-  overflow-y: auto;
   background-color: #6c757d;
-  position: absolute;
-  box-shadow: 0 0 0 transparent;
-  top: 0;
   bottom: 0;
+  box-shadow: 0 0 0 transparent;
+  overflow-y: auto;
+  position: absolute;
+  top: 0;
   transition: box-shadow 0.5s cubic-bezier(0.55, 0, 0.1, 1), -webkit-transform 0.5s cubic-bezier(0.55, 0, 0.1, 1);
   transition: transform 0.5s cubic-bezier(0.55, 0, 0.1, 1), box-shadow 0.5s cubic-bezier(0.55, 0, 0.1, 1);
   transition: transform 0.5s cubic-bezier(0.55, 0, 0.1, 1), box-shadow 0.5s cubic-bezier(0.55, 0, 0.1, 1), -webkit-transform 0.5s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: 2;
 }
 
-/* line 21, sass/blocks/_canvas.sass */
+/* line 22, sass/blocks/_canvas.sass */
 .canvas.is-shifted .canvas__aside {
   box-shadow: 3px 0 5px rgba(108, 117, 125, 0.5);
 }
@@ -5447,7 +5425,7 @@ input[type="button"].button--expand {
 /* line 7, sass/blocks/_card.sass */
 .card--gray {
   background-color: #6c757d;
-  color: #fff;
+  color: #ffffff;
 }
 
 @supports (--css: variables) {
@@ -5461,7 +5439,7 @@ input[type="button"].button--expand {
 /* line 7, sass/blocks/_card.sass */
 .card--black {
   background-color: #000000;
-  color: #fff;
+  color: #ffffff;
 }
 
 @supports (--css: variables) {
@@ -5475,7 +5453,7 @@ input[type="button"].button--expand {
 /* line 7, sass/blocks/_card.sass */
 .card--blue {
   background-color: #007bff;
-  color: #fff;
+  color: #ffffff;
 }
 
 @supports (--css: variables) {
@@ -5488,8 +5466,8 @@ input[type="button"].button--expand {
 
 /* line 7, sass/blocks/_card.sass */
 .card--purple {
-  background-color: #6f42c1;
-  color: #fff;
+  background-color: #524ad0;
+  color: #ffffff;
 }
 
 @supports (--css: variables) {
@@ -5503,7 +5481,7 @@ input[type="button"].button--expand {
 /* line 7, sass/blocks/_card.sass */
 .card--red {
   background-color: #dc3545;
-  color: #fff;
+  color: #ffffff;
 }
 
 @supports (--css: variables) {
@@ -5517,7 +5495,7 @@ input[type="button"].button--expand {
 /* line 7, sass/blocks/_card.sass */
 .card--orange {
   background-color: #fd7e14;
-  color: #fff;
+  color: #ffffff;
 }
 
 @supports (--css: variables) {
@@ -5545,7 +5523,7 @@ input[type="button"].button--expand {
 /* line 7, sass/blocks/_card.sass */
 .card--green {
   background-color: #28a745;
-  color: #fff;
+  color: #ffffff;
 }
 
 @supports (--css: variables) {
@@ -5559,7 +5537,7 @@ input[type="button"].button--expand {
 /* line 7, sass/blocks/_card.sass */
 .card--teal {
   background-color: #20c997;
-  color: #fff;
+  color: #ffffff;
 }
 
 @supports (--css: variables) {
@@ -5586,20 +5564,25 @@ input[type="button"].button--expand {
 .card__header__title {
   font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-weight: 600;
+  padding: 6px;
+  padding: 0.375rem;
   align-items: center;
   display: flex;
   flex-grow: 1;
-  padding: 6px;
-  padding: 0.375rem;
 }
 
-/* line 31, sass/blocks/_card.sass */
+/* line 29, sass/blocks/_card.sass */
+.card__header__subtitle {
+  display: block;
+}
+
+/* line 32, sass/blocks/_card.sass */
 .card__content {
   padding: 24px;
   padding: 1.5rem;
 }
 
-/* line 34, sass/blocks/_card.sass */
+/* line 35, sass/blocks/_card.sass */
 .card__footer {
   align-items: stretch;
   display: flex;
@@ -5620,30 +5603,30 @@ input[type="button"].button--expand {
   position: fixed;
   top: 0;
   left: 0;
-  content: "";
-  width: 100%;
-  height: 100%;
-  z-index: 1001;
   background-color: rgba(0, 0, 0, 0.8);
+  content: "";
+  height: 100%;
+  width: 100%;
+  z-index: 1001;
 }
 
 /* line 15, sass/blocks/_dialog.sass */
 .dialog__frame {
-  position: fixed;
   left: 50%;
+  position: fixed;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  top: 50%;
-  left: 50%;
-  width: 90%;
-  max-width: 60rem;
-  max-height: 90%;
-  z-index: 1002;
-  box-sizing: border-box;
   -webkit-overflow-scrolling: touch;
   background-color: white;
+  box-sizing: border-box;
+  left: 50%;
+  max-height: 90%;
+  max-width: 60rem;
   overflow-y: auto;
+  top: 50%;
+  width: 90%;
+  z-index: 1002;
 }
 
 /* line 28, sass/blocks/_dialog.sass */
@@ -5663,12 +5646,12 @@ input[type="button"].button--expand {
 
 /* line 4, sass/blocks/_empty.sass */
 .empty {
+  padding: 24px;
+  padding: 1.5rem;
   background: "#ededed";
   border-radius: 5px;
   color: #6c757d;
   text-align: center;
-  padding: 24px;
-  padding: 1.5rem;
 }
 
 /* line 11, sass/blocks/_empty.sass */
@@ -5718,40 +5701,41 @@ input[type="button"].button--expand {
 /* line 25, sass/blocks/_flag.sass */
 .flag__image {
   padding-right: 24px;
+  width: 25%;
 }
 
-/* line 28, sass/blocks/_flag.sass */
+/* line 29, sass/blocks/_flag.sass */
 .flag__image > img {
   display: block;
   max-width: none;
 }
 
-/* line 32, sass/blocks/_flag.sass */
+/* line 33, sass/blocks/_flag.sass */
 .flag--rev .flag__image {
-  padding-right: 0;
   padding-left: 24px;
+  padding-right: 0;
 }
 
-/* line 36, sass/blocks/_flag.sass */
+/* line 37, sass/blocks/_flag.sass */
 .flag__body {
-  width: 100%;
+  width: 75%;
 }
 
 /* line 1, sass/blocks/_flash.sass */
 .flash, .flash--notice, .flash--alert, .flash--warning, .flash--full {
-  text-align: center;
-  border: 1px solid #6c757d;
   font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-weight: 600;
   padding: 6px;
   padding: 0.375rem;
+  border: 1px solid #6c757d;
   border-radius: 4px;
+  text-align: center;
 }
 
 /* line 10, sass/blocks/_flash.sass */
 .flash--notice {
-  border-color: #6f42c1;
-  color: #6f42c1;
+  border-color: #524ad0;
+  color: #524ad0;
 }
 
 /* line 14, sass/blocks/_flash.sass */
@@ -5786,9 +5770,9 @@ input[type="button"].button--expand {
 
 /* line 17, sass/blocks/_flash.sass */
 .flash--full {
-  margin-top: -1px;
-  border-width: 1px 0;
   border-radius: 0;
+  border-width: 1px 0;
+  margin-top: -1px;
 }
 
 /* line 2, sass/blocks/_form.sass */
@@ -5810,8 +5794,8 @@ input[type="button"].button--expand {
   font-size: 1.6875rem;
   line-height: 30px;
   line-height: 1.875rem;
-  padding: 0 10px;
   margin: 0 -10px;
+  padding: 0 10px;
 }
 
 /* line 14, sass/blocks/_form.sass */
@@ -5835,29 +5819,29 @@ input[type="button"].button--expand {
 
 /* line 23, sass/blocks/_form.sass */
 .form__label {
-  display: block;
   margin-bottom: 12px;
   margin-bottom: 0.75rem;
+  display: block;
 }
 
 /* line 27, sass/blocks/_form.sass */
 .form__input {
-  width: 100%;
-  padding-top: 6px;
-  padding-top: 0.375rem;
-  padding-bottom: 6px;
-  padding-bottom: 0.375rem;
-  padding-left: 12px;
-  padding-left: 0.75rem;
-  padding-right: 12px;
-  padding-right: 0.75rem;
-  border: 1px solid #6c757d;
-  border-radius: 0.1rem;
-  transition: border 0.2s cubic-bezier(0.55, 0, 0.1, 1);
   font-size: 16px;
   font-size: 1rem;
   line-height: 24px;
   line-height: 1.5rem;
+  padding-left: 12px;
+  padding-left: 0.75rem;
+  padding-right: 12px;
+  padding-right: 0.75rem;
+  padding-top: 6px;
+  padding-top: 0.375rem;
+  padding-bottom: 6px;
+  padding-bottom: 0.375rem;
+  border: 1px solid #6c757d;
+  border-radius: 0.1rem;
+  transition: border 0.2s cubic-bezier(0.55, 0, 0.1, 1);
+  width: 100%;
 }
 
 /* line 36, sass/blocks/_form.sass */
@@ -5873,24 +5857,24 @@ input[type="button"].button--expand {
 
 /* line 43, sass/blocks/_form.sass */
 .form__error {
-  color: #dc3545;
-  margin-top: 12px;
-  margin-top: 0.75rem;
   font-size: 12px;
   font-size: 0.75rem;
   line-height: 14px;
   line-height: 0.875rem;
+  margin-top: 12px;
+  margin-top: 0.75rem;
+  color: #dc3545;
 }
 
 /* line 48, sass/blocks/_form.sass */
 .form__hint {
-  color: #000000;
-  margin-top: 12px;
-  margin-top: 0.75rem;
   font-size: 12px;
   font-size: 0.75rem;
   line-height: 14px;
   line-height: 0.875rem;
+  margin-top: 12px;
+  margin-top: 0.75rem;
+  color: #000000;
 }
 
 /* line 53, sass/blocks/_form.sass */
@@ -5913,8 +5897,8 @@ input[type="button"].button--expand {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   left: 0px;
-  width: 2em;
   text-align: right;
+  width: 2em;
   z-index: 2;
 }
 
@@ -6003,19 +5987,19 @@ input[type="button"].button--expand {
 
 /* line 35, sass/blocks/_formatted-content.sass */
 .formatted-content blockquote {
-  font-style: italic;
-  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
-  position: relative;
-  border-left: 0.1rem solid #6c757d;
   padding: 4.8px;
   padding: 0.3rem;
+  border-left: 0.1rem solid #6c757d;
+  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+  font-style: italic;
+  position: relative;
 }
 
 /* line 1, sass/blocks/_hero.sass */
 .hero, .hero--white, .hero--gray, .hero--black, .hero--blue, .hero--purple, .hero--red, .hero--orange, .hero--yellow, .hero--green, .hero--teal {
-  background-repeat: no-repeat;
-  background-position: center center;
   background-color: transparent;
+  background-position: center center;
+  background-repeat: no-repeat;
   background-size: cover;
   position: relative;
 }
@@ -6029,37 +6013,37 @@ input[type="button"].button--expand {
 /* line 9, sass/blocks/_hero.sass */
 .hero--gray {
   background-color: #6c757d;
-  color: #fff;
+  color: #ffffff;
 }
 
 /* line 9, sass/blocks/_hero.sass */
 .hero--black {
   background-color: #000000;
-  color: #fff;
+  color: #ffffff;
 }
 
 /* line 9, sass/blocks/_hero.sass */
 .hero--blue {
   background-color: #007bff;
-  color: #fff;
+  color: #ffffff;
 }
 
 /* line 9, sass/blocks/_hero.sass */
 .hero--purple {
-  background-color: #6f42c1;
-  color: #fff;
+  background-color: #524ad0;
+  color: #ffffff;
 }
 
 /* line 9, sass/blocks/_hero.sass */
 .hero--red {
   background-color: #dc3545;
-  color: #fff;
+  color: #ffffff;
 }
 
 /* line 9, sass/blocks/_hero.sass */
 .hero--orange {
   background-color: #fd7e14;
-  color: #fff;
+  color: #ffffff;
 }
 
 /* line 9, sass/blocks/_hero.sass */
@@ -6071,30 +6055,30 @@ input[type="button"].button--expand {
 /* line 9, sass/blocks/_hero.sass */
 .hero--green {
   background-color: #28a745;
-  color: #fff;
+  color: #ffffff;
 }
 
 /* line 9, sass/blocks/_hero.sass */
 .hero--teal {
   background-color: #20c997;
-  color: #fff;
+  color: #ffffff;
 }
 
 /* line 14, sass/blocks/_hero.sass */
 .hero__body {
   display: table;
-  width: 100%;
   text-align: center;
+  width: 100%;
 }
 
 /* line 19, sass/blocks/_hero.sass */
 .hero__body__inner {
-  display: table-cell;
-  vertical-align: middle;
   padding-top: 48px;
   padding-top: 3rem;
   padding-bottom: 48px;
   padding-bottom: 3rem;
+  display: table-cell;
+  vertical-align: middle;
 }
 
 /* line 24, sass/blocks/_hero.sass */
@@ -6117,9 +6101,9 @@ input[type="button"].button--expand {
   font-weight: 600;
   margin-top: 24px;
   margin-top: 1.5rem;
-  max-width: 75rem;
   margin-left: auto;
   margin-right: auto;
+  max-width: 75rem;
 }
 
 /* line 39, sass/blocks/_hero.sass */
@@ -6138,15 +6122,15 @@ input[type="button"].button--expand {
 
 /* line 1, sass/blocks/_input.sass */
 .input, .input--radio, .input--checkbox {
-  position: relative;
-  display: inline-block;
   cursor: pointer;
+  display: inline-block;
+  position: relative;
 }
 
 /* line 6, sass/blocks/_input.sass */
 .input input, .input--radio input, .input--checkbox input {
-  position: absolute;
   opacity: 0;
+  position: absolute;
   z-index: -1;
 }
 
@@ -6167,17 +6151,17 @@ input[type="button"].button--expand {
 
 /* line 20, sass/blocks/_input.sass */
 .input__label:before {
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  margin-right: 6px;
-  margin-right: 0.375rem;
   font-size: 16px;
   font-size: 1rem;
   line-height: 24px;
   line-height: 1.5rem;
+  margin-right: 6px;
+  margin-right: 0.375rem;
   color: #000000;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   vertical-align: middle;
 }
 
@@ -6195,30 +6179,30 @@ input[type="button"].button--expand {
 
 /* line 36, sass/blocks/_input.sass */
 .input--radio .input__label::before {
-  content: "";
   position: absolute;
   top: 1px;
   left: 1px;
-  width: 16px;
-  height: 16px;
   border: 1px solid #000000;
   border-radius: 100%;
+  content: "";
+  height: 16px;
+  width: 16px;
 }
 
 /* line 44, sass/blocks/_input.sass */
 .input--radio .input__label::after {
-  content: "";
-  width: 10px;
-  height: 10px;
-  background: #000000;
   position: absolute;
   top: 4px;
   left: 4px;
+  background: #000000;
   border-radius: 100%;
-  transition: all 0.2s ease;
+  content: "";
+  height: 10px;
   opacity: 0;
   -webkit-transform: scale(0);
           transform: scale(0);
+  transition: all 0.2s ease;
+  width: 10px;
 }
 
 /* line 55, sass/blocks/_input.sass */
@@ -6242,31 +6226,31 @@ input[type="button"].button--expand {
 
 /* line 68, sass/blocks/_input.sass */
 .input--checkbox .input__label::before {
-  content: "";
-  display: inline-block;
   position: absolute;
   top: 3px;
   left: 0;
+  border: 1px solid #000000;
+  content: "";
+  display: inline-block;
   height: 16px;
   width: 16px;
-  border: 1px solid #000000;
 }
 
 /* line 76, sass/blocks/_input.sass */
 .input--checkbox .input__label::after {
-  content: "";
-  display: inline-block;
   position: absolute;
   top: 7px;
   left: 4px;
-  height: 5px;
-  width: 9px;
-  border-left: 2px solid #000000;
   border-bottom: 2px solid #000000;
+  border-left: 2px solid #000000;
+  content: "";
+  display: inline-block;
+  height: 5px;
+  opacity: 0;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
   transition: all 0.2s ease;
-  opacity: 0;
+  width: 9px;
 }
 
 /* line 88, sass/blocks/_input.sass */
@@ -6277,15 +6261,15 @@ input[type="button"].button--expand {
 /* line 1, sass/blocks/_or.sass */
 .or {
   display: table;
-  width: 100%;
   table-layout: fixed;
+  width: 100%;
 }
 
 /* line 6, sass/blocks/_or.sass */
 .or__item {
   display: table-cell;
-  vertical-align: middle;
   text-align: center;
+  vertical-align: middle;
 }
 
 /* line 11, sass/blocks/_or.sass */
@@ -6307,9 +6291,9 @@ input[type="button"].button--expand {
 .page__list {
   align-items: center;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   text-align: center;
-  flex-wrap: wrap;
 }
 
 /* line 11, sass/blocks/_page.sass */
@@ -6334,15 +6318,25 @@ input[type="button"].button--expand {
   white-space: nowrap;
 }
 
+/* line 27, sass/blocks/_page.sass */
+.page__previous {
+  display: flex;
+}
+
+/* line 30, sass/blocks/_page.sass */
+.page__next {
+  display: flex;
+}
+
 /* line 1, sass/blocks/_tab.sass */
 .tab {
+  margin: 12px;
+  margin: 0.75rem;
   align-items: center;
   border-bottom: 1px solid #adadad;
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-  margin: 12px;
-  margin: 0.75rem;
 }
 
 /* line 9, sass/blocks/_tab.sass */
@@ -6350,62 +6344,76 @@ input[type="button"].button--expand {
   margin-top: 0;
 }
 
+/* line 11, sass/blocks/_tab.sass */
+.tab__item.is-active {
+  color: #000000;
+}
+
+/* line 14, sass/blocks/_tab.sass */
+.tab__content {
+  display: block;
+}
+
+/* line 17, sass/blocks/_tab.sass */
+.tab__content__item {
+  display: none;
+}
+
+/* line 19, sass/blocks/_tab.sass */
+.tab__content__item.is-active {
+  display: block;
+}
+
 /* line 5, sass/blocks/_table.sass */
 .table, .table---bordered, .table--striped, .table--scollable {
-  width: 100%;
-  margin-bottom: 24px;
-  color: #000000;
   background-color: #ffffff;
-  border-collapse: collapse;
   border: 1px solid #dae1e7;
+  border-collapse: collapse;
+  color: #000000;
+  margin-bottom: 24px;
+  width: 100%;
 }
 
 /* line 13, sass/blocks/_table.sass */
-.table th, .table---bordered th, .table--striped th, .table--scollable th,
-.table td,
-.table---bordered td,
-.table--striped td,
-.table--scollable td {
+.table th, .table---bordered th, .table--striped th, .table--scollable th, .table td, .table---bordered td, .table--striped td, .table--scollable td {
+  border-top: 1px solid #dae1e7;
   padding: 12px;
   vertical-align: top;
-  border-top: 1px solid #dae1e7;
 }
 
-/* line 19, sass/blocks/_table.sass */
+/* line 18, sass/blocks/_table.sass */
 .table thead th, .table---bordered thead th, .table--striped thead th, .table--scollable thead th {
-  vertical-align: bottom;
   border-bottom: 2px solid #dae1e7;
   text-align: left;
+  vertical-align: bottom;
 }
 
-/* line 24, sass/blocks/_table.sass */
+/* line 23, sass/blocks/_table.sass */
 .table tbody + tbody, .table---bordered tbody + tbody, .table--striped tbody + tbody, .table--scollable tbody + tbody {
   border-top: 2px solid #dae1e7;
 }
 
-/* line 32, sass/blocks/_table.sass */
+/* line 30, sass/blocks/_table.sass */
 .table---bordered {
   border: 1px solid #dae1e7;
 }
 
-/* line 36, sass/blocks/_table.sass */
-.table---bordered th,
-.table---bordered td {
+/* line 34, sass/blocks/_table.sass */
+.table---bordered th, .table---bordered td {
   border: 1px solid #dae1e7;
 }
 
-/* line 41, sass/blocks/_table.sass */
-.table---bordered thead th,
-.table---bordered thead td {
+/* line 38, sass/blocks/_table.sass */
+.table---bordered thead th, .table---bordered thead td {
   border-bottom-width: 2px;
 }
 
-/* line 52, sass/blocks/_table.sass */
+/* line 47, sass/blocks/_table.sass */
 .table--striped tbody tr:nth-of-type(odd) {
   background-color: #dae1e7;
 }
 
-/* line 55, sass/blocks/_table.sass */
+/* line 50, sass/blocks/_table.sass */
 .table--scollable {
   display: block;
   overflow-x: auto;
