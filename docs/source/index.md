@@ -19,13 +19,9 @@ layout: default
 <section class="section-1">
   <div class="wrap">
     <div class="grid">
-      <div class="grid">
-        <div class="grid__item desk-3-12">
-
-        </div>
-        <div class="grid__item desk-9-12">
-
-        </div>
+      <div class="grid__item desk-3-12">
+      </div>
+      <div class="grid__item desk-9-12">
       </div>
     </div>
   </div>
