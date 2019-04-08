@@ -82,8 +82,6 @@ To run locally test you can run:
 $ yarn lint
 ```
 
-Bemo2 integrate a test tool.
-
 ## Browser Support
 
 Chrome | Firefox | IE | Opera | Safari
