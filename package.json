@@ -40,7 +40,7 @@
     "test": "yarn lint"
   },
   "bin": {
-    "bemo": "./tools/scaffold.js"
+    "bemo": "./bin/scaffold.js"
   },
   "files": [
     "dist",
