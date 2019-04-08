@@ -18,10 +18,10 @@ layout: default
 
 <section class="section-1">
   <div class="wrap">
-    <div class="grid">
-      <div class="grid__item desk-3-12">
+    <div class="flex">
+      <div class="flex__item flex-desk-3-12">
       </div>
-      <div class="grid__item desk-9-12">
+      <div class="flex__item flex-desk-9-12">
       </div>
     </div>
   </div>
@@ -29,8 +29,8 @@ layout: default
 
 <section class="padding--both-5">
   <div class="wrap">
-    <div class="grid">
-      <div class="grid__item desk-4-12">
+    <div class="flex">
+      <div class="flex__item flex-desk-4-12">
         <div class="flag">
           <div class="flag__image">
             <img src="{{ site.url }}/images/grid.svg" class="img-fluid"/>
@@ -47,7 +47,7 @@ layout: default
           </div>
         </div>
       </div>
-      <div class="grid__item desk-4-12">
+      <div class="flex__item flex-desk-4-12">
         <div class="flag">
           <div class="flag__image">
             <img src="{{ site.url }}/images/components.svg" class="img-fluid"/>
@@ -64,7 +64,7 @@ layout: default
           </div>
         </div>
       </div>
-      <div class="grid__item desk-4-12">
+      <div class="flex__item flex-desk-4-12">
         <div class="flag">
           <div class="flag__image">
             <img src="{{ site.url }}/images/layout.svg" class="img-fluid"/>
@@ -82,20 +82,20 @@ layout: default
         </div>
       </div>
     </div>
-    <div class="grid">
-      <div class="grid__item desk-4-12">
+    <div class="flex">
+      <div class="flex__item flex-desk-4-12">
         <div class="flag">
           <div class="flag__image"></div>
           <div class="flag__body"></div>
         </div>
       </div>
-      <div class="grid__item desk-4-12">
+      <div class="flex__item flex-desk-4-12">
         <div class="flag">
           <div class="flag__image"></div>
           <div class="flag__body"></div>
         </div>
       </div>
-      <div class="grid__item desk-4-12">
+      <div class="flex__item flex-desk-4-12">
         <div class="flag">
           <div class="flag__image"></div>
           <div class="flag__body"></div>
