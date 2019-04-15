@@ -4,10 +4,22 @@
 //  .flag{--rev}
 //    .flag__image
 //    .flag__body
+//      .flag__body__title
+//      .flag__body__text
 
 .flag
+  background-color: $base-body-background
   display: table
   width: 100%
+
+@each $color, $value in $all-colors
+  .flag--#{$color}
+    @extend .flag
+    +bg-variant($value)
+    color: color-invert($value)
+    @supports (--css: variables)
+      background-color: var(--color-#{$color})
+      color: var(--color-white)
 
 .flag--rev,
 .flag--top,

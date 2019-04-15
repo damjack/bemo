@@ -5683,58 +5683,199 @@ input[type="button"].button--expand {
   margin-top: 12px;
 }
 
-/* line 8, sass/blocks/_flag.sass */
-.flag, .flag--rev,
+/* line 10, sass/blocks/_flag.sass */
+.flag, .flag--white, .flag--gray, .flag--black, .flag--blue, .flag--purple, .flag--red, .flag--orange, .flag--yellow, .flag--green, .flag--teal, .flag--rev,
 .flag--top,
 .flag--bottom {
+  background-color: #ffffff;
   display: table;
   width: 100%;
 }
 
-/* line 17, sass/blocks/_flag.sass */
+/* line 16, sass/blocks/_flag.sass */
+.flag--white {
+  background-color: #ffffff;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+@supports (--css: variables) {
+  /* line 16, sass/blocks/_flag.sass */
+  .flag--white {
+    background-color: var(--color-white);
+    color: var(--color-white);
+  }
+}
+
+/* line 16, sass/blocks/_flag.sass */
+.flag--gray {
+  background-color: #6c757d;
+  color: #ffffff;
+}
+
+@supports (--css: variables) {
+  /* line 16, sass/blocks/_flag.sass */
+  .flag--gray {
+    background-color: var(--color-gray);
+    color: var(--color-white);
+  }
+}
+
+/* line 16, sass/blocks/_flag.sass */
+.flag--black {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+@supports (--css: variables) {
+  /* line 16, sass/blocks/_flag.sass */
+  .flag--black {
+    background-color: var(--color-black);
+    color: var(--color-white);
+  }
+}
+
+/* line 16, sass/blocks/_flag.sass */
+.flag--blue {
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+@supports (--css: variables) {
+  /* line 16, sass/blocks/_flag.sass */
+  .flag--blue {
+    background-color: var(--color-blue);
+    color: var(--color-white);
+  }
+}
+
+/* line 16, sass/blocks/_flag.sass */
+.flag--purple {
+  background-color: #524ad0;
+  color: #ffffff;
+}
+
+@supports (--css: variables) {
+  /* line 16, sass/blocks/_flag.sass */
+  .flag--purple {
+    background-color: var(--color-purple);
+    color: var(--color-white);
+  }
+}
+
+/* line 16, sass/blocks/_flag.sass */
+.flag--red {
+  background-color: #dc3545;
+  color: #ffffff;
+}
+
+@supports (--css: variables) {
+  /* line 16, sass/blocks/_flag.sass */
+  .flag--red {
+    background-color: var(--color-red);
+    color: var(--color-white);
+  }
+}
+
+/* line 16, sass/blocks/_flag.sass */
+.flag--orange {
+  background-color: #fd7e14;
+  color: #ffffff;
+}
+
+@supports (--css: variables) {
+  /* line 16, sass/blocks/_flag.sass */
+  .flag--orange {
+    background-color: var(--color-orange);
+    color: var(--color-white);
+  }
+}
+
+/* line 16, sass/blocks/_flag.sass */
+.flag--yellow {
+  background-color: #ffc107;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+@supports (--css: variables) {
+  /* line 16, sass/blocks/_flag.sass */
+  .flag--yellow {
+    background-color: var(--color-yellow);
+    color: var(--color-white);
+  }
+}
+
+/* line 16, sass/blocks/_flag.sass */
+.flag--green {
+  background-color: #28a745;
+  color: #ffffff;
+}
+
+@supports (--css: variables) {
+  /* line 16, sass/blocks/_flag.sass */
+  .flag--green {
+    background-color: var(--color-green);
+    color: var(--color-white);
+  }
+}
+
+/* line 16, sass/blocks/_flag.sass */
+.flag--teal {
+  background-color: #20c997;
+  color: #ffffff;
+}
+
+@supports (--css: variables) {
+  /* line 16, sass/blocks/_flag.sass */
+  .flag--teal {
+    background-color: var(--color-teal);
+    color: var(--color-white);
+  }
+}
+
+/* line 29, sass/blocks/_flag.sass */
 .flag--rev {
   direction: rtl;
   text-align: left;
 }
 
-/* line 21, sass/blocks/_flag.sass */
+/* line 33, sass/blocks/_flag.sass */
 .flag__image,
 .flag__body {
   display: table-cell;
   vertical-align: middle;
 }
 
-/* line 26, sass/blocks/_flag.sass */
+/* line 38, sass/blocks/_flag.sass */
 .flag--top .flag__image, .flag--top
 .flag__body {
   vertical-align: top;
 }
 
-/* line 29, sass/blocks/_flag.sass */
+/* line 41, sass/blocks/_flag.sass */
 .flag--bottom .flag__image, .flag--bottom
 .flag__body {
   vertical-align: bottom;
 }
 
-/* line 32, sass/blocks/_flag.sass */
+/* line 44, sass/blocks/_flag.sass */
 .flag__image {
   padding-right: 24px;
   width: 25%;
 }
 
-/* line 36, sass/blocks/_flag.sass */
+/* line 48, sass/blocks/_flag.sass */
 .flag__image > img {
   display: block;
   max-width: none;
 }
 
-/* line 40, sass/blocks/_flag.sass */
+/* line 52, sass/blocks/_flag.sass */
 .flag--rev .flag__image {
   padding-left: 24px;
   padding-right: 0;
 }
 
-/* line 44, sass/blocks/_flag.sass */
+/* line 56, sass/blocks/_flag.sass */
 .flag__body {
   width: 75%;
 }
