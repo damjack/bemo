@@ -17,6 +17,7 @@
 
 @each $color, $value in $all-colors
   .card--#{$color}
+    @extend .card
     +bg-variant($value)
     color: color-invert($value)
     @supports (--css: variables)

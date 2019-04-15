@@ -13,10 +13,12 @@
   flex-direction: column-reverse
 
 @each $content, $value in $flex-contents
-  .justify--#{$content}
+  .flex--justify-#{$content}
+    @extend .flex
     justify-content: $value
 
-  .align--#{$content}
+  .flex--align-#{$content}
+    @extend .flex
     align-items: $value
 
 +flex-width-setup("flex-")

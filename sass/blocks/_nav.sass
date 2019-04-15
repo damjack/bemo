@@ -1,7 +1,7 @@
 // Bemo Nav component to generate navigation menu
 //
 // @example usage:
-//  .nav
+//  .nav{--black}
 //    .nav__toggler
 //      span
 //    .nav__left
@@ -13,9 +13,19 @@
 
 .nav
   align-items: stretch
+  background: $base-body-background
   display: flex
   flex-wrap: wrap
   justify-content: space-between
+
+@each $color, $value in $all-colors
+  .nav--#{$color}
+    @extend .nav
+    +bg-variant($value)
+    color: color-invert($value)
+    @supports (--css: variables)
+      background-color: var(--color-#{$color})
+      color: var(--color-white)
 
 .nav__toggler
   color: $black-color

@@ -925,7 +925,7 @@ legend {
 }
 
 /* line 1, sass/utilities/_flex.sass */
-.flex, .flex--reverse, .flex--reverse-column {
+.flex, .flex--reverse, .flex--reverse-column, .flex--justify-start, .flex--align-start, .flex--justify-end, .flex--align-end, .flex--justify-center, .flex--align-center, .flex--justify-between, .flex--align-between, .flex--justify-around, .flex--align-around {
   display: flex;
   flex: 0 1 auto;
   flex-direction: row;
@@ -954,53 +954,53 @@ legend {
 }
 
 /* line 16, sass/utilities/_flex.sass */
-.justify--start {
-  justify-content: "flex-start";
+.flex--justify-start {
+  justify-content: flex-start;
 }
 
-/* line 19, sass/utilities/_flex.sass */
-.align--start {
-  align-items: "flex-start";
-}
-
-/* line 16, sass/utilities/_flex.sass */
-.justify--end {
-  justify-content: "flex-end";
-}
-
-/* line 19, sass/utilities/_flex.sass */
-.align--end {
-  align-items: "flex-end";
+/* line 20, sass/utilities/_flex.sass */
+.flex--align-start {
+  align-items: flex-start;
 }
 
 /* line 16, sass/utilities/_flex.sass */
-.justify--center {
-  justify-content: "center";
+.flex--justify-end {
+  justify-content: flex-end;
 }
 
-/* line 19, sass/utilities/_flex.sass */
-.align--center {
-  align-items: "center";
-}
-
-/* line 16, sass/utilities/_flex.sass */
-.justify--between {
-  justify-content: "space-between";
-}
-
-/* line 19, sass/utilities/_flex.sass */
-.align--between {
-  align-items: "space-between";
+/* line 20, sass/utilities/_flex.sass */
+.flex--align-end {
+  align-items: flex-end;
 }
 
 /* line 16, sass/utilities/_flex.sass */
-.justify--around {
-  justify-content: "space-around";
+.flex--justify-center {
+  justify-content: center;
 }
 
-/* line 19, sass/utilities/_flex.sass */
-.align--around {
-  align-items: "space-around";
+/* line 20, sass/utilities/_flex.sass */
+.flex--align-center {
+  align-items: center;
+}
+
+/* line 16, sass/utilities/_flex.sass */
+.flex--justify-between {
+  justify-content: space-between;
+}
+
+/* line 20, sass/utilities/_flex.sass */
+.flex--align-between {
+  align-items: space-between;
+}
+
+/* line 16, sass/utilities/_flex.sass */
+.flex--justify-around {
+  justify-content: space-around;
+}
+
+/* line 20, sass/utilities/_flex.sass */
+.flex--align-around {
+  align-items: space-around;
 }
 
 /* line 19, sass/mixins/_flex.sass */
@@ -5408,7 +5408,7 @@ input[type="button"].button--expand {
 }
 
 /* line 12, sass/blocks/_card.sass */
-.card {
+.card, .card--white, .card--gray, .card--black, .card--blue, .card--purple, .card--red, .card--orange, .card--yellow, .card--green, .card--teal {
   background-color: #ffffff;
   box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.2);
   max-width: 100%;
@@ -5555,13 +5555,13 @@ input[type="button"].button--expand {
   }
 }
 
-/* line 26, sass/blocks/_card.sass */
+/* line 27, sass/blocks/_card.sass */
 .card__image {
   display: block;
   position: relative;
 }
 
-/* line 30, sass/blocks/_card.sass */
+/* line 31, sass/blocks/_card.sass */
 .card__header {
   padding: 12px;
   padding: 0.75rem;
@@ -5571,7 +5571,7 @@ input[type="button"].button--expand {
   display: flex;
 }
 
-/* line 36, sass/blocks/_card.sass */
+/* line 37, sass/blocks/_card.sass */
 .card__header__title {
   font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-weight: 600;
@@ -5584,13 +5584,13 @@ input[type="button"].button--expand {
   flex-grow: 1;
 }
 
-/* line 43, sass/blocks/_card.sass */
+/* line 44, sass/blocks/_card.sass */
 .card__header__subtitle {
   color: #6c757d;
   display: block;
 }
 
-/* line 47, sass/blocks/_card.sass */
+/* line 48, sass/blocks/_card.sass */
 .card__body {
   padding: 12px;
   padding: 0.75rem;
@@ -5598,7 +5598,7 @@ input[type="button"].button--expand {
   padding-bottom: 0rem;
 }
 
-/* line 51, sass/blocks/_card.sass */
+/* line 52, sass/blocks/_card.sass */
 .card__footer {
   padding: 12px;
   padding: 0.75rem;
@@ -6277,14 +6277,155 @@ input[type="button"].button--expand {
 }
 
 /* line 14, sass/blocks/_nav.sass */
-.nav {
+.nav, .nav--white, .nav--gray, .nav--black, .nav--blue, .nav--purple, .nav--red, .nav--orange, .nav--yellow, .nav--green, .nav--teal {
   align-items: stretch;
+  background: #ffffff;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-/* line 20, sass/blocks/_nav.sass */
+/* line 22, sass/blocks/_nav.sass */
+.nav--white {
+  background-color: #ffffff;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+@supports (--css: variables) {
+  /* line 22, sass/blocks/_nav.sass */
+  .nav--white {
+    background-color: var(--color-white);
+    color: var(--color-white);
+  }
+}
+
+/* line 22, sass/blocks/_nav.sass */
+.nav--gray {
+  background-color: #6c757d;
+  color: #ffffff;
+}
+
+@supports (--css: variables) {
+  /* line 22, sass/blocks/_nav.sass */
+  .nav--gray {
+    background-color: var(--color-gray);
+    color: var(--color-white);
+  }
+}
+
+/* line 22, sass/blocks/_nav.sass */
+.nav--black {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+@supports (--css: variables) {
+  /* line 22, sass/blocks/_nav.sass */
+  .nav--black {
+    background-color: var(--color-black);
+    color: var(--color-white);
+  }
+}
+
+/* line 22, sass/blocks/_nav.sass */
+.nav--blue {
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+@supports (--css: variables) {
+  /* line 22, sass/blocks/_nav.sass */
+  .nav--blue {
+    background-color: var(--color-blue);
+    color: var(--color-white);
+  }
+}
+
+/* line 22, sass/blocks/_nav.sass */
+.nav--purple {
+  background-color: #524ad0;
+  color: #ffffff;
+}
+
+@supports (--css: variables) {
+  /* line 22, sass/blocks/_nav.sass */
+  .nav--purple {
+    background-color: var(--color-purple);
+    color: var(--color-white);
+  }
+}
+
+/* line 22, sass/blocks/_nav.sass */
+.nav--red {
+  background-color: #dc3545;
+  color: #ffffff;
+}
+
+@supports (--css: variables) {
+  /* line 22, sass/blocks/_nav.sass */
+  .nav--red {
+    background-color: var(--color-red);
+    color: var(--color-white);
+  }
+}
+
+/* line 22, sass/blocks/_nav.sass */
+.nav--orange {
+  background-color: #fd7e14;
+  color: #ffffff;
+}
+
+@supports (--css: variables) {
+  /* line 22, sass/blocks/_nav.sass */
+  .nav--orange {
+    background-color: var(--color-orange);
+    color: var(--color-white);
+  }
+}
+
+/* line 22, sass/blocks/_nav.sass */
+.nav--yellow {
+  background-color: #ffc107;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+@supports (--css: variables) {
+  /* line 22, sass/blocks/_nav.sass */
+  .nav--yellow {
+    background-color: var(--color-yellow);
+    color: var(--color-white);
+  }
+}
+
+/* line 22, sass/blocks/_nav.sass */
+.nav--green {
+  background-color: #28a745;
+  color: #ffffff;
+}
+
+@supports (--css: variables) {
+  /* line 22, sass/blocks/_nav.sass */
+  .nav--green {
+    background-color: var(--color-green);
+    color: var(--color-white);
+  }
+}
+
+/* line 22, sass/blocks/_nav.sass */
+.nav--teal {
+  background-color: #20c997;
+  color: #ffffff;
+}
+
+@supports (--css: variables) {
+  /* line 22, sass/blocks/_nav.sass */
+  .nav--teal {
+    background-color: var(--color-teal);
+    color: var(--color-white);
+  }
+}
+
+/* line 30, sass/blocks/_nav.sass */
 .nav__toggler {
   color: #000000;
   cursor: pointer;
@@ -6292,7 +6433,7 @@ input[type="button"].button--expand {
   position: relative;
 }
 
-/* line 25, sass/blocks/_nav.sass */
+/* line 35, sass/blocks/_nav.sass */
 .nav__toggler span {
   background-color: currentColor;
   height: 2px;
@@ -6300,7 +6441,7 @@ input[type="button"].button--expand {
   width: 36px;
 }
 
-/* line 30, sass/blocks/_nav.sass */
+/* line 40, sass/blocks/_nav.sass */
 .nav__toggler span::before, .nav__toggler span::after {
   background-color: currentColor;
   content: '';
@@ -6308,21 +6449,21 @@ input[type="button"].button--expand {
   width: 100%;
 }
 
-/* line 36, sass/blocks/_nav.sass */
+/* line 46, sass/blocks/_nav.sass */
 .nav__toggler span::before {
   position: absolute;
   top: 12px;
   left: 0;
 }
 
-/* line 38, sass/blocks/_nav.sass */
+/* line 48, sass/blocks/_nav.sass */
 .nav__toggler span::after {
   position: absolute;
   bottom: -12px;
   left: 0;
 }
 
-/* line 41, sass/blocks/_nav.sass */
+/* line 51, sass/blocks/_nav.sass */
 .nav__left,
 .nav__right {
   align-items: center;
@@ -6330,12 +6471,12 @@ input[type="button"].button--expand {
   flex: 1 0 0;
 }
 
-/* line 47, sass/blocks/_nav.sass */
+/* line 57, sass/blocks/_nav.sass */
 .nav__left {
   justify-content: flex-start;
 }
 
-/* line 50, sass/blocks/_nav.sass */
+/* line 60, sass/blocks/_nav.sass */
 .nav__logo {
   font-size: 27px;
   font-size: 1.6875rem;
@@ -6346,18 +6487,18 @@ input[type="button"].button--expand {
   display: block;
 }
 
-/* line 55, sass/blocks/_nav.sass */
+/* line 65, sass/blocks/_nav.sass */
 .nav__right {
   justify-content: flex-end;
 }
 
-/* line 58, sass/blocks/_nav.sass */
+/* line 68, sass/blocks/_nav.sass */
 .nav__menu {
   display: none;
   list-style: none;
 }
 
-/* line 62, sass/blocks/_nav.sass */
+/* line 72, sass/blocks/_nav.sass */
 .nav__menu__item {
   margin-left: 12px;
   margin-left: 0.75rem;
@@ -6369,18 +6510,18 @@ input[type="button"].button--expand {
   line-height: 1.375rem;
 }
 
-/* line 66, sass/blocks/_nav.sass */
+/* line 76, sass/blocks/_nav.sass */
 .nav__menu__link {
   padding: 12px;
   padding: 0.75rem;
 }
 
 @media screen and (min-width: 1024px) {
-  /* line 70, sass/blocks/_nav.sass */
+  /* line 80, sass/blocks/_nav.sass */
   .nav__toggler {
     display: none;
   }
-  /* line 73, sass/blocks/_nav.sass */
+  /* line 83, sass/blocks/_nav.sass */
   .nav__menu {
     display: inline-block;
   }
