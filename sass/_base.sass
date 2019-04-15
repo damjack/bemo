@@ -26,8 +26,11 @@ body
   -moz-osx-font-smoothing: grayscale
 
 a
+  +base-transition("ease-in-out", "base")
   color: $base-body-color
   text-decoration: underline
+  &::before
+    +base-transition("ease-in-out", "base")
 
 ul, ol, blockquote
   +margin(0)

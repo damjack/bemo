@@ -1,0 +1,74 @@
+// Bemo Nav component to generate navigation menu
+//
+// @example usage:
+//  .nav
+//    .nav__toggler
+//      span
+//    .nav__left
+//      .nav__logo
+//    .nav__right
+//      .nav__menu
+//        .nav__menu__item
+//          .nav__menu__link
+
+.nav
+  align-items: stretch
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+
+.nav__toggler
+  color: $black-color
+  cursor: pointer
+  display: block
+  position: relative
+  span
+    background-color: currentColor
+    height: 2px
+    position: relative
+    width: 36px
+    &::before,
+    &::after
+      background-color: currentColor
+      content: ''
+      height: 2px
+      width: 100%
+    &::before
+      +position(absolute, 12px null null 0)
+    &::after
+      +position(absolute, null null -12px 0)
+
+.nav__left,
+.nav__right
+  align-items: center
+  display: flex
+  flex: 1 0 0
+
+.nav__left
+  justify-content: flex-start
+
+.nav__logo
+  +font-size(beta)
+  +margin-right(2)
+  display: block
+
+.nav__right
+  justify-content: flex-end
+
+.nav__menu
+  display: none
+  list-style: none
+
+.nav__menu__item
+  +horizontal-margin(1)
+  +font-size(delta)
+
+.nav__menu__link
+  +padding(1)
+
++at-breakpoint(desk)
+  .nav__toggler
+    display: none
+
+  .nav__menu
+    display: inline-block
