@@ -1387,6 +1387,98 @@ legend {
   }
 }
 
+@media screen and (min-width: 480px) {
+  /* line 32, sass/utilities/_flex.sass */
+  .flex--reverse-on-tab {
+    display: flex;
+    flex: 0 1 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    letter-spacing: -1000em;
+    margin: 0 -12px;
+    flex-direction: row-reverse;
+  }
+  /* line 36, sass/utilities/_flex.sass */
+  .flex--reverse-column-on-tab {
+    display: flex;
+    flex: 0 1 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    letter-spacing: -1000em;
+    margin: 0 -12px;
+    flex-direction: column-reverse;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  /* line 32, sass/utilities/_flex.sass */
+  .flex--reverse-on-lap {
+    display: flex;
+    flex: 0 1 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    letter-spacing: -1000em;
+    margin: 0 -12px;
+    flex-direction: row-reverse;
+  }
+  /* line 36, sass/utilities/_flex.sass */
+  .flex--reverse-column-on-lap {
+    display: flex;
+    flex: 0 1 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    letter-spacing: -1000em;
+    margin: 0 -12px;
+    flex-direction: column-reverse;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* line 32, sass/utilities/_flex.sass */
+  .flex--reverse-on-desk {
+    display: flex;
+    flex: 0 1 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    letter-spacing: -1000em;
+    margin: 0 -12px;
+    flex-direction: row-reverse;
+  }
+  /* line 36, sass/utilities/_flex.sass */
+  .flex--reverse-column-on-desk {
+    display: flex;
+    flex: 0 1 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    letter-spacing: -1000em;
+    margin: 0 -12px;
+    flex-direction: column-reverse;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 32, sass/utilities/_flex.sass */
+  .flex--reverse-on-wall {
+    display: flex;
+    flex: 0 1 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    letter-spacing: -1000em;
+    margin: 0 -12px;
+    flex-direction: row-reverse;
+  }
+  /* line 36, sass/utilities/_flex.sass */
+  .flex--reverse-column-on-wall {
+    display: flex;
+    flex: 0 1 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    letter-spacing: -1000em;
+    margin: 0 -12px;
+    flex-direction: column-reverse;
+  }
+}
+
 /* line 4, sass/utilities/_font-size.sass */
 .alpha {
   font-size: 30px;
@@ -5340,68 +5432,69 @@ input[type="button"].button--expand {
   width: 100%;
 }
 
-/* line 4, sass/blocks/_canvas.sass */
+/* line 8, sass/blocks/_canvas.sass */
 .canvas {
   overflow: hidden;
   position: relative;
 }
 
-/* line 8, sass/blocks/_canvas.sass */
-.canvas.is-shifted {
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  overflow: hidden;
-}
-
 /* line 12, sass/blocks/_canvas.sass */
-.canvas__main {
-  transition: all 1s cubic-bezier(0.55, 0, 0.1, 1);
+.canvas.is-shifted {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
 /* line 15, sass/blocks/_canvas.sass */
-.canvas__aside {
-  background-color: #6c757d;
-  bottom: 0;
-  box-shadow: 0 0 0 transparent;
-  overflow-y: auto;
+.canvas__main {
+  transition: -webkit-transform 0.6s cubic-bezier(0.55, 0, 0.1, 1);
+  transition: transform 0.6s cubic-bezier(0.55, 0, 0.1, 1);
+  transition: transform 0.6s cubic-bezier(0.55, 0, 0.1, 1), -webkit-transform 0.6s cubic-bezier(0.55, 0, 0.1, 1);
+}
+
+/* line 18, sass/blocks/_canvas.sass */
+.canvas__aside, .canvas__aside--left {
   position: absolute;
   top: 0;
+  bottom: 0;
+  background-color: #6c757d;
+  box-shadow: 0 0 0 transparent;
+  overflow-y: auto;
   transition: box-shadow 0.5s cubic-bezier(0.55, 0, 0.1, 1), -webkit-transform 0.5s cubic-bezier(0.55, 0, 0.1, 1);
   transition: transform 0.5s cubic-bezier(0.55, 0, 0.1, 1), box-shadow 0.5s cubic-bezier(0.55, 0, 0.1, 1);
   transition: transform 0.5s cubic-bezier(0.55, 0, 0.1, 1), box-shadow 0.5s cubic-bezier(0.55, 0, 0.1, 1), -webkit-transform 0.5s cubic-bezier(0.55, 0, 0.1, 1);
   z-index: 2;
 }
 
-/* line 25, sass/blocks/_canvas.sass */
-.canvas.is-shifted .canvas__aside {
+/* line 28, sass/blocks/_canvas.sass */
+.canvas.is-shifted .canvas__aside--left {
   box-shadow: 3px 0 5px rgba(108, 117, 125, 0.5);
 }
 
 /* line 2, sass/mixins/_canvas.sass */
-.canvas__aside {
+.canvas__aside--left {
   left: -314px;
-  width: 290px;
+  width: 314px;
 }
 
-/* line 7, sass/mixins/_canvas.sass */
-.canvas.is-shifted .canvas__aside,
-.canvas.is-shifted .canvas__main {
+/* line 19, sass/mixins/_canvas.sass */
+.canvas.is-shifted.shift-left .canvas__aside, .canvas.is-shifted.shift-left .canvas__aside--left,
+.canvas.is-shifted.shift-left .canvas__main {
   -webkit-transform: translateX(314px);
           transform: translateX(314px);
 }
 
 @media screen and (min-width: 720px) {
   /* line 2, sass/mixins/_canvas.sass */
-  .canvas__aside {
+  .canvas__aside--left {
     left: -424px;
-    width: 400px;
+    width: 424px;
   }
-  /* line 7, sass/mixins/_canvas.sass */
-  .canvas.is-shifted .canvas__aside,
-  .canvas.is-shifted .canvas__main {
+  /* line 19, sass/mixins/_canvas.sass */
+  .canvas.is-shifted.shift-left .canvas__aside, .canvas.is-shifted.shift-left .canvas__aside--left,
+  .canvas.is-shifted.shift-left .canvas__main {
     -webkit-transform: translateX(424px);
             transform: translateX(424px);
   }
@@ -6568,43 +6661,78 @@ input[type="button"].button--expand {
 
 /* line 30, sass/blocks/_nav.sass */
 .nav__toggler {
-  color: #000000;
+  padding: 12px;
+  padding: 0.75rem;
+  transition: all 1s cubic-bezier(0.55, 0, 0.1, 1);
+  background: #000000;
   cursor: pointer;
-  display: block;
+  display: inline-block;
+  font: inherit;
+  height: 60px;
   position: relative;
+  width: 60px;
 }
 
-/* line 35, sass/blocks/_nav.sass */
-.nav__toggler span {
-  background-color: currentColor;
+/* line 41, sass/blocks/_nav.sass */
+.nav__toggler__box {
+  position: absolute;
+  top: 14px;
+  left: 0.8rem;
+  transition: all 1s cubic-bezier(0.55, 0, 0.1, 1);
+  background-color: #ffffff;
+  border-radius: 4px;
   height: 2px;
-  position: relative;
-  width: 36px;
+  width: 60%;
 }
 
-/* line 40, sass/blocks/_nav.sass */
-.nav__toggler span::before, .nav__toggler span::after {
-  background-color: currentColor;
+/* line 48, sass/blocks/_nav.sass */
+.nav__toggler__box::before, .nav__toggler__box::after {
+  transition: all 1s cubic-bezier(0.55, 0, 0.1, 1);
+  background-color: #ffffff;
+  border-radius: 4px;
   content: '';
+  display: block;
   height: 2px;
   width: 100%;
 }
 
-/* line 46, sass/blocks/_nav.sass */
-.nav__toggler span::before {
+/* line 57, sass/blocks/_nav.sass */
+.nav__toggler__box::before {
   position: absolute;
-  top: 12px;
+  top: 14px;
   left: 0;
 }
 
-/* line 48, sass/blocks/_nav.sass */
-.nav__toggler span::after {
+/* line 59, sass/blocks/_nav.sass */
+.nav__toggler__box::after {
   position: absolute;
-  bottom: -12px;
+  top: 28px;
   left: 0;
 }
 
-/* line 51, sass/blocks/_nav.sass */
+/* line 62, sass/blocks/_nav.sass */
+.is-shifted .nav__toggler__box {
+  transition: all 1s cubic-bezier(0.55, 0, 0.1, 1);
+  -webkit-transform: translate3d(0, 14px, 0) rotate(45deg);
+          transform: translate3d(0, 14px, 0) rotate(45deg);
+}
+
+/* line 65, sass/blocks/_nav.sass */
+.is-shifted .nav__toggler__box::before {
+  transition: all 1s cubic-bezier(0.55, 0, 0.1, 1);
+  opacity: 0;
+  -webkit-transform: rotate(-45deg) translate3d(-5.71429px, -6px, 0);
+          transform: rotate(-45deg) translate3d(-5.71429px, -6px, 0);
+}
+
+/* line 69, sass/blocks/_nav.sass */
+.is-shifted .nav__toggler__box::after {
+  transition: all 1s cubic-bezier(0.55, 0, 0.1, 1);
+  -webkit-transform: translate3d(0, -28px, 0) rotate(-90deg);
+          transform: translate3d(0, -28px, 0) rotate(-90deg);
+}
+
+/* line 73, sass/blocks/_nav.sass */
 .nav__left,
 .nav__right {
   align-items: center;
@@ -6612,12 +6740,12 @@ input[type="button"].button--expand {
   flex: 1 0 0;
 }
 
-/* line 57, sass/blocks/_nav.sass */
+/* line 79, sass/blocks/_nav.sass */
 .nav__left {
   justify-content: flex-start;
 }
 
-/* line 60, sass/blocks/_nav.sass */
+/* line 82, sass/blocks/_nav.sass */
 .nav__logo {
   font-size: 27px;
   font-size: 1.6875rem;
@@ -6628,18 +6756,18 @@ input[type="button"].button--expand {
   display: block;
 }
 
-/* line 65, sass/blocks/_nav.sass */
+/* line 87, sass/blocks/_nav.sass */
 .nav__right {
   justify-content: flex-end;
 }
 
-/* line 68, sass/blocks/_nav.sass */
+/* line 90, sass/blocks/_nav.sass */
 .nav__menu {
   display: none;
   list-style: none;
 }
 
-/* line 72, sass/blocks/_nav.sass */
+/* line 94, sass/blocks/_nav.sass */
 .nav__menu__item {
   margin-left: 12px;
   margin-left: 0.75rem;
@@ -6651,18 +6779,18 @@ input[type="button"].button--expand {
   line-height: 1.375rem;
 }
 
-/* line 76, sass/blocks/_nav.sass */
+/* line 98, sass/blocks/_nav.sass */
 .nav__menu__link {
   padding: 12px;
   padding: 0.75rem;
 }
 
 @media screen and (min-width: 1024px) {
-  /* line 80, sass/blocks/_nav.sass */
+  /* line 102, sass/blocks/_nav.sass */
   .nav__toggler {
     display: none;
   }
-  /* line 83, sass/blocks/_nav.sass */
+  /* line 105, sass/blocks/_nav.sass */
   .nav__menu {
     display: inline-block;
   }
