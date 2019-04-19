@@ -33,17 +33,18 @@
   +padding-bottom(0)
   align-items: stretch
   display: flex
+  flex-direction: column
 
 .card__header__title
   +heading-font-family
-  +font-size(beta)
+  +font-size(gamma)
   align-items: center
   display: flex
   flex-grow: 1
 
 .card__header__subtitle
-  color: $gray-color
-  display: block
+  +font-size(smallprint)
+  display: flex
 
 .card__body
   +padding(1)
