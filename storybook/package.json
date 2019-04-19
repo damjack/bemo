@@ -1,15 +1,12 @@
 {
-  "name": "bemo",
+  "name": "bemo-storybook",
   "version": "2.0.0",
   "private": true,
-  "description": "Sass theme and list of utilities",
+  "description": "Storybook to explane sass blocks and utilities",
   "scripts": {
     "start": "start-storybook -p 8000 -c .storybook",
     "publish-storybook": "npm run storybook && gh-pages -d build -b gh-pages -r https://cantierecreativo.github.io/bemo",
-    "release-pr": "script/release-pr",
-    "release-candidate": "script/release-candidate",
-    "release": "script/release",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook -c .storybook"
   },
   "devDependencies": {
     "@babel/core": "^7.2.2",

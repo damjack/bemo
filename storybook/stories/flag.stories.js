@@ -18,6 +18,25 @@ storiesOf('BLOCKS', module)
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla!</p>
           </div>
         </div>
+        <hr className="margin--all-2" />
+        <div className="flag--blue">
+          <div className="flag__image">
+            <img src="http://placehold.it/100x100" />
+          </div>
+          <div className="flag__body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla!</p>
+          </div>
+        </div>
+        <hr className="margin--all-2" />
+        <div className="flag--teal">
+          <div className="flag__image">
+            <img src="http://placehold.it/100x100" />
+          </div>
+          <div className="flag__body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla!</p>
+          </div>
+        </div>
+        <hr className="margin--all-2" />
       </div>
 
       <div className="code">
@@ -32,12 +51,8 @@ storiesOf('BLOCKS', module)
     </div>`}
         </Code>
       </div>
-    </Main>
-  )
-  .add('Flag Inverse', () =>
-    <Main className="wrap">
-      <Title className="markdown">Flag</Title>
-      <p className="text">Examples of building flag block with Bemo CSS.</p>
+      <Title className="markdown">Flag Reverse</Title>
+      <p className="text">Examples of building flag reverse block with Bemo CSS.</p>
 
       <div className="example">
         <div className="flag--rev">
