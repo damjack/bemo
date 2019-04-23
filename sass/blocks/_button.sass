@@ -7,11 +7,10 @@
   +button
   @include button-size($button-padding-vertical, $button-padding-horizontal, $base-font-size, $button-border-radius)
   border: $button-border-width solid transparent
-  transition: $button-transition
+  +base-transition('bounce', 'base')
 
 //
 // Button Sizes
-//
 @if $enable-button-size
   .button--small
     @extend .button
@@ -19,7 +18,6 @@
 
 //
 // Alternate buttons
-//
 @if $enable-button-colored
   @each $color, $value in $all-colors
     .button--#{$color}
@@ -33,7 +31,6 @@
 
 //
 // Block button
-//
 .button--expand
   @extend .button
   display: block

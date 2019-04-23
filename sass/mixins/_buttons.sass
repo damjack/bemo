@@ -63,9 +63,10 @@
     color: $color
 
 // Button sizes
-@mixin button-size($padding-vertical, $padding-horizontal, $font-size, $border-radius)
+@mixin button-size($vertical-padding, $horizontal-padding, $font-size, $border-radius)
   +font-size($font-size)
-  padding: $padding-vertical $padding-horizontal
+  +vertical-padding($vertical-padding)
+  +horizontal-padding($horizontal-padding)
   // Manually declare to provide an override to the browser default
   @if $enable-button-rounded
     border-radius: $border-radius

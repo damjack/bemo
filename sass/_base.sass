@@ -28,9 +28,11 @@ body
 a
   +base-transition("ease-in-out", "base")
   color: $base-body-color
-  text-decoration: underline
+  text-decoration: none
   &::before
     +base-transition("ease-in-out", "base")
+  @include hover-focus
+    text-decoration: underline
 
 ul, ol, blockquote
   +margin(0)
