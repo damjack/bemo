@@ -10,7 +10,24 @@ storiesOf('BLOCKS', module)
       <p className="text">Examples of building card block with Bemo CSS.</p>
 
       <div className="code">
-        <Preview>
+        <Code>
+          {`    <div class="card">
+      <div class="card__image">
+        <img src="http://placehold.it/500x250" class="img-fluid"/>
+      </div>
+      <div class="card__header">
+        <div class="card__header__title">Lorem ipsum dolor sit amet</div>
+        <div class="card__header__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing</div>
+      </div>
+      <div class="card__body">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla!</p>
+      </div>
+      <div class="card__footer">
+        <a class="button--red" href="#">Action</a>
+      </div>
+    </div>`}
+        </Code>
+        <Preview className="padding--top-2">
           <div className="grid padding--both-3">
             <div className="grid__item lap-4-12 desk-3-12">
               <div className="card">
@@ -49,12 +66,6 @@ storiesOf('BLOCKS', module)
             </div>
           </div>
         </Preview>
-
-        <Code>
-          {`    <div class="card">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla!</p>
-    </div>`}
-        </Code>
       </div>
     </Main>
   );

@@ -10,7 +10,12 @@ storiesOf('BLOCKS', module)
       <p className="text">Examples of building buttons with Bemo</p>
 
       <div className="code">
-        <Preview>
+        <Code>
+          {`    <button class="button">Button</button>
+    <button class="button--blue">Blue</button>
+    <button class="button--red">Red</button>`}
+        </Code>
+        <Preview className="padding--top-2">
           <p>
             <Button className="button">Button</Button>
             <Button className="button--blue">Blue</Button>
@@ -22,11 +27,6 @@ storiesOf('BLOCKS', module)
             <Button className="button--teal">Teal</Button>
           </p>
         </Preview>
-        <Code>
-          {`    <button class="button">Button</button>
-    <button class="button--blue">Blue</button>
-    <button class="button--red">Red</button>`}
-        </Code>
       </div>
     </Main>
   ));
