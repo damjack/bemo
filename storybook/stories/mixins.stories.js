@@ -76,9 +76,20 @@ storiesOf('MIXINS', module)
 
       <div className="code">
         <Code>
-          {`    <button class="button">Button</button>
-    <button class="button--blue">Blue</button>
-    <button class="button--red">Red</button>`}
+          {`    $space-unit:            12px
+    $space-amounts:         ( 1, 2, 3, 5 )
+    $space-directions:      ( top bottom )
+
+    // +space-rule(NAME OF RULE, SIZE IN NUMBER WITHOUT UNIT OR CUSTOM UNIT SIZE)
+    // if use number without unit the decimal number is multiplied by $space-unit
+    // the output is size in REM with fallback in PX
+
+    +space-rule("margin-left", 1) // margin-left: 12px;
+    +horizontal-margin(3) // margin-left: 36px; margin-right: 36px
+    +horizontal-padding(1) // padding-left: 12px; padding-right: 12px;
+    +vertical-margin(2) // margin-top: 24px; margin-bottom: 24px;
+    +vertical-padding(4) // padding-top: 48px; padding-bottom: 48px;
+          `}
         </Code>
       </div>
 
