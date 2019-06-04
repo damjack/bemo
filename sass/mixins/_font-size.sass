@@ -12,7 +12,6 @@
     @warn "size ‘#{$unit-font}’ invalid"
 
   @if $unit-line
-    line-height: ($unit-line / $unit-font)
     @if type-of($unit-line) == "number" and unit($unit-line) == "px"
       +rem-rule(line-height, $unit-line)
 
