@@ -31,12 +31,12 @@
     opacity: $button-disabled-opacity
 
 @mixin button-variant($background, $border, $hover-background: darken($background, 7.5%), $hover-border: darken($border, 10%), $active-background: darken($background, 10%), $active-border: darken($border, 12.5%))
-  +bg-variant($background)
+  background: $background
   border-color: $border
   color: color-yiq($background)
 
   @include hover
-    +bg-variant($hover-background)
+    background: $hover-background
     border-color: $hover-border
     color: color-yiq($hover-background)
 
