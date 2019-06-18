@@ -20,7 +20,7 @@
 @each $color, $value in $all-colors
   .hero--#{$color}
     @extend .hero
-    +bg-variant($value)
+    +bg-variant($color)
     color: color-invert($value)
 
 .hero__body

@@ -17,12 +17,15 @@
     &[disabled] ~ .input__label:before
       opacity: 0.5
 
-.input__label:before
+.input__label
   +font-size(regular)
-  +margin-right(0.5)
-  color: $base-body-color
-  user-select: none
-  vertical-align: middle
+  display: inline-block
+  word-break: break-word
+  &::before
+    +margin-right(0.5)
+    color: $base-body-color
+    user-select: none
+    vertical-align: middle
 
 .input--radio
   @extend .input

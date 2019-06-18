@@ -21,7 +21,7 @@
 @each $color, $value in $all-colors
   .nav--#{$color}
     @extend .nav
-    +bg-variant($value)
+    +bg-variant($color)
     color: color-invert($value)
     @supports (--css: variables)
       background-color: var(--color-#{$color})

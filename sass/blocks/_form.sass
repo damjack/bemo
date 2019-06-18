@@ -27,7 +27,7 @@
   +margin-bottom(1)
   display: block
 
-.form__input
+.form__input,
   +font-size(regular)
   +horizontal-padding(1)
   +vertical-padding(0.5)
@@ -35,6 +35,10 @@
   border-radius: 0.1rem
   transition: border 0.2s cubic-bezier(.55,0,.1,1)
   width: 100%
+
+@each $input in $inputs-list
+  #{$input}.form__input
+    @extend .form__input
 
 .form__actions
   +margin-top(2)
