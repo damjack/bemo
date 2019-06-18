@@ -8,7 +8,11 @@
     object-fit: cover
     object-position: 50% 50%
 
-.img-fluid
+.img--fluid
   display: block
   height: auto
   max-width: 100%
+
+.img--rounded
+  @extend .img--fluid
+  border-radius: 50%

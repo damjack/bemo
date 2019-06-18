@@ -16,5 +16,5 @@
   @each $color, $value in $all-colors
     .label--#{$color}
       @extend .label
-      +bg-variant($value)
+      +bg-variant($color)
       color: color-invert($value)
