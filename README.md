@@ -24,15 +24,13 @@ or with Yarn:
 yarn add -D bemo-sass
 ```
 
-after this you can run:
-
-```sh
-$ bemo --directory {{DEST-SASS}} --basename {{BASE-SASS-IMPORT}}
-```
-
 ## Usage
 
 To manage and install Bemo you can use a install script
+
+```sh
+$ bemo --directory styles/sass --basename application
+```
 
 ```node
 Usage: bemo [options]
