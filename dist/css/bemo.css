@@ -86,10 +86,8 @@ article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, s
 
 /* line 20, sass/_normalize.sass */
 h1 {
-  margin-top: 8.04px;
-  margin-top: 0.5025rem;
-  margin-bottom: 8.04px;
-  margin-bottom: 0.5025rem;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
   margin-left: 0px;
   margin-left: 0rem;
   margin-right: 0px;
@@ -105,14 +103,12 @@ figcaption, figure, main {
 
 /* line 29, sass/_normalize.sass */
 figure {
-  margin-top: 12px;
-  margin-top: 0.75rem;
-  margin-bottom: 12px;
-  margin-bottom: 0.75rem;
-  margin-left: 480px;
-  margin-left: 30rem;
-  margin-right: 480px;
-  margin-right: 30rem;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 40px;
+  margin-left: 2.5rem;
+  margin-right: 40px;
+  margin-right: 2.5rem;
 }
 
 /* line 33, sass/_normalize.sass */
@@ -392,7 +388,16 @@ html {
 /* line 17, sass/_base.sass */
 body {
   font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-style: normal;
+  text-align: left;
+  text-transform: none;
+  word-spacing: normal;
+  word-break: normal;
+  white-space: normal;
+  text-decoration: none;
+  text-indent: 0;
   font-weight: 300;
+  letter-spacing: normal;
   color: #000000;
   line-height: 1.5;
   min-height: 100%;
@@ -409,7 +414,7 @@ body {
 a {
   transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
   color: #000000;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 /* line 32, sass/_base.sass */
@@ -417,7 +422,12 @@ a::before {
   transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
-/* line 35, sass/_base.sass */
+/* line 15, sass/mixins/_hover.sass */
+a:hover, a:focus {
+  text-decoration: underline;
+}
+
+/* line 37, sass/_base.sass */
 ul, ol, blockquote {
   margin: 0px;
   margin: 0rem;
@@ -425,12 +435,12 @@ ul, ol, blockquote {
   padding-left: 0rem;
 }
 
-/* line 39, sass/_base.sass */
+/* line 41, sass/_base.sass */
 li {
   list-style-type: none;
 }
 
-/* line 42, sass/_base.sass */
+/* line 44, sass/_base.sass */
 h1, h2, h3, h4, h5, h6, hgroup,
 ul, ol, dd, p, figure, pre, table,
 fieldset, hr, form {
@@ -438,14 +448,14 @@ fieldset, hr, form {
   margin: 0rem;
 }
 
-/* line 47, sass/_base.sass */
+/* line 49, sass/_base.sass */
 h1, h2, h3, h4, h5, h6 {
   font-family: inherit;
   font-size: inherit;
   font-weight: inherit;
 }
 
-/* line 52, sass/_base.sass */
+/* line 54, sass/_base.sass */
 input[type=email], input[type=number], input[type=password], input[type=search],
 input[type=tel], input[type=text], input[type=url], input[type=color], input[type=date],
 input[type=datetime], input[type=datetime-local], input[type=month], input[type=time],
@@ -461,7 +471,7 @@ input[type=week], textarea {
   width: 100%;
 }
 
-/* line 65, sass/_base.sass */
+/* line 67, sass/_base.sass */
 input[type=email][disabled], input[type=number][disabled], input[type=password][disabled], input[type=search][disabled],
 input[type=tel][disabled], input[type=text][disabled], input[type=url][disabled], input[type=color][disabled], input[type=date][disabled],
 input[type=datetime][disabled], input[type=datetime-local][disabled], input[type=month][disabled], input[type=time][disabled],
@@ -469,24 +479,24 @@ input[type=week][disabled], textarea[disabled] {
   opacity: 0.9;
 }
 
-/* line 68, sass/_base.sass */
+/* line 70, sass/_base.sass */
 *:focus {
   outline: 0;
 }
 
-/* line 71, sass/_base.sass */
+/* line 73, sass/_base.sass */
 input[type=number]::-ms-tooltip {
   display: none;
 }
 
-/* line 74, sass/_base.sass */
+/* line 76, sass/_base.sass */
 input[type=number] {
   -moz-appearance: textfield;
   -webkit-appearance: textfield;
           appearance: textfield;
 }
 
-/* line 78, sass/_base.sass */
+/* line 80, sass/_base.sass */
 input[type=number]::-webkit-outer-spin-button,
 input[type=number]::-webkit-inner-spin-button {
   margin: 0px;
@@ -495,13 +505,13 @@ input[type=number]::-webkit-inner-spin-button {
   appearance: none;
 }
 
-/* line 84, sass/_base.sass */
+/* line 86, sass/_base.sass */
 button, input[type="submit"] {
   background-image: none;
   border-radius: 0;
 }
 
-/* line 88, sass/_base.sass */
+/* line 90, sass/_base.sass */
 input[type=email]:hover, input[type=number]:hover, input[type=password]:hover, input[type=search]:hover,
 input[type=tel]:hover, input[type=text]:hover, input[type=url]:hover, input[type=color]:hover, input[type=date]:hover,
 input[type=datetime]:hover, input[type=datetime-local]:hover, input[type=month]:hover, input[type=time]:hover,
@@ -509,7 +519,7 @@ input[type=week]:hover, textarea:hover {
   border-color: #545b62;
 }
 
-/* line 94, sass/_base.sass */
+/* line 96, sass/_base.sass */
 input[type=email]:focus, input[type=number]:focus, input[type=password]:focus, input[type=search]:focus,
 input[type=tel]:focus, input[type=text]:focus, input[type=url]:focus, input[type=color]:focus, input[type=date]:focus,
 input[type=datetime]:focus, input[type=datetime-local]:focus, input[type=month]:focus, input[type=time]:focus,
@@ -517,45 +527,52 @@ input[type=week]:focus, textarea:focus {
   border-color: #6c757d;
 }
 
-/* line 100, sass/_base.sass */
+/* line 102, sass/_base.sass */
 input[type="checkbox"] {
   display: inline-block;
   margin-right: 0.4em;
 }
 
-/* line 104, sass/_base.sass */
+/* line 106, sass/_base.sass */
 pre, code {
   font-family: "Bitstream Vera Sans Mono", Consolas, Courier, monospace;
+  font-style: normal;
+  text-align: left;
+  text-transform: none;
+  word-spacing: normal;
+  word-break: normal;
+  white-space: normal;
+  text-decoration: none;
+  text-indent: 0;
   font-weight: normal;
+  letter-spacing: normal;
 }
 
-/* line 107, sass/_base.sass */
+/* line 109, sass/_base.sass */
 hr {
   border: none;
   border-bottom-style: solid;
   border-bottom-width: 1px;
 }
 
-/* line 112, sass/_base.sass */
+/* line 114, sass/_base.sass */
 table {
   table-layout: fixed;
 }
 
-/* line 115, sass/_base.sass */
+/* line 117, sass/_base.sass */
 th, td {
   text-align: left;
 }
 
-/* line 118, sass/_base.sass */
+/* line 120, sass/_base.sass */
 img {
   max-width: 100%;
   vertical-align: top;
 }
 
-/* line 122, sass/_base.sass */
+/* line 124, sass/_base.sass */
 legend {
-  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-  font-weight: 600;
   color: #6c757d;
 }
 
@@ -642,140 +659,120 @@ legend {
 /* line 5, sass/utilities/_background.sass */
 .background--white {
   background-color: #ffffff;
-  color: rgba(0, 0, 0, 0.7);
 }
 
 @supports (--css: variables) {
   /* line 5, sass/utilities/_background.sass */
   .background--white {
     background-color: var(--color-white);
-    color: var(--color-white);
   }
 }
 
 /* line 5, sass/utilities/_background.sass */
 .background--gray {
   background-color: #6c757d;
-  color: #ffffff;
 }
 
 @supports (--css: variables) {
   /* line 5, sass/utilities/_background.sass */
   .background--gray {
     background-color: var(--color-gray);
-    color: var(--color-white);
   }
 }
 
 /* line 5, sass/utilities/_background.sass */
 .background--black {
   background-color: #000000;
-  color: #ffffff;
 }
 
 @supports (--css: variables) {
   /* line 5, sass/utilities/_background.sass */
   .background--black {
     background-color: var(--color-black);
-    color: var(--color-white);
   }
 }
 
 /* line 5, sass/utilities/_background.sass */
 .background--blue {
   background-color: #007bff;
-  color: #ffffff;
 }
 
 @supports (--css: variables) {
   /* line 5, sass/utilities/_background.sass */
   .background--blue {
     background-color: var(--color-blue);
-    color: var(--color-white);
   }
 }
 
 /* line 5, sass/utilities/_background.sass */
 .background--purple {
   background-color: #524ad0;
-  color: #ffffff;
 }
 
 @supports (--css: variables) {
   /* line 5, sass/utilities/_background.sass */
   .background--purple {
     background-color: var(--color-purple);
-    color: var(--color-white);
   }
 }
 
 /* line 5, sass/utilities/_background.sass */
 .background--red {
   background-color: #dc3545;
-  color: #ffffff;
 }
 
 @supports (--css: variables) {
   /* line 5, sass/utilities/_background.sass */
   .background--red {
     background-color: var(--color-red);
-    color: var(--color-white);
   }
 }
 
 /* line 5, sass/utilities/_background.sass */
 .background--orange {
   background-color: #fd7e14;
-  color: #ffffff;
 }
 
 @supports (--css: variables) {
   /* line 5, sass/utilities/_background.sass */
   .background--orange {
     background-color: var(--color-orange);
-    color: var(--color-white);
   }
 }
 
 /* line 5, sass/utilities/_background.sass */
 .background--yellow {
   background-color: #ffc107;
-  color: rgba(0, 0, 0, 0.7);
 }
 
 @supports (--css: variables) {
   /* line 5, sass/utilities/_background.sass */
   .background--yellow {
     background-color: var(--color-yellow);
-    color: var(--color-white);
   }
 }
 
 /* line 5, sass/utilities/_background.sass */
 .background--green {
   background-color: #28a745;
-  color: #ffffff;
 }
 
 @supports (--css: variables) {
   /* line 5, sass/utilities/_background.sass */
   .background--green {
     background-color: var(--color-green);
-    color: var(--color-white);
   }
 }
 
 /* line 5, sass/utilities/_background.sass */
 .background--teal {
   background-color: #20c997;
-  color: #ffffff;
 }
 
 @supports (--css: variables) {
   /* line 5, sass/utilities/_background.sass */
   .background--teal {
     background-color: var(--color-teal);
-    color: var(--color-white);
   }
 }
 
@@ -1626,12 +1623,12 @@ legend {
 
 /* line 25, sass/mixins/_grid.sass */
 .width-1-12 {
-  width: 8.333%;
+  width: 8.33333%;
 }
 
 /* line 25, sass/mixins/_grid.sass */
 .width-2-12 {
-  width: 16.667%;
+  width: 16.66667%;
 }
 
 /* line 25, sass/mixins/_grid.sass */
@@ -1641,12 +1638,12 @@ legend {
 
 /* line 25, sass/mixins/_grid.sass */
 .width-4-12 {
-  width: 33.333%;
+  width: 33.33333%;
 }
 
 /* line 25, sass/mixins/_grid.sass */
 .width-5-12 {
-  width: 41.667%;
+  width: 41.66667%;
 }
 
 /* line 25, sass/mixins/_grid.sass */
@@ -1656,12 +1653,12 @@ legend {
 
 /* line 25, sass/mixins/_grid.sass */
 .width-7-12 {
-  width: 58.333%;
+  width: 58.33333%;
 }
 
 /* line 25, sass/mixins/_grid.sass */
 .width-8-12 {
-  width: 66.667%;
+  width: 66.66667%;
 }
 
 /* line 25, sass/mixins/_grid.sass */
@@ -1671,12 +1668,12 @@ legend {
 
 /* line 25, sass/mixins/_grid.sass */
 .width-10-12 {
-  width: 83.333%;
+  width: 83.33333%;
 }
 
 /* line 25, sass/mixins/_grid.sass */
 .width-11-12 {
-  width: 91.667%;
+  width: 91.66667%;
 }
 
 @media screen and (min-width: 480px) {
@@ -1686,11 +1683,11 @@ legend {
   }
   /* line 25, sass/mixins/_grid.sass */
   .tab-1-12 {
-    width: 8.333%;
+    width: 8.33333%;
   }
   /* line 25, sass/mixins/_grid.sass */
   .tab-2-12 {
-    width: 16.667%;
+    width: 16.66667%;
   }
   /* line 25, sass/mixins/_grid.sass */
   .tab-3-12 {
@@ -1698,11 +1695,11 @@ legend {
   }
   /* line 25, sass/mixins/_grid.sass */
   .tab-4-12 {
-    width: 33.333%;
+    width: 33.33333%;
   }
   /* line 25, sass/mixins/_grid.sass */
   .tab-5-12 {
-    width: 41.667%;
+    width: 41.66667%;
   }
   /* line 25, sass/mixins/_grid.sass */
   .tab-6-12 {
@@ -1710,11 +1707,11 @@ legend {
   }
   /* line 25, sass/mixins/_grid.sass */
   .tab-7-12 {
-    width: 58.333%;
+    width: 58.33333%;
   }
   /* line 25, sass/mixins/_grid.sass */
   .tab-8-12 {
-    width: 66.667%;
+    width: 66.66667%;
   }
   /* line 25, sass/mixins/_grid.sass */
   .tab-9-12 {
@@ -1722,11 +1719,11 @@ legend {
   }
   /* line 25, sass/mixins/_grid.sass */
   .tab-10-12 {
-    width: 83.333%;
+    width: 83.33333%;
   }
   /* line 25, sass/mixins/_grid.sass */
   .tab-11-12 {
-    width: 91.667%;
+    width: 91.66667%;
   }
 }
 
@@ -1737,11 +1734,11 @@ legend {
   }
   /* line 25, sass/mixins/_grid.sass */
   .lap-1-12 {
-    width: 8.333%;
+    width: 8.33333%;
   }
   /* line 25, sass/mixins/_grid.sass */
   .lap-2-12 {
-    width: 16.667%;
+    width: 16.66667%;
   }
   /* line 25, sass/mixins/_grid.sass */
   .lap-3-12 {
@@ -1749,11 +1746,11 @@ legend {
   }
   /* line 25, sass/mixins/_grid.sass */
   .lap-4-12 {
-    width: 33.333%;
+    width: 33.33333%;
   }
   /* line 25, sass/mixins/_grid.sass */
   .lap-5-12 {
-    width: 41.667%;
+    width: 41.66667%;
   }
   /* line 25, sass/mixins/_grid.sass */
   .lap-6-12 {
@@ -1761,11 +1758,11 @@ legend {
   }
   /* line 25, sass/mixins/_grid.sass */
   .lap-7-12 {
-    width: 58.333%;
+    width: 58.33333%;
   }
   /* line 25, sass/mixins/_grid.sass */
   .lap-8-12 {
-    width: 66.667%;
+    width: 66.66667%;
   }
   /* line 25, sass/mixins/_grid.sass */
   .lap-9-12 {
@@ -1773,11 +1770,11 @@ legend {
   }
   /* line 25, sass/mixins/_grid.sass */
   .lap-10-12 {
-    width: 83.333%;
+    width: 83.33333%;
   }
   /* line 25, sass/mixins/_grid.sass */
   .lap-11-12 {
-    width: 91.667%;
+    width: 91.66667%;
   }
 }
 
@@ -1788,11 +1785,11 @@ legend {
   }
   /* line 25, sass/mixins/_grid.sass */
   .desk-1-12 {
-    width: 8.333%;
+    width: 8.33333%;
   }
   /* line 25, sass/mixins/_grid.sass */
   .desk-2-12 {
-    width: 16.667%;
+    width: 16.66667%;
   }
   /* line 25, sass/mixins/_grid.sass */
   .desk-3-12 {
@@ -1800,11 +1797,11 @@ legend {
   }
   /* line 25, sass/mixins/_grid.sass */
   .desk-4-12 {
-    width: 33.333%;
+    width: 33.33333%;
   }
   /* line 25, sass/mixins/_grid.sass */
   .desk-5-12 {
-    width: 41.667%;
+    width: 41.66667%;
   }
   /* line 25, sass/mixins/_grid.sass */
   .desk-6-12 {
@@ -1812,11 +1809,11 @@ legend {
   }
   /* line 25, sass/mixins/_grid.sass */
   .desk-7-12 {
-    width: 58.333%;
+    width: 58.33333%;
   }
   /* line 25, sass/mixins/_grid.sass */
   .desk-8-12 {
-    width: 66.667%;
+    width: 66.66667%;
   }
   /* line 25, sass/mixins/_grid.sass */
   .desk-9-12 {
@@ -1824,11 +1821,11 @@ legend {
   }
   /* line 25, sass/mixins/_grid.sass */
   .desk-10-12 {
-    width: 83.333%;
+    width: 83.33333%;
   }
   /* line 25, sass/mixins/_grid.sass */
   .desk-11-12 {
-    width: 91.667%;
+    width: 91.66667%;
   }
 }
 
@@ -1839,11 +1836,11 @@ legend {
   }
   /* line 25, sass/mixins/_grid.sass */
   .wall-1-12 {
-    width: 8.333%;
+    width: 8.33333%;
   }
   /* line 25, sass/mixins/_grid.sass */
   .wall-2-12 {
-    width: 16.667%;
+    width: 16.66667%;
   }
   /* line 25, sass/mixins/_grid.sass */
   .wall-3-12 {
@@ -1851,11 +1848,11 @@ legend {
   }
   /* line 25, sass/mixins/_grid.sass */
   .wall-4-12 {
-    width: 33.333%;
+    width: 33.33333%;
   }
   /* line 25, sass/mixins/_grid.sass */
   .wall-5-12 {
-    width: 41.667%;
+    width: 41.66667%;
   }
   /* line 25, sass/mixins/_grid.sass */
   .wall-6-12 {
@@ -1863,11 +1860,11 @@ legend {
   }
   /* line 25, sass/mixins/_grid.sass */
   .wall-7-12 {
-    width: 58.333%;
+    width: 58.33333%;
   }
   /* line 25, sass/mixins/_grid.sass */
   .wall-8-12 {
-    width: 66.667%;
+    width: 66.66667%;
   }
   /* line 25, sass/mixins/_grid.sass */
   .wall-9-12 {
@@ -1875,11 +1872,11 @@ legend {
   }
   /* line 25, sass/mixins/_grid.sass */
   .wall-10-12 {
-    width: 83.333%;
+    width: 83.33333%;
   }
   /* line 25, sass/mixins/_grid.sass */
   .wall-11-12 {
-    width: 91.667%;
+    width: 91.66667%;
   }
 }
 
@@ -1891,13 +1888,13 @@ legend {
 /* line 34, sass/mixins/_grid.sass */
 .pull-1-12 {
   position: relative;
-  right: 8.333%;
+  right: 8.33333%;
 }
 
 /* line 34, sass/mixins/_grid.sass */
 .pull-2-12 {
   position: relative;
-  right: 16.667%;
+  right: 16.66667%;
 }
 
 /* line 34, sass/mixins/_grid.sass */
@@ -1909,13 +1906,13 @@ legend {
 /* line 34, sass/mixins/_grid.sass */
 .pull-4-12 {
   position: relative;
-  right: 33.333%;
+  right: 33.33333%;
 }
 
 /* line 34, sass/mixins/_grid.sass */
 .pull-5-12 {
   position: relative;
-  right: 41.667%;
+  right: 41.66667%;
 }
 
 /* line 34, sass/mixins/_grid.sass */
@@ -1927,13 +1924,13 @@ legend {
 /* line 34, sass/mixins/_grid.sass */
 .pull-7-12 {
   position: relative;
-  right: 58.333%;
+  right: 58.33333%;
 }
 
 /* line 34, sass/mixins/_grid.sass */
 .pull-8-12 {
   position: relative;
-  right: 66.667%;
+  right: 66.66667%;
 }
 
 /* line 34, sass/mixins/_grid.sass */
@@ -1945,13 +1942,13 @@ legend {
 /* line 34, sass/mixins/_grid.sass */
 .pull-10-12 {
   position: relative;
-  right: 83.333%;
+  right: 83.33333%;
 }
 
 /* line 34, sass/mixins/_grid.sass */
 .pull-11-12 {
   position: relative;
-  right: 91.667%;
+  right: 91.66667%;
 }
 
 /* line 29, sass/mixins/_grid.sass */
@@ -1962,13 +1959,13 @@ legend {
 /* line 34, sass/mixins/_grid.sass */
 .push-1-12 {
   position: relative;
-  left: 8.333%;
+  left: 8.33333%;
 }
 
 /* line 34, sass/mixins/_grid.sass */
 .push-2-12 {
   position: relative;
-  left: 16.667%;
+  left: 16.66667%;
 }
 
 /* line 34, sass/mixins/_grid.sass */
@@ -1980,13 +1977,13 @@ legend {
 /* line 34, sass/mixins/_grid.sass */
 .push-4-12 {
   position: relative;
-  left: 33.333%;
+  left: 33.33333%;
 }
 
 /* line 34, sass/mixins/_grid.sass */
 .push-5-12 {
   position: relative;
-  left: 41.667%;
+  left: 41.66667%;
 }
 
 /* line 34, sass/mixins/_grid.sass */
@@ -1998,13 +1995,13 @@ legend {
 /* line 34, sass/mixins/_grid.sass */
 .push-7-12 {
   position: relative;
-  left: 58.333%;
+  left: 58.33333%;
 }
 
 /* line 34, sass/mixins/_grid.sass */
 .push-8-12 {
   position: relative;
-  left: 66.667%;
+  left: 66.66667%;
 }
 
 /* line 34, sass/mixins/_grid.sass */
@@ -2016,13 +2013,13 @@ legend {
 /* line 34, sass/mixins/_grid.sass */
 .push-10-12 {
   position: relative;
-  left: 83.333%;
+  left: 83.33333%;
 }
 
 /* line 34, sass/mixins/_grid.sass */
 .push-11-12 {
   position: relative;
-  left: 91.667%;
+  left: 91.66667%;
 }
 
 @media screen and (min-width: 480px) {
@@ -2033,12 +2030,12 @@ legend {
   /* line 34, sass/mixins/_grid.sass */
   .tab-push-1-12 {
     position: relative;
-    left: 8.333%;
+    left: 8.33333%;
   }
   /* line 34, sass/mixins/_grid.sass */
   .tab-push-2-12 {
     position: relative;
-    left: 16.667%;
+    left: 16.66667%;
   }
   /* line 34, sass/mixins/_grid.sass */
   .tab-push-3-12 {
@@ -2048,12 +2045,12 @@ legend {
   /* line 34, sass/mixins/_grid.sass */
   .tab-push-4-12 {
     position: relative;
-    left: 33.333%;
+    left: 33.33333%;
   }
   /* line 34, sass/mixins/_grid.sass */
   .tab-push-5-12 {
     position: relative;
-    left: 41.667%;
+    left: 41.66667%;
   }
   /* line 34, sass/mixins/_grid.sass */
   .tab-push-6-12 {
@@ -2063,12 +2060,12 @@ legend {
   /* line 34, sass/mixins/_grid.sass */
   .tab-push-7-12 {
     position: relative;
-    left: 58.333%;
+    left: 58.33333%;
   }
   /* line 34, sass/mixins/_grid.sass */
   .tab-push-8-12 {
     position: relative;
-    left: 66.667%;
+    left: 66.66667%;
   }
   /* line 34, sass/mixins/_grid.sass */
   .tab-push-9-12 {
@@ -2078,12 +2075,12 @@ legend {
   /* line 34, sass/mixins/_grid.sass */
   .tab-push-10-12 {
     position: relative;
-    left: 83.333%;
+    left: 83.33333%;
   }
   /* line 34, sass/mixins/_grid.sass */
   .tab-push-11-12 {
     position: relative;
-    left: 91.667%;
+    left: 91.66667%;
   }
   /* line 29, sass/mixins/_grid.sass */
   .tab-pull-0 {
@@ -2092,12 +2089,12 @@ legend {
   /* line 34, sass/mixins/_grid.sass */
   .tab-pull-1-12 {
     position: relative;
-    right: 8.333%;
+    right: 8.33333%;
   }
   /* line 34, sass/mixins/_grid.sass */
   .tab-pull-2-12 {
     position: relative;
-    right: 16.667%;
+    right: 16.66667%;
   }
   /* line 34, sass/mixins/_grid.sass */
   .tab-pull-3-12 {
@@ -2107,12 +2104,12 @@ legend {
   /* line 34, sass/mixins/_grid.sass */
   .tab-pull-4-12 {
     position: relative;
-    right: 33.333%;
+    right: 33.33333%;
   }
   /* line 34, sass/mixins/_grid.sass */
   .tab-pull-5-12 {
     position: relative;
-    right: 41.667%;
+    right: 41.66667%;
   }
   /* line 34, sass/mixins/_grid.sass */
   .tab-pull-6-12 {
@@ -2122,12 +2119,12 @@ legend {
   /* line 34, sass/mixins/_grid.sass */
   .tab-pull-7-12 {
     position: relative;
-    right: 58.333%;
+    right: 58.33333%;
   }
   /* line 34, sass/mixins/_grid.sass */
   .tab-pull-8-12 {
     position: relative;
-    right: 66.667%;
+    right: 66.66667%;
   }
   /* line 34, sass/mixins/_grid.sass */
   .tab-pull-9-12 {
@@ -2137,12 +2134,12 @@ legend {
   /* line 34, sass/mixins/_grid.sass */
   .tab-pull-10-12 {
     position: relative;
-    right: 83.333%;
+    right: 83.33333%;
   }
   /* line 34, sass/mixins/_grid.sass */
   .tab-pull-11-12 {
     position: relative;
-    right: 91.667%;
+    right: 91.66667%;
   }
 }
 
@@ -2154,12 +2151,12 @@ legend {
   /* line 34, sass/mixins/_grid.sass */
   .lap-push-1-12 {
     position: relative;
-    left: 8.333%;
+    left: 8.33333%;
   }
   /* line 34, sass/mixins/_grid.sass */
   .lap-push-2-12 {
     position: relative;
-    left: 16.667%;
+    left: 16.66667%;
   }
   /* line 34, sass/mixins/_grid.sass */
   .lap-push-3-12 {
@@ -2169,12 +2166,12 @@ legend {
   /* line 34, sass/mixins/_grid.sass */
   .lap-push-4-12 {
     position: relative;
-    left: 33.333%;
+    left: 33.33333%;
   }
   /* line 34, sass/mixins/_grid.sass */
   .lap-push-5-12 {
     position: relative;
-    left: 41.667%;
+    left: 41.66667%;
   }
   /* line 34, sass/mixins/_grid.sass */
   .lap-push-6-12 {
@@ -2184,12 +2181,12 @@ legend {
   /* line 34, sass/mixins/_grid.sass */
   .lap-push-7-12 {
     position: relative;
-    left: 58.333%;
+    left: 58.33333%;
   }
   /* line 34, sass/mixins/_grid.sass */
   .lap-push-8-12 {
     position: relative;
-    left: 66.667%;
+    left: 66.66667%;
   }
   /* line 34, sass/mixins/_grid.sass */
   .lap-push-9-12 {
@@ -2199,12 +2196,12 @@ legend {
   /* line 34, sass/mixins/_grid.sass */
   .lap-push-10-12 {
     position: relative;
-    left: 83.333%;
+    left: 83.33333%;
   }
   /* line 34, sass/mixins/_grid.sass */
   .lap-push-11-12 {
     position: relative;
-    left: 91.667%;
+    left: 91.66667%;
   }
   /* line 29, sass/mixins/_grid.sass */
   .lap-pull-0 {
@@ -2213,12 +2210,12 @@ legend {
   /* line 34, sass/mixins/_grid.sass */
   .lap-pull-1-12 {
     position: relative;
-    right: 8.333%;
+    right: 8.33333%;
   }
   /* line 34, sass/mixins/_grid.sass */
   .lap-pull-2-12 {
     position: relative;
-    right: 16.667%;
+    right: 16.66667%;
   }
   /* line 34, sass/mixins/_grid.sass */
   .lap-pull-3-12 {
@@ -2228,12 +2225,12 @@ legend {
   /* line 34, sass/mixins/_grid.sass */
   .lap-pull-4-12 {
     position: relative;
-    right: 33.333%;
+    right: 33.33333%;
   }
   /* line 34, sass/mixins/_grid.sass */
   .lap-pull-5-12 {
     position: relative;
-    right: 41.667%;
+    right: 41.66667%;
   }
   /* line 34, sass/mixins/_grid.sass */
   .lap-pull-6-12 {
@@ -2243,12 +2240,12 @@ legend {
   /* line 34, sass/mixins/_grid.sass */
   .lap-pull-7-12 {
     position: relative;
-    right: 58.333%;
+    right: 58.33333%;
   }
   /* line 34, sass/mixins/_grid.sass */
   .lap-pull-8-12 {
     position: relative;
-    right: 66.667%;
+    right: 66.66667%;
   }
   /* line 34, sass/mixins/_grid.sass */
   .lap-pull-9-12 {
@@ -2258,12 +2255,12 @@ legend {
   /* line 34, sass/mixins/_grid.sass */
   .lap-pull-10-12 {
     position: relative;
-    right: 83.333%;
+    right: 83.33333%;
   }
   /* line 34, sass/mixins/_grid.sass */
   .lap-pull-11-12 {
     position: relative;
-    right: 91.667%;
+    right: 91.66667%;
   }
 }
 
@@ -2275,12 +2272,12 @@ legend {
   /* line 34, sass/mixins/_grid.sass */
   .desk-push-1-12 {
     position: relative;
-    left: 8.333%;
+    left: 8.33333%;
   }
   /* line 34, sass/mixins/_grid.sass */
   .desk-push-2-12 {
     position: relative;
-    left: 16.667%;
+    left: 16.66667%;
   }
   /* line 34, sass/mixins/_grid.sass */
   .desk-push-3-12 {
@@ -2290,12 +2287,12 @@ legend {
   /* line 34, sass/mixins/_grid.sass */
   .desk-push-4-12 {
     position: relative;
-    left: 33.333%;
+    left: 33.33333%;
   }
   /* line 34, sass/mixins/_grid.sass */
   .desk-push-5-12 {
     position: relative;
-    left: 41.667%;
+    left: 41.66667%;
   }
   /* line 34, sass/mixins/_grid.sass */
   .desk-push-6-12 {
@@ -2305,12 +2302,12 @@ legend {
   /* line 34, sass/mixins/_grid.sass */
   .desk-push-7-12 {
     position: relative;
-    left: 58.333%;
+    left: 58.33333%;
   }
   /* line 34, sass/mixins/_grid.sass */
   .desk-push-8-12 {
     position: relative;
-    left: 66.667%;
+    left: 66.66667%;
   }
   /* line 34, sass/mixins/_grid.sass */
   .desk-push-9-12 {
@@ -2320,12 +2317,12 @@ legend {
   /* line 34, sass/mixins/_grid.sass */
   .desk-push-10-12 {
     position: relative;
-    left: 83.333%;
+    left: 83.33333%;
   }
   /* line 34, sass/mixins/_grid.sass */
   .desk-push-11-12 {
     position: relative;
-    left: 91.667%;
+    left: 91.66667%;
   }
   /* line 29, sass/mixins/_grid.sass */
   .desk-pull-0 {
@@ -2334,12 +2331,12 @@ legend {
   /* line 34, sass/mixins/_grid.sass */
   .desk-pull-1-12 {
     position: relative;
-    right: 8.333%;
+    right: 8.33333%;
   }
   /* line 34, sass/mixins/_grid.sass */
   .desk-pull-2-12 {
     position: relative;
-    right: 16.667%;
+    right: 16.66667%;
   }
   /* line 34, sass/mixins/_grid.sass */
   .desk-pull-3-12 {
@@ -2349,12 +2346,12 @@ legend {
   /* line 34, sass/mixins/_grid.sass */
   .desk-pull-4-12 {
     position: relative;
-    right: 33.333%;
+    right: 33.33333%;
   }
   /* line 34, sass/mixins/_grid.sass */
   .desk-pull-5-12 {
     position: relative;
-    right: 41.667%;
+    right: 41.66667%;
   }
   /* line 34, sass/mixins/_grid.sass */
   .desk-pull-6-12 {
@@ -2364,12 +2361,12 @@ legend {
   /* line 34, sass/mixins/_grid.sass */
   .desk-pull-7-12 {
     position: relative;
-    right: 58.333%;
+    right: 58.33333%;
   }
   /* line 34, sass/mixins/_grid.sass */
   .desk-pull-8-12 {
     position: relative;
-    right: 66.667%;
+    right: 66.66667%;
   }
   /* line 34, sass/mixins/_grid.sass */
   .desk-pull-9-12 {
@@ -2379,12 +2376,12 @@ legend {
   /* line 34, sass/mixins/_grid.sass */
   .desk-pull-10-12 {
     position: relative;
-    right: 83.333%;
+    right: 83.33333%;
   }
   /* line 34, sass/mixins/_grid.sass */
   .desk-pull-11-12 {
     position: relative;
-    right: 91.667%;
+    right: 91.66667%;
   }
 }
 
@@ -2396,12 +2393,12 @@ legend {
   /* line 34, sass/mixins/_grid.sass */
   .wall-push-1-12 {
     position: relative;
-    left: 8.333%;
+    left: 8.33333%;
   }
   /* line 34, sass/mixins/_grid.sass */
   .wall-push-2-12 {
     position: relative;
-    left: 16.667%;
+    left: 16.66667%;
   }
   /* line 34, sass/mixins/_grid.sass */
   .wall-push-3-12 {
@@ -2411,12 +2408,12 @@ legend {
   /* line 34, sass/mixins/_grid.sass */
   .wall-push-4-12 {
     position: relative;
-    left: 33.333%;
+    left: 33.33333%;
   }
   /* line 34, sass/mixins/_grid.sass */
   .wall-push-5-12 {
     position: relative;
-    left: 41.667%;
+    left: 41.66667%;
   }
   /* line 34, sass/mixins/_grid.sass */
   .wall-push-6-12 {
@@ -2426,12 +2423,12 @@ legend {
   /* line 34, sass/mixins/_grid.sass */
   .wall-push-7-12 {
     position: relative;
-    left: 58.333%;
+    left: 58.33333%;
   }
   /* line 34, sass/mixins/_grid.sass */
   .wall-push-8-12 {
     position: relative;
-    left: 66.667%;
+    left: 66.66667%;
   }
   /* line 34, sass/mixins/_grid.sass */
   .wall-push-9-12 {
@@ -2441,12 +2438,12 @@ legend {
   /* line 34, sass/mixins/_grid.sass */
   .wall-push-10-12 {
     position: relative;
-    left: 83.333%;
+    left: 83.33333%;
   }
   /* line 34, sass/mixins/_grid.sass */
   .wall-push-11-12 {
     position: relative;
-    left: 91.667%;
+    left: 91.66667%;
   }
   /* line 29, sass/mixins/_grid.sass */
   .wall-pull-0 {
@@ -2455,12 +2452,12 @@ legend {
   /* line 34, sass/mixins/_grid.sass */
   .wall-pull-1-12 {
     position: relative;
-    right: 8.333%;
+    right: 8.33333%;
   }
   /* line 34, sass/mixins/_grid.sass */
   .wall-pull-2-12 {
     position: relative;
-    right: 16.667%;
+    right: 16.66667%;
   }
   /* line 34, sass/mixins/_grid.sass */
   .wall-pull-3-12 {
@@ -2470,12 +2467,12 @@ legend {
   /* line 34, sass/mixins/_grid.sass */
   .wall-pull-4-12 {
     position: relative;
-    right: 33.333%;
+    right: 33.33333%;
   }
   /* line 34, sass/mixins/_grid.sass */
   .wall-pull-5-12 {
     position: relative;
-    right: 41.667%;
+    right: 41.66667%;
   }
   /* line 34, sass/mixins/_grid.sass */
   .wall-pull-6-12 {
@@ -2485,12 +2482,12 @@ legend {
   /* line 34, sass/mixins/_grid.sass */
   .wall-pull-7-12 {
     position: relative;
-    right: 58.333%;
+    right: 58.33333%;
   }
   /* line 34, sass/mixins/_grid.sass */
   .wall-pull-8-12 {
     position: relative;
-    right: 66.667%;
+    right: 66.66667%;
   }
   /* line 34, sass/mixins/_grid.sass */
   .wall-pull-9-12 {
@@ -2500,12 +2497,12 @@ legend {
   /* line 34, sass/mixins/_grid.sass */
   .wall-pull-10-12 {
     position: relative;
-    right: 83.333%;
+    right: 83.33333%;
   }
   /* line 34, sass/mixins/_grid.sass */
   .wall-pull-11-12 {
     position: relative;
-    right: 91.667%;
+    right: 91.66667%;
   }
 }
 
@@ -2654,10 +2651,15 @@ legend {
 }
 
 /* line 11, sass/utilities/_image.sass */
-.img-fluid {
+.img--fluid, .img--rounded {
   display: block;
   height: auto;
   max-width: 100%;
+}
+
+/* line 16, sass/utilities/_image.sass */
+.img--rounded {
+  border-radius: 50%;
 }
 
 /* line 1, sass/utilities/_label.sass */
@@ -2694,10 +2696,24 @@ legend {
   color: rgba(0, 0, 0, 0.7);
 }
 
+@supports (--css: variables) {
+  /* line 17, sass/utilities/_label.sass */
+  .label--white {
+    background-color: var(--color-white);
+  }
+}
+
 /* line 17, sass/utilities/_label.sass */
 .label--gray {
   background-color: #6c757d;
   color: #ffffff;
+}
+
+@supports (--css: variables) {
+  /* line 17, sass/utilities/_label.sass */
+  .label--gray {
+    background-color: var(--color-gray);
+  }
 }
 
 /* line 17, sass/utilities/_label.sass */
@@ -2706,10 +2722,24 @@ legend {
   color: #ffffff;
 }
 
+@supports (--css: variables) {
+  /* line 17, sass/utilities/_label.sass */
+  .label--black {
+    background-color: var(--color-black);
+  }
+}
+
 /* line 17, sass/utilities/_label.sass */
 .label--blue {
   background-color: #007bff;
   color: #ffffff;
+}
+
+@supports (--css: variables) {
+  /* line 17, sass/utilities/_label.sass */
+  .label--blue {
+    background-color: var(--color-blue);
+  }
 }
 
 /* line 17, sass/utilities/_label.sass */
@@ -2718,10 +2748,24 @@ legend {
   color: #ffffff;
 }
 
+@supports (--css: variables) {
+  /* line 17, sass/utilities/_label.sass */
+  .label--purple {
+    background-color: var(--color-purple);
+  }
+}
+
 /* line 17, sass/utilities/_label.sass */
 .label--red {
   background-color: #dc3545;
   color: #ffffff;
+}
+
+@supports (--css: variables) {
+  /* line 17, sass/utilities/_label.sass */
+  .label--red {
+    background-color: var(--color-red);
+  }
 }
 
 /* line 17, sass/utilities/_label.sass */
@@ -2730,10 +2774,24 @@ legend {
   color: #ffffff;
 }
 
+@supports (--css: variables) {
+  /* line 17, sass/utilities/_label.sass */
+  .label--orange {
+    background-color: var(--color-orange);
+  }
+}
+
 /* line 17, sass/utilities/_label.sass */
 .label--yellow {
   background-color: #ffc107;
   color: rgba(0, 0, 0, 0.7);
+}
+
+@supports (--css: variables) {
+  /* line 17, sass/utilities/_label.sass */
+  .label--yellow {
+    background-color: var(--color-yellow);
+  }
 }
 
 /* line 17, sass/utilities/_label.sass */
@@ -2742,10 +2800,24 @@ legend {
   color: #ffffff;
 }
 
+@supports (--css: variables) {
+  /* line 17, sass/utilities/_label.sass */
+  .label--green {
+    background-color: var(--color-green);
+  }
+}
+
 /* line 17, sass/utilities/_label.sass */
 .label--teal {
   background-color: #20c997;
   color: #ffffff;
+}
+
+@supports (--css: variables) {
+  /* line 17, sass/utilities/_label.sass */
+  .label--teal {
+    background-color: var(--color-teal);
+  }
 }
 
 /* line 1, sass/utilities/_list.sass */
@@ -2763,8 +2835,8 @@ legend {
 
 /* line 11, sass/utilities/_list.sass */
 .list__item {
-  margin-bottom: -12px;
-  margin-bottom: -0.75rem;
+  margin-bottom: -1px;
+  margin-bottom: -0.0625rem;
   padding: 12px;
   padding: 0.75rem;
   background-color: #ffffff;
@@ -2775,8 +2847,8 @@ legend {
 
 /* line 18, sass/utilities/_list.sass */
 .list--horizontal .list__item {
-  margin-right: -12px;
-  margin-right: -0.75rem;
+  margin-right: -1px;
+  margin-right: -0.0625rem;
   margin-bottom: 0;
 }
 
@@ -3983,6 +4055,12 @@ legend {
 }
 
 /* line 1, sass/utilities/_wrap.sass */
+.unwrapped {
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+}
+
+/* line 5, sass/utilities/_wrap.sass */
 .wrap {
   box-sizing: border-box;
   margin-left: auto;
@@ -3999,7 +4077,7 @@ legend {
   display: table;
 }
 
-/* line 6, sass/utilities/_wrap.sass */
+/* line 10, sass/utilities/_wrap.sass */
 .wrap--large {
   box-sizing: border-box;
   margin-left: auto;
@@ -4016,7 +4094,7 @@ legend {
   display: table;
 }
 
-/* line 6, sass/utilities/_wrap.sass */
+/* line 10, sass/utilities/_wrap.sass */
 .wrap--small {
   box-sizing: border-box;
   margin-left: auto;
@@ -4034,7 +4112,7 @@ legend {
 }
 
 @media screen and (max-width: 479px) {
-  /* line 11, sass/utilities/_wrap.sass */
+  /* line 15, sass/utilities/_wrap.sass */
   .wrap--on-eq-palm {
     box-sizing: border-box;
     margin-left: auto;
@@ -4052,7 +4130,7 @@ legend {
 }
 
 @media screen and (max-width: 479px) {
-  /* line 17, sass/utilities/_wrap.sass */
+  /* line 21, sass/utilities/_wrap.sass */
   .wrap--large-on-eq-palm {
     box-sizing: border-box;
     margin-left: auto;
@@ -4070,7 +4148,7 @@ legend {
 }
 
 @media screen and (max-width: 479px) {
-  /* line 17, sass/utilities/_wrap.sass */
+  /* line 21, sass/utilities/_wrap.sass */
   .wrap--small-on-eq-palm {
     box-sizing: border-box;
     margin-left: auto;
@@ -4088,7 +4166,7 @@ legend {
 }
 
 @media screen and (min-width: 480px) {
-  /* line 11, sass/utilities/_wrap.sass */
+  /* line 15, sass/utilities/_wrap.sass */
   .wrap--on-tab {
     box-sizing: border-box;
     margin-left: auto;
@@ -4106,7 +4184,7 @@ legend {
 }
 
 @media screen and (min-width: 480px) {
-  /* line 17, sass/utilities/_wrap.sass */
+  /* line 21, sass/utilities/_wrap.sass */
   .wrap--large-on-tab {
     box-sizing: border-box;
     margin-left: auto;
@@ -4124,7 +4202,7 @@ legend {
 }
 
 @media screen and (min-width: 480px) {
-  /* line 17, sass/utilities/_wrap.sass */
+  /* line 21, sass/utilities/_wrap.sass */
   .wrap--small-on-tab {
     box-sizing: border-box;
     margin-left: auto;
@@ -4142,7 +4220,7 @@ legend {
 }
 
 @media screen and (min-width: 480px) and (max-width: 719px) {
-  /* line 11, sass/utilities/_wrap.sass */
+  /* line 15, sass/utilities/_wrap.sass */
   .wrap--on-eq-tab {
     box-sizing: border-box;
     margin-left: auto;
@@ -4160,7 +4238,7 @@ legend {
 }
 
 @media screen and (min-width: 480px) and (max-width: 719px) {
-  /* line 17, sass/utilities/_wrap.sass */
+  /* line 21, sass/utilities/_wrap.sass */
   .wrap--large-on-eq-tab {
     box-sizing: border-box;
     margin-left: auto;
@@ -4178,7 +4256,7 @@ legend {
 }
 
 @media screen and (min-width: 480px) and (max-width: 719px) {
-  /* line 17, sass/utilities/_wrap.sass */
+  /* line 21, sass/utilities/_wrap.sass */
   .wrap--small-on-eq-tab {
     box-sizing: border-box;
     margin-left: auto;
@@ -4196,7 +4274,7 @@ legend {
 }
 
 @media screen and (max-width: 719px) {
-  /* line 11, sass/utilities/_wrap.sass */
+  /* line 15, sass/utilities/_wrap.sass */
   .wrap--on-lte-tab {
     box-sizing: border-box;
     margin-left: auto;
@@ -4214,7 +4292,7 @@ legend {
 }
 
 @media screen and (max-width: 719px) {
-  /* line 17, sass/utilities/_wrap.sass */
+  /* line 21, sass/utilities/_wrap.sass */
   .wrap--large-on-lte-tab {
     box-sizing: border-box;
     margin-left: auto;
@@ -4232,7 +4310,7 @@ legend {
 }
 
 @media screen and (max-width: 719px) {
-  /* line 17, sass/utilities/_wrap.sass */
+  /* line 21, sass/utilities/_wrap.sass */
   .wrap--small-on-lte-tab {
     box-sizing: border-box;
     margin-left: auto;
@@ -4250,7 +4328,7 @@ legend {
 }
 
 @media screen and (min-width: 720px) {
-  /* line 11, sass/utilities/_wrap.sass */
+  /* line 15, sass/utilities/_wrap.sass */
   .wrap--on-lap {
     box-sizing: border-box;
     margin-left: auto;
@@ -4268,7 +4346,7 @@ legend {
 }
 
 @media screen and (min-width: 720px) {
-  /* line 17, sass/utilities/_wrap.sass */
+  /* line 21, sass/utilities/_wrap.sass */
   .wrap--large-on-lap {
     box-sizing: border-box;
     margin-left: auto;
@@ -4286,7 +4364,7 @@ legend {
 }
 
 @media screen and (min-width: 720px) {
-  /* line 17, sass/utilities/_wrap.sass */
+  /* line 21, sass/utilities/_wrap.sass */
   .wrap--small-on-lap {
     box-sizing: border-box;
     margin-left: auto;
@@ -4304,7 +4382,7 @@ legend {
 }
 
 @media screen and (min-width: 720px) and (max-width: 1023px) {
-  /* line 11, sass/utilities/_wrap.sass */
+  /* line 15, sass/utilities/_wrap.sass */
   .wrap--on-eq-lap {
     box-sizing: border-box;
     margin-left: auto;
@@ -4322,7 +4400,7 @@ legend {
 }
 
 @media screen and (min-width: 720px) and (max-width: 1023px) {
-  /* line 17, sass/utilities/_wrap.sass */
+  /* line 21, sass/utilities/_wrap.sass */
   .wrap--large-on-eq-lap {
     box-sizing: border-box;
     margin-left: auto;
@@ -4340,7 +4418,7 @@ legend {
 }
 
 @media screen and (min-width: 720px) and (max-width: 1023px) {
-  /* line 17, sass/utilities/_wrap.sass */
+  /* line 21, sass/utilities/_wrap.sass */
   .wrap--small-on-eq-lap {
     box-sizing: border-box;
     margin-left: auto;
@@ -4358,7 +4436,7 @@ legend {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 11, sass/utilities/_wrap.sass */
+  /* line 15, sass/utilities/_wrap.sass */
   .wrap--on-lte-lap {
     box-sizing: border-box;
     margin-left: auto;
@@ -4376,7 +4454,7 @@ legend {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 17, sass/utilities/_wrap.sass */
+  /* line 21, sass/utilities/_wrap.sass */
   .wrap--large-on-lte-lap {
     box-sizing: border-box;
     margin-left: auto;
@@ -4394,7 +4472,7 @@ legend {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 17, sass/utilities/_wrap.sass */
+  /* line 21, sass/utilities/_wrap.sass */
   .wrap--small-on-lte-lap {
     box-sizing: border-box;
     margin-left: auto;
@@ -4412,7 +4490,7 @@ legend {
 }
 
 @media screen and (min-width: 1024px) {
-  /* line 11, sass/utilities/_wrap.sass */
+  /* line 15, sass/utilities/_wrap.sass */
   .wrap--on-desk {
     box-sizing: border-box;
     margin-left: auto;
@@ -4430,7 +4508,7 @@ legend {
 }
 
 @media screen and (min-width: 1024px) {
-  /* line 17, sass/utilities/_wrap.sass */
+  /* line 21, sass/utilities/_wrap.sass */
   .wrap--large-on-desk {
     box-sizing: border-box;
     margin-left: auto;
@@ -4448,7 +4526,7 @@ legend {
 }
 
 @media screen and (min-width: 1024px) {
-  /* line 17, sass/utilities/_wrap.sass */
+  /* line 21, sass/utilities/_wrap.sass */
   .wrap--small-on-desk {
     box-sizing: border-box;
     margin-left: auto;
@@ -4466,7 +4544,7 @@ legend {
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
-  /* line 11, sass/utilities/_wrap.sass */
+  /* line 15, sass/utilities/_wrap.sass */
   .wrap--on-eq-desk {
     box-sizing: border-box;
     margin-left: auto;
@@ -4484,7 +4562,7 @@ legend {
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
-  /* line 17, sass/utilities/_wrap.sass */
+  /* line 21, sass/utilities/_wrap.sass */
   .wrap--large-on-eq-desk {
     box-sizing: border-box;
     margin-left: auto;
@@ -4502,7 +4580,7 @@ legend {
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
-  /* line 17, sass/utilities/_wrap.sass */
+  /* line 21, sass/utilities/_wrap.sass */
   .wrap--small-on-eq-desk {
     box-sizing: border-box;
     margin-left: auto;
@@ -4520,7 +4598,7 @@ legend {
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 11, sass/utilities/_wrap.sass */
+  /* line 15, sass/utilities/_wrap.sass */
   .wrap--on-lte-desk {
     box-sizing: border-box;
     margin-left: auto;
@@ -4538,7 +4616,7 @@ legend {
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 17, sass/utilities/_wrap.sass */
+  /* line 21, sass/utilities/_wrap.sass */
   .wrap--large-on-lte-desk {
     box-sizing: border-box;
     margin-left: auto;
@@ -4556,7 +4634,7 @@ legend {
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 17, sass/utilities/_wrap.sass */
+  /* line 21, sass/utilities/_wrap.sass */
   .wrap--small-on-lte-desk {
     box-sizing: border-box;
     margin-left: auto;
@@ -4574,7 +4652,7 @@ legend {
 }
 
 @media screen and (min-width: 1280px) {
-  /* line 11, sass/utilities/_wrap.sass */
+  /* line 15, sass/utilities/_wrap.sass */
   .wrap--on-monitor {
     box-sizing: border-box;
     margin-left: auto;
@@ -4592,7 +4670,7 @@ legend {
 }
 
 @media screen and (min-width: 1280px) {
-  /* line 17, sass/utilities/_wrap.sass */
+  /* line 21, sass/utilities/_wrap.sass */
   .wrap--large-on-monitor {
     box-sizing: border-box;
     margin-left: auto;
@@ -4610,7 +4688,7 @@ legend {
 }
 
 @media screen and (min-width: 1280px) {
-  /* line 17, sass/utilities/_wrap.sass */
+  /* line 21, sass/utilities/_wrap.sass */
   .wrap--small-on-monitor {
     box-sizing: border-box;
     margin-left: auto;
@@ -4628,7 +4706,7 @@ legend {
 }
 
 @media screen and (min-width: 1280px) and (max-width: 1439px) {
-  /* line 11, sass/utilities/_wrap.sass */
+  /* line 15, sass/utilities/_wrap.sass */
   .wrap--on-eq-monitor {
     box-sizing: border-box;
     margin-left: auto;
@@ -4646,7 +4724,7 @@ legend {
 }
 
 @media screen and (min-width: 1280px) and (max-width: 1439px) {
-  /* line 17, sass/utilities/_wrap.sass */
+  /* line 21, sass/utilities/_wrap.sass */
   .wrap--large-on-eq-monitor {
     box-sizing: border-box;
     margin-left: auto;
@@ -4664,7 +4742,7 @@ legend {
 }
 
 @media screen and (min-width: 1280px) and (max-width: 1439px) {
-  /* line 17, sass/utilities/_wrap.sass */
+  /* line 21, sass/utilities/_wrap.sass */
   .wrap--small-on-eq-monitor {
     box-sizing: border-box;
     margin-left: auto;
@@ -4682,7 +4760,7 @@ legend {
 }
 
 @media screen and (max-width: 1439px) {
-  /* line 11, sass/utilities/_wrap.sass */
+  /* line 15, sass/utilities/_wrap.sass */
   .wrap--on-lte-monitor {
     box-sizing: border-box;
     margin-left: auto;
@@ -4700,7 +4778,7 @@ legend {
 }
 
 @media screen and (max-width: 1439px) {
-  /* line 17, sass/utilities/_wrap.sass */
+  /* line 21, sass/utilities/_wrap.sass */
   .wrap--large-on-lte-monitor {
     box-sizing: border-box;
     margin-left: auto;
@@ -4718,7 +4796,7 @@ legend {
 }
 
 @media screen and (max-width: 1439px) {
-  /* line 17, sass/utilities/_wrap.sass */
+  /* line 21, sass/utilities/_wrap.sass */
   .wrap--small-on-lte-monitor {
     box-sizing: border-box;
     margin-left: auto;
@@ -4736,7 +4814,7 @@ legend {
 }
 
 @media screen and (min-width: 1440px) {
-  /* line 11, sass/utilities/_wrap.sass */
+  /* line 15, sass/utilities/_wrap.sass */
   .wrap--on-wall {
     box-sizing: border-box;
     margin-left: auto;
@@ -4754,7 +4832,7 @@ legend {
 }
 
 @media screen and (min-width: 1440px) {
-  /* line 17, sass/utilities/_wrap.sass */
+  /* line 21, sass/utilities/_wrap.sass */
   .wrap--large-on-wall {
     box-sizing: border-box;
     margin-left: auto;
@@ -4772,7 +4850,7 @@ legend {
 }
 
 @media screen and (min-width: 1440px) {
-  /* line 17, sass/utilities/_wrap.sass */
+  /* line 21, sass/utilities/_wrap.sass */
   .wrap--small-on-wall {
     box-sizing: border-box;
     margin-left: auto;
@@ -4790,7 +4868,7 @@ legend {
 }
 
 @media screen and (min-width: 1440px) and (max-width: 1919px) {
-  /* line 11, sass/utilities/_wrap.sass */
+  /* line 15, sass/utilities/_wrap.sass */
   .wrap--on-eq-wall {
     box-sizing: border-box;
     margin-left: auto;
@@ -4808,7 +4886,7 @@ legend {
 }
 
 @media screen and (min-width: 1440px) and (max-width: 1919px) {
-  /* line 17, sass/utilities/_wrap.sass */
+  /* line 21, sass/utilities/_wrap.sass */
   .wrap--large-on-eq-wall {
     box-sizing: border-box;
     margin-left: auto;
@@ -4826,7 +4904,7 @@ legend {
 }
 
 @media screen and (min-width: 1440px) and (max-width: 1919px) {
-  /* line 17, sass/utilities/_wrap.sass */
+  /* line 21, sass/utilities/_wrap.sass */
   .wrap--small-on-eq-wall {
     box-sizing: border-box;
     margin-left: auto;
@@ -4844,7 +4922,7 @@ legend {
 }
 
 @media screen and (max-width: 1919px) {
-  /* line 11, sass/utilities/_wrap.sass */
+  /* line 15, sass/utilities/_wrap.sass */
   .wrap--on-lte-wall {
     box-sizing: border-box;
     margin-left: auto;
@@ -4862,7 +4940,7 @@ legend {
 }
 
 @media screen and (max-width: 1919px) {
-  /* line 17, sass/utilities/_wrap.sass */
+  /* line 21, sass/utilities/_wrap.sass */
   .wrap--large-on-lte-wall {
     box-sizing: border-box;
     margin-left: auto;
@@ -4880,7 +4958,7 @@ legend {
 }
 
 @media screen and (max-width: 1919px) {
-  /* line 17, sass/utilities/_wrap.sass */
+  /* line 21, sass/utilities/_wrap.sass */
   .wrap--small-on-lte-wall {
     box-sizing: border-box;
     margin-left: auto;
@@ -4898,7 +4976,7 @@ legend {
 }
 
 @media screen and (min-width: 1920px) {
-  /* line 11, sass/utilities/_wrap.sass */
+  /* line 15, sass/utilities/_wrap.sass */
   .wrap--on-full {
     box-sizing: border-box;
     margin-left: auto;
@@ -4916,7 +4994,7 @@ legend {
 }
 
 @media screen and (min-width: 1920px) {
-  /* line 17, sass/utilities/_wrap.sass */
+  /* line 21, sass/utilities/_wrap.sass */
   .wrap--large-on-full {
     box-sizing: border-box;
     margin-left: auto;
@@ -4934,7 +5012,7 @@ legend {
 }
 
 @media screen and (min-width: 1920px) {
-  /* line 17, sass/utilities/_wrap.sass */
+  /* line 21, sass/utilities/_wrap.sass */
   .wrap--small-on-full {
     box-sizing: border-box;
     margin-left: auto;
@@ -4967,10 +5045,13 @@ legend {
   white-space: nowrap;
   font-size: 16px;
   font-size: 1rem;
-  padding: 0.375rem 0.75rem;
+  padding-top: 0.375rem;
+  padding-bottom: 0.375rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
   border-radius: 8px;
   border: 1px solid transparent;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 /* line 17, sass/mixins/_buttons.sass */
@@ -4993,16 +5074,16 @@ legend {
   opacity: 0.65;
 }
 
-/* line 25, sass/blocks/_button.sass */
+/* line 23, sass/blocks/_button.sass */
 .button--white {
-  background-color: #ffffff;
+  background: #ffffff;
   border-color: #ffffff;
   color: #000000;
 }
 
 /* line 11, sass/mixins/_hover.sass */
 .button--white:hover {
-  background-color: #ececec;
+  background: #ececec;
   border-color: #e6e6e6;
   color: #000000;
 }
@@ -5014,16 +5095,16 @@ legend {
   color: #000000;
 }
 
-/* line 25, sass/blocks/_button.sass */
+/* line 23, sass/blocks/_button.sass */
 .button--gray {
-  background-color: #6c757d;
+  background: #6c757d;
   border-color: #6c757d;
   color: #ffffff;
 }
 
 /* line 11, sass/mixins/_hover.sass */
 .button--gray:hover {
-  background-color: #5a6268;
+  background: #5a6268;
   border-color: #545b62;
   color: #ffffff;
 }
@@ -5035,16 +5116,16 @@ legend {
   color: #ffffff;
 }
 
-/* line 25, sass/blocks/_button.sass */
+/* line 23, sass/blocks/_button.sass */
 .button--black {
-  background-color: #000000;
+  background: #000000;
   border-color: #000000;
   color: #ffffff;
 }
 
 /* line 11, sass/mixins/_hover.sass */
 .button--black:hover {
-  background-color: black;
+  background: black;
   border-color: black;
   color: #ffffff;
 }
@@ -5056,16 +5137,16 @@ legend {
   color: #ffffff;
 }
 
-/* line 25, sass/blocks/_button.sass */
+/* line 23, sass/blocks/_button.sass */
 .button--blue {
-  background-color: #007bff;
+  background: #007bff;
   border-color: #007bff;
   color: #ffffff;
 }
 
 /* line 11, sass/mixins/_hover.sass */
 .button--blue:hover {
-  background-color: #0069d9;
+  background: #0069d9;
   border-color: #0062cc;
   color: #ffffff;
 }
@@ -5077,16 +5158,16 @@ legend {
   color: #ffffff;
 }
 
-/* line 25, sass/blocks/_button.sass */
+/* line 23, sass/blocks/_button.sass */
 .button--purple {
-  background-color: #524ad0;
+  background: #524ad0;
   border-color: #524ad0;
   color: #ffffff;
 }
 
 /* line 11, sass/mixins/_hover.sass */
 .button--purple:hover {
-  background-color: #3b32c2;
+  background: #3b32c2;
   border-color: #3830b7;
   color: #ffffff;
 }
@@ -5098,16 +5179,16 @@ legend {
   color: #ffffff;
 }
 
-/* line 25, sass/blocks/_button.sass */
+/* line 23, sass/blocks/_button.sass */
 .button--red {
-  background-color: #dc3545;
+  background: #dc3545;
   border-color: #dc3545;
   color: #ffffff;
 }
 
 /* line 11, sass/mixins/_hover.sass */
 .button--red:hover {
-  background-color: #c82333;
+  background: #c82333;
   border-color: #bd2130;
   color: #ffffff;
 }
@@ -5119,16 +5200,16 @@ legend {
   color: #ffffff;
 }
 
-/* line 25, sass/blocks/_button.sass */
+/* line 23, sass/blocks/_button.sass */
 .button--orange {
-  background-color: #fd7e14;
+  background: #fd7e14;
   border-color: #fd7e14;
   color: #000000;
 }
 
 /* line 11, sass/mixins/_hover.sass */
 .button--orange:hover {
-  background-color: #e96b02;
+  background: #e96b02;
   border-color: #dc6502;
   color: #ffffff;
 }
@@ -5140,16 +5221,16 @@ legend {
   color: #000000;
 }
 
-/* line 25, sass/blocks/_button.sass */
+/* line 23, sass/blocks/_button.sass */
 .button--yellow {
-  background-color: #ffc107;
+  background: #ffc107;
   border-color: #ffc107;
   color: #000000;
 }
 
 /* line 11, sass/mixins/_hover.sass */
 .button--yellow:hover {
-  background-color: #e0a800;
+  background: #e0a800;
   border-color: #d39e00;
   color: #000000;
 }
@@ -5161,16 +5242,16 @@ legend {
   color: #000000;
 }
 
-/* line 25, sass/blocks/_button.sass */
+/* line 23, sass/blocks/_button.sass */
 .button--green {
-  background-color: #28a745;
+  background: #28a745;
   border-color: #28a745;
   color: #ffffff;
 }
 
 /* line 11, sass/mixins/_hover.sass */
 .button--green:hover {
-  background-color: #218838;
+  background: #218838;
   border-color: #1e7e34;
   color: #ffffff;
 }
@@ -5182,16 +5263,16 @@ legend {
   color: #ffffff;
 }
 
-/* line 25, sass/blocks/_button.sass */
+/* line 23, sass/blocks/_button.sass */
 .button--teal {
-  background-color: #20c997;
+  background: #20c997;
   border-color: #20c997;
   color: #ffffff;
 }
 
 /* line 11, sass/mixins/_hover.sass */
 .button--teal:hover {
-  background-color: #1ba87e;
+  background: #1ba87e;
   border-color: #199d76;
   color: #ffffff;
 }
@@ -5203,7 +5284,7 @@ legend {
   color: #ffffff;
 }
 
-/* line 30, sass/blocks/_button.sass */
+/* line 28, sass/blocks/_button.sass */
 .button--outline-white {
   background-color: transparent;
   background-image: none;
@@ -5224,7 +5305,7 @@ legend {
   color: #ffffff;
 }
 
-/* line 30, sass/blocks/_button.sass */
+/* line 28, sass/blocks/_button.sass */
 .button--outline-gray {
   background-color: transparent;
   background-image: none;
@@ -5245,7 +5326,7 @@ legend {
   color: #6c757d;
 }
 
-/* line 30, sass/blocks/_button.sass */
+/* line 28, sass/blocks/_button.sass */
 .button--outline-black {
   background-color: transparent;
   background-image: none;
@@ -5266,7 +5347,7 @@ legend {
   color: #000000;
 }
 
-/* line 30, sass/blocks/_button.sass */
+/* line 28, sass/blocks/_button.sass */
 .button--outline-blue {
   background-color: transparent;
   background-image: none;
@@ -5287,7 +5368,7 @@ legend {
   color: #007bff;
 }
 
-/* line 30, sass/blocks/_button.sass */
+/* line 28, sass/blocks/_button.sass */
 .button--outline-purple {
   background-color: transparent;
   background-image: none;
@@ -5308,7 +5389,7 @@ legend {
   color: #524ad0;
 }
 
-/* line 30, sass/blocks/_button.sass */
+/* line 28, sass/blocks/_button.sass */
 .button--outline-red {
   background-color: transparent;
   background-image: none;
@@ -5329,7 +5410,7 @@ legend {
   color: #dc3545;
 }
 
-/* line 30, sass/blocks/_button.sass */
+/* line 28, sass/blocks/_button.sass */
 .button--outline-orange {
   background-color: transparent;
   background-image: none;
@@ -5350,7 +5431,7 @@ legend {
   color: #fd7e14;
 }
 
-/* line 30, sass/blocks/_button.sass */
+/* line 28, sass/blocks/_button.sass */
 .button--outline-yellow {
   background-color: transparent;
   background-image: none;
@@ -5371,7 +5452,7 @@ legend {
   color: #ffc107;
 }
 
-/* line 30, sass/blocks/_button.sass */
+/* line 28, sass/blocks/_button.sass */
 .button--outline-green {
   background-color: transparent;
   background-image: none;
@@ -5392,7 +5473,7 @@ legend {
   color: #28a745;
 }
 
-/* line 30, sass/blocks/_button.sass */
+/* line 28, sass/blocks/_button.sass */
 .button--outline-teal {
   background-color: transparent;
   background-image: none;
@@ -5413,19 +5494,19 @@ legend {
   color: #20c997;
 }
 
-/* line 37, sass/blocks/_button.sass */
+/* line 34, sass/blocks/_button.sass */
 .button--expand {
   display: block;
   width: 100%;
 }
 
-/* line 43, sass/blocks/_button.sass */
+/* line 40, sass/blocks/_button.sass */
 .button--expand + .button--expand {
   margin-top: 12px;
   margin-top: 0.75rem;
 }
 
-/* line 50, sass/blocks/_button.sass */
+/* line 47, sass/blocks/_button.sass */
 input[type="submit"].button--expand,
 input[type="reset"].button--expand,
 input[type="button"].button--expand {
@@ -5465,7 +5546,7 @@ input[type="button"].button--expand {
   transition: box-shadow 0.5s cubic-bezier(0.55, 0, 0.1, 1), -webkit-transform 0.5s cubic-bezier(0.55, 0, 0.1, 1);
   transition: transform 0.5s cubic-bezier(0.55, 0, 0.1, 1), box-shadow 0.5s cubic-bezier(0.55, 0, 0.1, 1);
   transition: transform 0.5s cubic-bezier(0.55, 0, 0.1, 1), box-shadow 0.5s cubic-bezier(0.55, 0, 0.1, 1), -webkit-transform 0.5s cubic-bezier(0.55, 0, 0.1, 1);
-  z-index: 2;
+  z-index: 12;
 }
 
 /* line 28, sass/blocks/_canvas.sass */
@@ -5475,29 +5556,15 @@ input[type="button"].button--expand {
 
 /* line 2, sass/mixins/_canvas.sass */
 .canvas__aside--left {
-  left: -314px;
-  width: 314px;
+  left: -100%;
+  width: 100%;
 }
 
 /* line 19, sass/mixins/_canvas.sass */
 .canvas.is-shifted.shift-left .canvas__aside, .canvas.is-shifted.shift-left .canvas__aside--left,
 .canvas.is-shifted.shift-left .canvas__main {
-  -webkit-transform: translateX(314px);
-          transform: translateX(314px);
-}
-
-@media screen and (min-width: 720px) {
-  /* line 2, sass/mixins/_canvas.sass */
-  .canvas__aside--left {
-    left: -424px;
-    width: 424px;
-  }
-  /* line 19, sass/mixins/_canvas.sass */
-  .canvas.is-shifted.shift-left .canvas__aside, .canvas.is-shifted.shift-left .canvas__aside--left,
-  .canvas.is-shifted.shift-left .canvas__main {
-    -webkit-transform: translateX(424px);
-            transform: translateX(424px);
-  }
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
 }
 
 /* line 12, sass/blocks/_card.sass */
@@ -5518,6 +5585,13 @@ input[type="button"].button--expand {
   /* line 19, sass/blocks/_card.sass */
   .card--white {
     background-color: var(--color-white);
+  }
+}
+
+@supports (--css: variables) {
+  /* line 19, sass/blocks/_card.sass */
+  .card--white {
+    background-color: var(--color-white);
     color: var(--color-white);
   }
 }
@@ -5526,6 +5600,13 @@ input[type="button"].button--expand {
 .card--gray {
   background-color: #6c757d;
   color: #ffffff;
+}
+
+@supports (--css: variables) {
+  /* line 19, sass/blocks/_card.sass */
+  .card--gray {
+    background-color: var(--color-gray);
+  }
 }
 
 @supports (--css: variables) {
@@ -5546,6 +5627,13 @@ input[type="button"].button--expand {
   /* line 19, sass/blocks/_card.sass */
   .card--black {
     background-color: var(--color-black);
+  }
+}
+
+@supports (--css: variables) {
+  /* line 19, sass/blocks/_card.sass */
+  .card--black {
+    background-color: var(--color-black);
     color: var(--color-white);
   }
 }
@@ -5554,6 +5642,13 @@ input[type="button"].button--expand {
 .card--blue {
   background-color: #007bff;
   color: #ffffff;
+}
+
+@supports (--css: variables) {
+  /* line 19, sass/blocks/_card.sass */
+  .card--blue {
+    background-color: var(--color-blue);
+  }
 }
 
 @supports (--css: variables) {
@@ -5574,6 +5669,13 @@ input[type="button"].button--expand {
   /* line 19, sass/blocks/_card.sass */
   .card--purple {
     background-color: var(--color-purple);
+  }
+}
+
+@supports (--css: variables) {
+  /* line 19, sass/blocks/_card.sass */
+  .card--purple {
+    background-color: var(--color-purple);
     color: var(--color-white);
   }
 }
@@ -5582,6 +5684,13 @@ input[type="button"].button--expand {
 .card--red {
   background-color: #dc3545;
   color: #ffffff;
+}
+
+@supports (--css: variables) {
+  /* line 19, sass/blocks/_card.sass */
+  .card--red {
+    background-color: var(--color-red);
+  }
 }
 
 @supports (--css: variables) {
@@ -5602,6 +5711,13 @@ input[type="button"].button--expand {
   /* line 19, sass/blocks/_card.sass */
   .card--orange {
     background-color: var(--color-orange);
+  }
+}
+
+@supports (--css: variables) {
+  /* line 19, sass/blocks/_card.sass */
+  .card--orange {
+    background-color: var(--color-orange);
     color: var(--color-white);
   }
 }
@@ -5610,6 +5726,13 @@ input[type="button"].button--expand {
 .card--yellow {
   background-color: #ffc107;
   color: rgba(0, 0, 0, 0.7);
+}
+
+@supports (--css: variables) {
+  /* line 19, sass/blocks/_card.sass */
+  .card--yellow {
+    background-color: var(--color-yellow);
+  }
 }
 
 @supports (--css: variables) {
@@ -5630,6 +5753,13 @@ input[type="button"].button--expand {
   /* line 19, sass/blocks/_card.sass */
   .card--green {
     background-color: var(--color-green);
+  }
+}
+
+@supports (--css: variables) {
+  /* line 19, sass/blocks/_card.sass */
+  .card--green {
+    background-color: var(--color-green);
     color: var(--color-white);
   }
 }
@@ -5638,6 +5768,13 @@ input[type="button"].button--expand {
 .card--teal {
   background-color: #20c997;
   color: #ffffff;
+}
+
+@supports (--css: variables) {
+  /* line 19, sass/blocks/_card.sass */
+  .card--teal {
+    background-color: var(--color-teal);
+  }
 }
 
 @supports (--css: variables) {
@@ -5662,16 +5799,15 @@ input[type="button"].button--expand {
   padding-bottom: 0rem;
   align-items: stretch;
   display: flex;
+  flex-direction: column;
 }
 
-/* line 37, sass/blocks/_card.sass */
+/* line 38, sass/blocks/_card.sass */
 .card__header__title {
-  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-  font-weight: 600;
-  font-size: 27px;
-  font-size: 1.6875rem;
-  line-height: 30px;
-  line-height: 1.875rem;
+  font-size: 22px;
+  font-size: 1.375rem;
+  line-height: 26px;
+  line-height: 1.625rem;
   align-items: center;
   display: flex;
   flex-grow: 1;
@@ -5679,8 +5815,11 @@ input[type="button"].button--expand {
 
 /* line 44, sass/blocks/_card.sass */
 .card__header__subtitle {
-  color: #6c757d;
-  display: block;
+  font-size: 13px;
+  font-size: 0.8125rem;
+  line-height: 19px;
+  line-height: 1.1875rem;
+  display: flex;
 }
 
 /* line 48, sass/blocks/_card.sass */
@@ -5795,6 +5934,13 @@ input[type="button"].button--expand {
   /* line 16, sass/blocks/_flag.sass */
   .flag--white {
     background-color: var(--color-white);
+  }
+}
+
+@supports (--css: variables) {
+  /* line 16, sass/blocks/_flag.sass */
+  .flag--white {
+    background-color: var(--color-white);
     color: var(--color-white);
   }
 }
@@ -5803,6 +5949,13 @@ input[type="button"].button--expand {
 .flag--gray {
   background-color: #6c757d;
   color: #ffffff;
+}
+
+@supports (--css: variables) {
+  /* line 16, sass/blocks/_flag.sass */
+  .flag--gray {
+    background-color: var(--color-gray);
+  }
 }
 
 @supports (--css: variables) {
@@ -5823,6 +5976,13 @@ input[type="button"].button--expand {
   /* line 16, sass/blocks/_flag.sass */
   .flag--black {
     background-color: var(--color-black);
+  }
+}
+
+@supports (--css: variables) {
+  /* line 16, sass/blocks/_flag.sass */
+  .flag--black {
+    background-color: var(--color-black);
     color: var(--color-white);
   }
 }
@@ -5831,6 +5991,13 @@ input[type="button"].button--expand {
 .flag--blue {
   background-color: #007bff;
   color: #ffffff;
+}
+
+@supports (--css: variables) {
+  /* line 16, sass/blocks/_flag.sass */
+  .flag--blue {
+    background-color: var(--color-blue);
+  }
 }
 
 @supports (--css: variables) {
@@ -5851,6 +6018,13 @@ input[type="button"].button--expand {
   /* line 16, sass/blocks/_flag.sass */
   .flag--purple {
     background-color: var(--color-purple);
+  }
+}
+
+@supports (--css: variables) {
+  /* line 16, sass/blocks/_flag.sass */
+  .flag--purple {
+    background-color: var(--color-purple);
     color: var(--color-white);
   }
 }
@@ -5859,6 +6033,13 @@ input[type="button"].button--expand {
 .flag--red {
   background-color: #dc3545;
   color: #ffffff;
+}
+
+@supports (--css: variables) {
+  /* line 16, sass/blocks/_flag.sass */
+  .flag--red {
+    background-color: var(--color-red);
+  }
 }
 
 @supports (--css: variables) {
@@ -5879,6 +6060,13 @@ input[type="button"].button--expand {
   /* line 16, sass/blocks/_flag.sass */
   .flag--orange {
     background-color: var(--color-orange);
+  }
+}
+
+@supports (--css: variables) {
+  /* line 16, sass/blocks/_flag.sass */
+  .flag--orange {
+    background-color: var(--color-orange);
     color: var(--color-white);
   }
 }
@@ -5887,6 +6075,13 @@ input[type="button"].button--expand {
 .flag--yellow {
   background-color: #ffc107;
   color: rgba(0, 0, 0, 0.7);
+}
+
+@supports (--css: variables) {
+  /* line 16, sass/blocks/_flag.sass */
+  .flag--yellow {
+    background-color: var(--color-yellow);
+  }
 }
 
 @supports (--css: variables) {
@@ -5907,6 +6102,13 @@ input[type="button"].button--expand {
   /* line 16, sass/blocks/_flag.sass */
   .flag--green {
     background-color: var(--color-green);
+  }
+}
+
+@supports (--css: variables) {
+  /* line 16, sass/blocks/_flag.sass */
+  .flag--green {
+    background-color: var(--color-green);
     color: var(--color-white);
   }
 }
@@ -5915,6 +6117,13 @@ input[type="button"].button--expand {
 .flag--teal {
   background-color: #20c997;
   color: #ffffff;
+}
+
+@supports (--css: variables) {
+  /* line 16, sass/blocks/_flag.sass */
+  .flag--teal {
+    background-color: var(--color-teal);
+  }
 }
 
 @supports (--css: variables) {
@@ -5975,8 +6184,6 @@ input[type="button"].button--expand {
 
 /* line 4, sass/blocks/_flash.sass */
 .flash, .flash--notice, .flash--alert, .flash--warning, .flash--full {
-  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-  font-weight: 600;
   padding: 6px;
   padding: 0.375rem;
   border: 1px solid #6c757d;
@@ -5984,43 +6191,43 @@ input[type="button"].button--expand {
   text-align: center;
 }
 
-/* line 13, sass/blocks/_flash.sass */
+/* line 12, sass/blocks/_flash.sass */
 .flash--notice {
   border-color: #524ad0;
   color: #524ad0;
 }
 
-/* line 17, sass/blocks/_flash.sass */
+/* line 16, sass/blocks/_flash.sass */
 .flash--notice::before {
   margin-right: 6px;
   margin-right: 0.375rem;
 }
 
-/* line 13, sass/blocks/_flash.sass */
+/* line 12, sass/blocks/_flash.sass */
 .flash--alert {
   border-color: #dc3545;
   color: #dc3545;
 }
 
-/* line 17, sass/blocks/_flash.sass */
+/* line 16, sass/blocks/_flash.sass */
 .flash--alert::before {
   margin-right: 6px;
   margin-right: 0.375rem;
 }
 
-/* line 13, sass/blocks/_flash.sass */
+/* line 12, sass/blocks/_flash.sass */
 .flash--warning {
   border-color: #fd7e14;
   color: #fd7e14;
 }
 
-/* line 17, sass/blocks/_flash.sass */
+/* line 16, sass/blocks/_flash.sass */
 .flash--warning::before {
   margin-right: 6px;
   margin-right: 0.375rem;
 }
 
-/* line 20, sass/blocks/_flash.sass */
+/* line 19, sass/blocks/_flash.sass */
 .flash--full {
   border-radius: 0;
   border-width: 1px 0;
@@ -6077,7 +6284,7 @@ input[type="button"].button--expand {
 }
 
 /* line 30, sass/blocks/_form.sass */
-.form__input {
+.form__input, .form__input[type="email"], .form__input[type="number"], .form__input[type="password"], .form__input[type="search"], .form__input[type="tel"], .form__input[type="text"], .form__input[type="url"], .form__input[type="color"], .form__input[type="date"], .form__input[type="datetime"], .form__input[type="datetime-local"], .form__input[type="month"], .form__input[type="time"], .form__input[type="week"] {
   font-size: 16px;
   font-size: 1rem;
   line-height: 24px;
@@ -6096,18 +6303,18 @@ input[type="button"].button--expand {
   width: 100%;
 }
 
-/* line 39, sass/blocks/_form.sass */
+/* line 43, sass/blocks/_form.sass */
 .form__actions {
   margin-top: 24px;
   margin-top: 1.5rem;
 }
 
-/* line 43, sass/blocks/_form.sass */
+/* line 47, sass/blocks/_form.sass */
 .form__field--invalid [type="email"], .form__field--invalid [type="number"], .form__field--invalid [type="password"], .form__field--invalid [type="search"], .form__field--invalid [type="tel"], .form__field--invalid [type="text"], .form__field--invalid [type="url"], .form__field--invalid [type="color"], .form__field--invalid [type="date"], .form__field--invalid [type="datetime"], .form__field--invalid [type="datetime-local"], .form__field--invalid [type="month"], .form__field--invalid [type="time"], .form__field--invalid [type="week"], .form__field--invalid textarea {
   border: 1px solid #dc3545;
 }
 
-/* line 46, sass/blocks/_form.sass */
+/* line 50, sass/blocks/_form.sass */
 .form__error {
   font-size: 12px;
   font-size: 0.75rem;
@@ -6118,7 +6325,7 @@ input[type="button"].button--expand {
   color: #dc3545;
 }
 
-/* line 51, sass/blocks/_form.sass */
+/* line 55, sass/blocks/_form.sass */
 .form__hint {
   font-size: 12px;
   font-size: 0.75rem;
@@ -6129,7 +6336,7 @@ input[type="button"].button--expand {
   color: #000000;
 }
 
-/* line 56, sass/blocks/_form.sass */
+/* line 60, sass/blocks/_form.sass */
 .form__block {
   margin-bottom: 36px;
   margin-bottom: 2.25rem;
@@ -6137,12 +6344,12 @@ input[type="button"].button--expand {
   padding-bottom: 2.25rem;
 }
 
-/* line 60, sass/blocks/_form.sass */
+/* line 64, sass/blocks/_form.sass */
 .form__field--with-prefix {
   position: relative;
 }
 
-/* line 63, sass/blocks/_form.sass */
+/* line 67, sass/blocks/_form.sass */
 .form__field--with-prefix .form__field__prefix {
   position: absolute;
   top: 50%;
@@ -6154,7 +6361,7 @@ input[type="button"].button--expand {
   z-index: 2;
 }
 
-/* line 70, sass/blocks/_form.sass */
+/* line 74, sass/blocks/_form.sass */
 .form__field--with-prefix .form__field__input * {
   padding-left: 2.5em;
 }
@@ -6242,7 +6449,6 @@ input[type="button"].button--expand {
   padding: 4.8px;
   padding: 0.3rem;
   border-left: 0.1rem solid #6c757d;
-  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
   font-style: italic;
   position: relative;
 }
@@ -6262,10 +6468,24 @@ input[type="button"].button--expand {
   color: rgba(0, 0, 0, 0.7);
 }
 
+@supports (--css: variables) {
+  /* line 21, sass/blocks/_hero.sass */
+  .hero--white {
+    background-color: var(--color-white);
+  }
+}
+
 /* line 21, sass/blocks/_hero.sass */
 .hero--gray {
   background-color: #6c757d;
   color: #ffffff;
+}
+
+@supports (--css: variables) {
+  /* line 21, sass/blocks/_hero.sass */
+  .hero--gray {
+    background-color: var(--color-gray);
+  }
 }
 
 /* line 21, sass/blocks/_hero.sass */
@@ -6274,10 +6494,24 @@ input[type="button"].button--expand {
   color: #ffffff;
 }
 
+@supports (--css: variables) {
+  /* line 21, sass/blocks/_hero.sass */
+  .hero--black {
+    background-color: var(--color-black);
+  }
+}
+
 /* line 21, sass/blocks/_hero.sass */
 .hero--blue {
   background-color: #007bff;
   color: #ffffff;
+}
+
+@supports (--css: variables) {
+  /* line 21, sass/blocks/_hero.sass */
+  .hero--blue {
+    background-color: var(--color-blue);
+  }
 }
 
 /* line 21, sass/blocks/_hero.sass */
@@ -6286,10 +6520,24 @@ input[type="button"].button--expand {
   color: #ffffff;
 }
 
+@supports (--css: variables) {
+  /* line 21, sass/blocks/_hero.sass */
+  .hero--purple {
+    background-color: var(--color-purple);
+  }
+}
+
 /* line 21, sass/blocks/_hero.sass */
 .hero--red {
   background-color: #dc3545;
   color: #ffffff;
+}
+
+@supports (--css: variables) {
+  /* line 21, sass/blocks/_hero.sass */
+  .hero--red {
+    background-color: var(--color-red);
+  }
 }
 
 /* line 21, sass/blocks/_hero.sass */
@@ -6298,10 +6546,24 @@ input[type="button"].button--expand {
   color: #ffffff;
 }
 
+@supports (--css: variables) {
+  /* line 21, sass/blocks/_hero.sass */
+  .hero--orange {
+    background-color: var(--color-orange);
+  }
+}
+
 /* line 21, sass/blocks/_hero.sass */
 .hero--yellow {
   background-color: #ffc107;
   color: rgba(0, 0, 0, 0.7);
+}
+
+@supports (--css: variables) {
+  /* line 21, sass/blocks/_hero.sass */
+  .hero--yellow {
+    background-color: var(--color-yellow);
+  }
 }
 
 /* line 21, sass/blocks/_hero.sass */
@@ -6310,10 +6572,24 @@ input[type="button"].button--expand {
   color: #ffffff;
 }
 
+@supports (--css: variables) {
+  /* line 21, sass/blocks/_hero.sass */
+  .hero--green {
+    background-color: var(--color-green);
+  }
+}
+
 /* line 21, sass/blocks/_hero.sass */
 .hero--teal {
   background-color: #20c997;
   color: #ffffff;
+}
+
+@supports (--css: variables) {
+  /* line 21, sass/blocks/_hero.sass */
+  .hero--teal {
+    background-color: var(--color-teal);
+  }
 }
 
 /* line 26, sass/blocks/_hero.sass */
@@ -6335,8 +6611,6 @@ input[type="button"].button--expand {
 
 /* line 36, sass/blocks/_hero.sass */
 .hero__heading {
-  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-  font-weight: 600;
   font-size: 30px;
   font-size: 1.875rem;
   line-height: 38px;
@@ -6347,10 +6621,8 @@ input[type="button"].button--expand {
   max-width: 80rem;
 }
 
-/* line 44, sass/blocks/_hero.sass */
+/* line 43, sass/blocks/_hero.sass */
 .hero__text {
-  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-  font-weight: 600;
   margin-top: 24px;
   margin-top: 1.5rem;
   margin-left: auto;
@@ -6358,14 +6630,14 @@ input[type="button"].button--expand {
   max-width: 75rem;
 }
 
-/* line 51, sass/blocks/_hero.sass */
+/* line 49, sass/blocks/_hero.sass */
 .hero__actions {
   margin-top: 24px;
   margin-top: 1.5rem;
 }
 
 @media screen and (min-width: 1024px) {
-  /* line 55, sass/blocks/_hero.sass */
+  /* line 53, sass/blocks/_hero.sass */
   .hero__heading {
     font-size: 40px;
     font-size: 2.5rem;
@@ -6402,11 +6674,17 @@ input[type="button"].button--expand {
 }
 
 /* line 20, sass/blocks/_input.sass */
-.input__label:before {
+.input__label {
   font-size: 16px;
   font-size: 1rem;
   line-height: 24px;
   line-height: 1.5rem;
+  display: inline-block;
+  word-break: break-word;
+}
+
+/* line 24, sass/blocks/_input.sass */
+.input__label::before {
   margin-right: 6px;
   margin-right: 0.375rem;
   color: #000000;
@@ -6417,19 +6695,19 @@ input[type="button"].button--expand {
   vertical-align: middle;
 }
 
-/* line 30, sass/blocks/_input.sass */
+/* line 33, sass/blocks/_input.sass */
 .input--radio ~ .input--radio {
   margin-left: 24px;
   margin-left: 1.5rem;
 }
 
-/* line 33, sass/blocks/_input.sass */
+/* line 36, sass/blocks/_input.sass */
 .input--radio .input__label {
   padding-left: 24px;
   padding-left: 1.5rem;
 }
 
-/* line 36, sass/blocks/_input.sass */
+/* line 39, sass/blocks/_input.sass */
 .input--radio .input__label::before {
   position: absolute;
   top: 1px;
@@ -6441,7 +6719,7 @@ input[type="button"].button--expand {
   width: 16px;
 }
 
-/* line 44, sass/blocks/_input.sass */
+/* line 47, sass/blocks/_input.sass */
 .input--radio .input__label::after {
   position: absolute;
   top: 4px;
@@ -6457,26 +6735,26 @@ input[type="button"].button--expand {
   width: 10px;
 }
 
-/* line 55, sass/blocks/_input.sass */
+/* line 58, sass/blocks/_input.sass */
 .input--radio input:checked + .input__label::after {
   opacity: 1;
   -webkit-transform: scale(1);
           transform: scale(1);
 }
 
-/* line 62, sass/blocks/_input.sass */
+/* line 65, sass/blocks/_input.sass */
 .input--checkbox ~ .input--checkbox {
   margin-left: 24px;
   margin-left: 1.5rem;
 }
 
-/* line 65, sass/blocks/_input.sass */
+/* line 68, sass/blocks/_input.sass */
 .input--checkbox .input__label {
   padding-left: 24px;
   padding-left: 1.5rem;
 }
 
-/* line 68, sass/blocks/_input.sass */
+/* line 71, sass/blocks/_input.sass */
 .input--checkbox .input__label::before {
   position: absolute;
   top: 3px;
@@ -6488,7 +6766,7 @@ input[type="button"].button--expand {
   width: 16px;
 }
 
-/* line 76, sass/blocks/_input.sass */
+/* line 79, sass/blocks/_input.sass */
 .input--checkbox .input__label::after {
   position: absolute;
   top: 7px;
@@ -6505,7 +6783,7 @@ input[type="button"].button--expand {
   width: 9px;
 }
 
-/* line 88, sass/blocks/_input.sass */
+/* line 91, sass/blocks/_input.sass */
 .input--checkbox input:checked + .input__label::after {
   opacity: 1;
 }
@@ -6529,6 +6807,13 @@ input[type="button"].button--expand {
   /* line 22, sass/blocks/_nav.sass */
   .nav--white {
     background-color: var(--color-white);
+  }
+}
+
+@supports (--css: variables) {
+  /* line 22, sass/blocks/_nav.sass */
+  .nav--white {
+    background-color: var(--color-white);
     color: var(--color-white);
   }
 }
@@ -6537,6 +6822,13 @@ input[type="button"].button--expand {
 .nav--gray {
   background-color: #6c757d;
   color: #ffffff;
+}
+
+@supports (--css: variables) {
+  /* line 22, sass/blocks/_nav.sass */
+  .nav--gray {
+    background-color: var(--color-gray);
+  }
 }
 
 @supports (--css: variables) {
@@ -6557,6 +6849,13 @@ input[type="button"].button--expand {
   /* line 22, sass/blocks/_nav.sass */
   .nav--black {
     background-color: var(--color-black);
+  }
+}
+
+@supports (--css: variables) {
+  /* line 22, sass/blocks/_nav.sass */
+  .nav--black {
+    background-color: var(--color-black);
     color: var(--color-white);
   }
 }
@@ -6565,6 +6864,13 @@ input[type="button"].button--expand {
 .nav--blue {
   background-color: #007bff;
   color: #ffffff;
+}
+
+@supports (--css: variables) {
+  /* line 22, sass/blocks/_nav.sass */
+  .nav--blue {
+    background-color: var(--color-blue);
+  }
 }
 
 @supports (--css: variables) {
@@ -6585,6 +6891,13 @@ input[type="button"].button--expand {
   /* line 22, sass/blocks/_nav.sass */
   .nav--purple {
     background-color: var(--color-purple);
+  }
+}
+
+@supports (--css: variables) {
+  /* line 22, sass/blocks/_nav.sass */
+  .nav--purple {
+    background-color: var(--color-purple);
     color: var(--color-white);
   }
 }
@@ -6593,6 +6906,13 @@ input[type="button"].button--expand {
 .nav--red {
   background-color: #dc3545;
   color: #ffffff;
+}
+
+@supports (--css: variables) {
+  /* line 22, sass/blocks/_nav.sass */
+  .nav--red {
+    background-color: var(--color-red);
+  }
 }
 
 @supports (--css: variables) {
@@ -6613,6 +6933,13 @@ input[type="button"].button--expand {
   /* line 22, sass/blocks/_nav.sass */
   .nav--orange {
     background-color: var(--color-orange);
+  }
+}
+
+@supports (--css: variables) {
+  /* line 22, sass/blocks/_nav.sass */
+  .nav--orange {
+    background-color: var(--color-orange);
     color: var(--color-white);
   }
 }
@@ -6621,6 +6948,13 @@ input[type="button"].button--expand {
 .nav--yellow {
   background-color: #ffc107;
   color: rgba(0, 0, 0, 0.7);
+}
+
+@supports (--css: variables) {
+  /* line 22, sass/blocks/_nav.sass */
+  .nav--yellow {
+    background-color: var(--color-yellow);
+  }
 }
 
 @supports (--css: variables) {
@@ -6641,6 +6975,13 @@ input[type="button"].button--expand {
   /* line 22, sass/blocks/_nav.sass */
   .nav--green {
     background-color: var(--color-green);
+  }
+}
+
+@supports (--css: variables) {
+  /* line 22, sass/blocks/_nav.sass */
+  .nav--green {
+    background-color: var(--color-green);
     color: var(--color-white);
   }
 }
@@ -6649,6 +6990,13 @@ input[type="button"].button--expand {
 .nav--teal {
   background-color: #20c997;
   color: #ffffff;
+}
+
+@supports (--css: variables) {
+  /* line 22, sass/blocks/_nav.sass */
+  .nav--teal {
+    background-color: var(--color-teal);
+  }
 }
 
 @supports (--css: variables) {
