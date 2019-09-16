@@ -18,17 +18,17 @@
 @mixin font-family($typeface: "Helvetiva Neue", $font-weight: normal, $letter-spacing: normal, $font-style: normal, $text-align: left, $text-transform: none, $word-spacing: normal, $word-break: normal, $white-space: normal, $text-decoration: none, $text-indent: 0, $text-overflow: false)
   font-family: $typeface
   font-style: $font-style
-  text-align: $text-align
-  text-transform: $text-transform
-  word-spacing: $word-spacing
-  word-break: $word-break
-  white-space: $white-space
-  text-decoration: $text-decoration
-  text-indent: $text-indent
   font-weight: $font-weight
   letter-spacing: $letter-spacing
+  text-align: $text-align
+  text-decoration: $text-decoration
+  text-indent: $text-indent
   @if $text-overflow
     text-overflow: $text-overflow
+  text-transform: $text-transform
+  white-space: $white-space
+  word-break: $word-break
+  word-spacing: $word-spacing
 
 @mixin body-font-family
   +font-family($body-font-family, $body-font-weight)
