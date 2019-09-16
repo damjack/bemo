@@ -5,9 +5,9 @@
 
 .button
   +button
+  +base-transition('bounce', 'base')
   @include button-size($button-padding-vertical, $button-padding-horizontal, $base-font-size, $button-border-radius)
   border: $button-border-width solid transparent
-  +base-transition('bounce', 'base')
 
 //
 // Button Sizes
