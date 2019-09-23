@@ -1,38 +1,39 @@
-.flex
-  +flex
+@if $enable-flex-grid
+  .flex
+    +flex
 
-.flex__item
-  +flex-item
+  .flex__item
+    +flex-item
 
-.flex--reverse
-  @extend .flex
-  flex-direction: row-reverse
-
-.flex--reverse-column
-  @extend .flex
-  flex-direction: column-reverse
-
-@each $content, $value in $flex-contents
-  .flex--justify-#{$content}
+  .flex--reverse
     @extend .flex
-    justify-content: $value
+    flex-direction: row-reverse
 
-  .flex--align-#{$content}
+  .flex--reverse-column
     @extend .flex
-    align-items: $value
+    flex-direction: column-reverse
 
-+flex-width-setup("flex-")
+  @each $content, $value in $flex-contents
+    .flex--justify-#{$content}
+      @extend .flex
+      justify-content: $value
 
-@each $name in $grid-breakpoints
-  +at-breakpoint($name)
-    +flex-width-setup("flex-#{$name}-")
+    .flex--align-#{$content}
+      @extend .flex
+      align-items: $value
 
-@each $name in $grid-breakpoints
-  +at-breakpoint($name)
-    .flex--reverse-on-#{$name}
-      +flex
-      flex-direction: row-reverse
+  +flex-width-setup("flex-")
 
-    .flex--reverse-column-on-#{$name}
-      +flex
-      flex-direction: column-reverse
+  @each $name in $flex-breakpoints
+    +at-breakpoint($name)
+      +flex-width-setup("flex-#{$name}-")
+
+  @each $name in $flex-breakpoints
+    +at-breakpoint($name)
+      .flex--reverse-on-#{$name}
+        +flex
+        flex-direction: row-reverse
+
+      .flex--reverse-column-on-#{$name}
+        +flex
+        flex-direction: column-reverse
