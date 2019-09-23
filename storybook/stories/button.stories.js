@@ -10,12 +10,7 @@ storiesOf('BLOCKS', module)
       <p className="text">Examples of building buttons with Bemo</p>
 
       <div className="code">
-        <Code>
-          {`    <button class="button">Button</button>
-    <button class="button--blue">Blue</button>
-    <button class="button--red">Red</button>`}
-        </Code>
-        <Preview className="padding--top-2">
+        <Preview className="padding--bottom-2">
           <p>
             <Button className="button">Button base</Button>
             <Button className="button--blue">Blue</Button>
@@ -27,18 +22,18 @@ storiesOf('BLOCKS', module)
             <Button className="button--teal">Teal</Button>
           </p>
         </Preview>
+        <Code>
+          {`    <button class="button">Button</button>
+    <button class="button--blue">Blue</button>
+    <button class="button--red">Red</button>`}
+        </Code>
       </div>
 
       <Title className="markdown">Buttons Outline</Title>
       <p className="text">Examples of building buttons with Bemo</p>
 
       <div className="code">
-        <Code>
-          {`    <button class="button--red--outline">Button</button>
-    <button class="button--blue--outline">Blue</button>
-    <button class="button--purple--outline">Red</button>`}
-        </Code>
-        <Preview className="padding--top-2">
+        <Preview className="padding--bottom-2">
           <p>
             <Button className="button--blue--outline">Blue</Button>
             <Button className="button--red--outline">Red</Button>
@@ -49,18 +44,18 @@ storiesOf('BLOCKS', module)
             <Button className="button--teal--outline">Teal</Button>
           </p>
         </Preview>
+        <Code>
+          {`    <button class="button--red--outline">Button</button>
+    <button class="button--blue--outline">Blue</button>
+    <button class="button--purple--outline">Red</button>`}
+        </Code>
       </div>
 
       <Title className="markdown">Buttons Rounded</Title>
       <p className="text">Examples of building buttons with Bemo</p>
 
       <div className="code">
-        <Code>
-          {`    <button class="button--red--rounded">Button</button>
-    <button class="button--blue--rounded">Blue</button>
-    <button class="button--purple--rounded">Red</button>`}
-        </Code>
-        <Preview className="padding--top-2">
+        <Preview className="padding--bottom-2">
           <p>
             <Button className="button--blue--rounded">Blue</Button>
             <Button className="button--red--rounded">Red</Button>
@@ -71,18 +66,18 @@ storiesOf('BLOCKS', module)
             <Button className="button--teal--rounded">Teal</Button>
           </p>
         </Preview>
+        <Code>
+          {`    <button class="button--red--rounded">Button</button>
+    <button class="button--blue--rounded">Blue</button>
+    <button class="button--purple--rounded">Red</button>`}
+        </Code>
       </div>
 
       <Title className="markdown">Buttons Rounded Outline</Title>
       <p className="text">Examples of building buttons with Bemo</p>
 
       <div className="code">
-        <Code>
-          {`    <button class="button--red--rounded--outline">Button</button>
-    <button class="button--blue--rounded--outline">Blue</button>
-    <button class="button--purple--rounded--outline">Red</button>`}
-        </Code>
-        <Preview className="padding--top-2">
+        <Preview className="padding--bottom-2">
           <p>
             <Button className="button--blue--outline--rounded">Blue</Button>
             <Button className="button--red--outline--rounded">Red</Button>
@@ -93,6 +88,11 @@ storiesOf('BLOCKS', module)
             <Button className="button--teal--outline--rounded">Teal</Button>
           </p>
         </Preview>
+        <Code>
+          {`    <button class="button--red--rounded--outline">Button</button>
+    <button class="button--blue--rounded--outline">Blue</button>
+    <button class="button--purple--rounded--outline">Red</button>`}
+        </Code>
       </div>
     </Main>
   ));

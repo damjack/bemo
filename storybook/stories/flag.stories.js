@@ -54,7 +54,7 @@ storiesOf('BLOCKS', module)
       <Title className="markdown">Flag Reverse</Title>
       <p className="text">Examples of building flag reverse block with Bemo CSS.</p>
 
-      <div className="example">
+      <div className="example padding--bottom-2">
         <div className="flag--rev">
           <div className="flag__image">
             <img src="http://placehold.it/100x100" />

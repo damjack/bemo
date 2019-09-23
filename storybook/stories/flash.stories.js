@@ -10,7 +10,7 @@ storiesOf('BLOCKS', module)
       <p className="text">Examples of building flash block with Bemo CSS.</p>
 
       <div className="code">
-        <Preview>
+        <Preview className="padding--bottom-2">
           <div className="flash--notice">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla!</p>
           </div>
@@ -24,7 +24,7 @@ storiesOf('BLOCKS', module)
       </div>
 
       <div className="code margin--top-2">
-        <Preview>
+        <Preview className="padding--bottom-2">
           <div className="flash--alert">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla!</p>
           </div>
@@ -38,7 +38,7 @@ storiesOf('BLOCKS', module)
       </div>
 
       <div className="code margin--top-2">
-        <Preview>
+        <Preview className="padding--bottom-2">
           <div className="flash--warning">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla!</p>
           </div>

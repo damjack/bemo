@@ -9,7 +9,7 @@ storiesOf('LAYOUT', module)
       <Title className="markdown">Grid</Title>
       <p className="text">Examples of building grid layouts with Bemo CSS.</p>
 
-      <div className="example">
+      <div className="example padding--bottom-2">
         <div className='grid'>
           <div className='grid__item width-1-12'>
             <div className='blurb'>

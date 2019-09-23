@@ -18,7 +18,7 @@ storiesOf('MIXINS', module)
 
     @at-breakpoint(lap) // 1024px > viewport >= 720px
       .style-class
-        text0align: center
+        text-align: center
     @at-breakpoint(desk) // viewport >= 1024px
       .style-class
         text-align: left
@@ -35,10 +35,7 @@ storiesOf('MIXINS', module)
 
       <div className="code">
         <Code>
-          {`    $heading-font-family:         $sans-serif
-    $heading-font-weight:         600
-
-    $body-font-family:            $sans-serif
+          {`    $body-font-family:            $sans-serif
     $body-font-weight:            300
 
     $monospaced-font-family:      $monospace
@@ -46,7 +43,6 @@ storiesOf('MIXINS', module)
 
     // +font-family(CUSTOM FONT FAMILY OR HELVETIVA NEUE, OPTIONAL FONT WIGHT)
 
-    +heading-font-family // +font-family($heading-font-family, $heading-font-weight)
     +body-font-family // +font-family($body-font-family, $body-font-weight)
     +monospaced-font-family // +font-family($monospaced-font-family, $monospaced-font-weight)
           `}
@@ -111,14 +107,14 @@ storiesOf('MIXINS', module)
 
       <div className="code">
         <Code>
-          {`    $transition-functions: map-merge(("material": cubic-bezier(.55,0,.1,1), "inertial": cubic-bezier(0.190, 1.000, 0.220, 1.000), "bounce": cubic-bezier(0.175, 0.885, 0.32, 1.275), "ease-in-out": cubic-bezier(0.645, 0.045, 0.355, 1), "ease-in": cubic-bezier(0.55, 0.055, 0.675, 0.19), "ease-out": cubic-bezier(0.215, 0.61, 0.355, 1)), $transition-functions)
+          {`    $transition-functions: map-merge(("bounce": cubic-bezier(0.175, 0.885, 0.32, 1.275), "ease-in-out": cubic-bezier(0.645, 0.045, 0.355, 1)), $transition-functions)
     $transition-base: all 1s
     $transition-advanced: transform 0.6s
 
     // +base-transition(TRANSITION FROM MAP, 'base' || 'advanced')
 
     +base-transition(alpha) // font-family: 30px; line-height: 38px
-    +base-transition(beta, aplha) // font-family: 27px; line-height: 38px
+    +base-transition("ease-in-out", "base")
           `}
         </Code>
       </div>

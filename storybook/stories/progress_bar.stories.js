@@ -10,15 +10,7 @@ storiesOf('BLOCKS', module)
       <p className="text">Examples of building progress with Bemo</p>
 
       <div className="code">
-        <Code>
-          {`    <div class="progress-bar">
-      <div class="progress-bar__line--green" style="width: 30%">30%</div>
-    </div>
-    <div class="progress-bar">
-      <div class="progress-bar__line--red" style="width: 80%">80%</div>
-    </div>`}
-        </Code>
-        <Preview className="padding--top-2">
+        <Preview className="padding--bottom-2">
           <div className="margin--bottom-1">
             <div className="progress-bar"><div className="progress-bar__line--purple" style={{width: "10%"}}>10%</div></div>
           </div>
@@ -32,6 +24,14 @@ storiesOf('BLOCKS', module)
             <div className="progress-bar"><div className="progress-bar__line--red" style={{width: "80%"}}>80%</div></div>
           </div>
         </Preview>
+        <Code>
+          {`    <div class="progress-bar">
+      <div class="progress-bar__line--green" style="width: 30%">30%</div>
+    </div>
+    <div class="progress-bar">
+      <div class="progress-bar__line--red" style="width: 80%">80%</div>
+    </div>`}
+        </Code>
       </div>
     </Main>
   ));

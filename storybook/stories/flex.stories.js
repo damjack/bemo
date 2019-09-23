@@ -9,7 +9,7 @@ storiesOf('LAYOUT', module)
       <Title className="markdown">Flex</Title>
       <p className="text">Examples of building flex layouts with Bemo CSS.</p>
 
-      <div className="example">
+      <div className="example padding--bottom-2">
         <div className='flex'>
           <div className='flex__item flex-1-12'>
             <div className='blurb'>
