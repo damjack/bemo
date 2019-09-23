@@ -651,6 +651,41 @@ legend {
   }
 }
 
+/* line 3, sass/utilities/_angle.sass */
+.angle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  height: 0.5rem;
+  margin: 0 0.3rem;
+  width: 1rem;
+  z-index: 1;
+}
+
+/* line 11, sass/utilities/_angle.sass */
+.angle::before, .angle::after {
+  content: "";
+  display: block;
+  border-color: transparent;
+  border-style: solid;
+  position: absolute;
+}
+
+/* line 19, sass/utilities/_angle.sass */
+.angle::before {
+  border-bottom-color: #6c757d;
+  border-width: 0 0.5rem 0.5rem 0.5rem;
+  top: 0;
+}
+
+/* line 24, sass/utilities/_angle.sass */
+.angle::after {
+  top: 1px;
+  border-width: 0 0.5rem 0.5rem 0.5rem;
+  border-bottom-color: #ffffff;
+}
+
 /* line 7, sass/utilities/_background.sass */
 .background--transparent {
   background-color: transparent;
@@ -1526,7 +1561,7 @@ legend {
   }
 }
 
-/* line 4, sass/utilities/_font-size.sass */
+/* line 7, sass/utilities/_font-size.sass */
 .alpha {
   font-size: 30px;
   font-size: 1.875rem;
@@ -1534,7 +1569,7 @@ legend {
   line-height: 2.375rem;
 }
 
-/* line 4, sass/utilities/_font-size.sass */
+/* line 7, sass/utilities/_font-size.sass */
 .beta {
   font-size: 27px;
   font-size: 1.6875rem;
@@ -1542,7 +1577,7 @@ legend {
   line-height: 1.875rem;
 }
 
-/* line 4, sass/utilities/_font-size.sass */
+/* line 7, sass/utilities/_font-size.sass */
 .gamma {
   font-size: 22px;
   font-size: 1.375rem;
@@ -1550,7 +1585,7 @@ legend {
   line-height: 1.625rem;
 }
 
-/* line 4, sass/utilities/_font-size.sass */
+/* line 7, sass/utilities/_font-size.sass */
 .delta {
   font-size: 18px;
   font-size: 1.125rem;
@@ -1558,7 +1593,7 @@ legend {
   line-height: 1.375rem;
 }
 
-/* line 10, sass/utilities/_font-size.sass */
+/* line 13, sass/utilities/_font-size.sass */
 .smallprint {
   font-size: 13px;
   font-size: 0.8125rem;
@@ -1566,7 +1601,7 @@ legend {
   line-height: 1.1875rem;
 }
 
-/* line 10, sass/utilities/_font-size.sass */
+/* line 13, sass/utilities/_font-size.sass */
 .milli {
   font-size: 12px;
   font-size: 0.75rem;
@@ -5141,6 +5176,8 @@ legend {
   transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   font-size: 16px;
   font-size: 1rem;
+  line-height: 16px;
+  line-height: 1rem;
   padding-top: 0.375rem;
   padding-bottom: 0.375rem;
   padding-left: 0.75rem;
@@ -6381,6 +6418,11 @@ input[type="button"].button--expand {
   width: 75%;
 }
 
+/* line 59, sass/blocks/_flag.sass */
+.flag--rev .flag__body {
+  direction: ltr;
+}
+
 /* line 4, sass/blocks/_flash.sass */
 .flash, .flash--notice, .flash--alert, .flash--warning, .flash--full {
   padding: 6px;
@@ -7369,33 +7411,52 @@ input[type="button"].button--expand {
 
 /* line 4, sass/blocks/_page.sass */
 .page {
+  padding-top: 12px;
+  padding-top: 0.75rem;
+  padding-bottom: 12px;
+  padding-bottom: 0.75rem;
+  align-items: center;
+  display: flex;
+  justify-content: center;
   margin: -0.25rem;
+  text-align: center;
 }
 
-/* line 7, sass/blocks/_page.sass */
+/* line 12, sass/blocks/_page.sass */
 .page__list {
   align-items: center;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  order: 2;
   text-align: center;
 }
 
-/* line 14, sass/blocks/_page.sass */
+/* line 20, sass/blocks/_page.sass */
 .page__link,
 .page__previous,
 .page__next {
+  padding: 6px;
+  padding: 0.375rem;
   border-color: #000000;
   justify-content: center;
   text-align: center;
+  text-decoration: underline;
 }
 
-/* line 21, sass/blocks/_page.sass */
+/* line 28, sass/blocks/_page.sass */
+.page__link.is-current,
+.page__previous.is-current,
+.page__next.is-current {
+  text-decoration: none;
+}
+
+/* line 31, sass/blocks/_page.sass */
 .page__ellipsis {
   pointer-events: none;
 }
 
-/* line 24, sass/blocks/_page.sass */
+/* line 34, sass/blocks/_page.sass */
 .page__previous,
 .page__next {
   padding-left: 0.75em;
@@ -7403,14 +7464,16 @@ input[type="button"].button--expand {
   white-space: nowrap;
 }
 
-/* line 30, sass/blocks/_page.sass */
+/* line 40, sass/blocks/_page.sass */
 .page__previous {
   display: flex;
+  order: 1;
 }
 
-/* line 33, sass/blocks/_page.sass */
+/* line 44, sass/blocks/_page.sass */
 .page__next {
   display: flex;
+  order: 3;
 }
 
 /* line 2, sass/blocks/_progress-bar.sass */
