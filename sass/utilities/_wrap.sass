@@ -6,6 +6,10 @@
   +wrap
   max-width: $base-wrap-width
 
+.wrap--full
+  +wrap
+  max-width: 100%
+
 @each $name, $width in $wrap-widths
   .wrap--#{$name}
     +wrap
