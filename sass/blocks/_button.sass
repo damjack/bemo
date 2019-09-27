@@ -8,6 +8,8 @@
   +base-transition('bounce', 'base')
   @include button-size($button-padding-vertical, $button-padding-horizontal, $base-font-size)
   border: $button-border-width solid transparent
+  @if $enable-button-rounded
+    border-radius: $button-border-radius
 
 //
 // Button Sizes
@@ -15,6 +17,17 @@
   .button--small
     @extend .button
     @include button-size(8px, 12px, "delta")
+
+  @if $enable-button-colored
+    @each $color, $value in $all-colors
+      .button--small-#{$color}
+        @extend .button--samll
+        @include button-variant($value, $value)
+
+    @each $color, $value in $all-colors
+      .button--small-#{$color}-outline
+        @extend .button--small
+        @include button-outline-variant($value)
 
 //
 // Alternate buttons
@@ -25,32 +38,9 @@
       @include button-variant($value, $value)
 
   @each $color, $value in $all-colors
-    .button--#{$color}--outline
+    .button--#{$color}-outline
       @extend .button
       @include button-outline-variant($value)
-
-//
-// Rounded buttons
-@if $enable-button-rounded
-  .button--rounded
-    @extend .button
-    border-radius: $border-radius
-
-  @if $enable-button-size
-    .button--small--rounded
-      @extend .button--small
-      border-radius: $border-radius
-
-  @if $enable-button-colored
-    @each $color, $value in $all-colors
-      .button--#{$color}--rounded
-        @extend .button--#{$color}
-        border-radius: $border-radius
-
-    @each $color, $value in $all-colors
-      .button--#{$color}--outline--rounded
-        @extend .button--#{$color}
-        border-radius: $border-radius
 
 //
 // Block button
