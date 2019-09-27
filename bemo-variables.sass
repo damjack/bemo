@@ -4,13 +4,18 @@
 
 $align-breakpoints:         ( tab lap desk wall )
 
+// Enable all generator
 $enable-button-rounded:     true
 $enable-button-colored:     true
 $enable-color-label:        true
 $enable-transitions:        true
 $enable-prefers-reduced-motion-media-query: false
 $enable-color-gradients:    true
+$enable-flash-colored:     true
+$enable-flex-grid:          true
+$enable-grid:               true
 
+// Base personalized color
 $blue-color:                #007bff
 $purple-color:              #524ad0
 $red-color:                 #dc3545
@@ -19,30 +24,23 @@ $yellow-color:              #ffc107
 $green-color:               #28a745
 $teal-color:                #20c997
 
-$bemo-colors:               () !default
-$bemo-colors:               map-merge(("blue": $blue-color, "purple": $purple-color, "red": $red-color, "orange": $orange-color, "yellow": $yellow-color, "green": $green-color, "teal": $teal-color), $bemo-colors)
-$all-colors:                map-merge($base-colors, $bemo-colors)
+$bemo-colors:               map-merge(("primary": $blue-color, "secondary": $purple-color, "danger": $red-color, "warning": $orange-color, "success": $green-color, "dark": $black-color, "light": $gray-color, "teal": $teal-color, "yellow": $yellow-color), $bemo-colors)
 
-$enable-flex-grid:          true
-$flex-cols:                 ( 12 )
+// Activate Flex and Grid
+$flex-cols:                 ( 12 7 )
 $flex-breakpoints:          ( tab lap desk wall )
-
-$enable-grid:               true
-$grid-cols:                 ( 12 )
+$grid-cols:                 ( 12 7 )
 $grid-breakpoints:          ( tab lap desk wall )
 
-$space-amounts:             ( 1, 2, 3, 5, 8 )
+$space-amounts:             ( 1, 2, 3, 5, 8, 13 )
 $space-directions:          ( top bottom left )
 $space-breakpoints:         ( tab lap desk )
 
-$space-sizes:               () !default
 $space-sizes:               map-merge((15: 15%, 25: 25%, 50: 50%, 75: 75%, 100: 100%), $space-sizes)
 
 $base-wrap-width:           1440px
 
-$enable-flash-colored:     true
-$flash-colors:             () !default
-$flash-colors:             map-merge(("notice": "purple", "alert": "red", "warning": "orange"), $flash-colors)
+$flash-colors:             map-merge(("notice": "primary", "alert": "danger", "warning": "warning"), $flash-colors)
 $notice-colors:            notice-colors($flash-colors, $bemo-colors)
 
 $table-color:           $black-color
