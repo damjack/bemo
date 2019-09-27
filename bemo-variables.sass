@@ -11,7 +11,7 @@ $enable-color-label:        true
 $enable-transitions:        true
 $enable-prefers-reduced-motion-media-query: false
 $enable-color-gradients:    true
-$enable-flash-colored:     true
+$enable-flash-colored:      true
 $enable-flex-grid:          true
 $enable-grid:               true
 
@@ -24,7 +24,9 @@ $yellow-color:              #ffc107
 $green-color:               #28a745
 $teal-color:                #20c997
 
+$bemo-colors:               ()
 $bemo-colors:               map-merge(("primary": $blue-color, "secondary": $purple-color, "danger": $red-color, "warning": $orange-color, "success": $green-color, "dark": $black-color, "light": $gray-color, "teal": $teal-color, "yellow": $yellow-color), $bemo-colors)
+$all-colors:                map-merge($base-colors, $bemo-colors)
 
 // Activate Flex and Grid
 $flex-cols:                 ( 12 7 )
@@ -40,13 +42,13 @@ $space-sizes:               map-merge((15: 15%, 25: 25%, 50: 50%, 75: 75%, 100: 
 
 $base-wrap-width:           1440px
 
-$flash-colors:             map-merge(("notice": "primary", "alert": "danger", "warning": "warning"), $flash-colors)
-$notice-colors:            notice-colors($flash-colors, $bemo-colors)
+$flash-colors:              map-merge(("notice": "primary", "alert": "danger", "warning": "warning"), $flash-colors)
+$notice-colors:             notice-colors($flash-colors, $bemo-colors)
 
-$table-color:           $black-color
-$table-bg:              $white-color
-$table-cell-padding:    12px
-$table-border-width:    1px
-$table-border-color:    #dae1e7
-$table-accent-bg:       #dae1e7
-$table-striped-order:   odd
+$table-color:               $black-color
+$table-bg:                  $white-color
+$table-cell-padding:        12px
+$table-border-width:        1px
+$table-border-color:        #dae1e7
+$table-accent-bg:           #dae1e7
+$table-striped-order:       odd
